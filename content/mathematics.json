@@ -1,0 +1,473 @@
+{
+  "subject": "mathematics",
+  "name": "Mathematics",
+  "name_hi": "गणित",
+  "version": "1.0.0",
+  "lessons": [
+    {
+      "id": "math-linear",
+      "order": 1,
+      "title": "Linear equations and graphs",
+      "title_hi": "रैखिक समीकरण और ग्राफ़",
+      "level": "Foundation",
+      "summary": "Solving linear equations by balancing, straight-line graphs y = mx + c with gradient and intercept, and simultaneous equations.",
+      "summary_hi": "संतुलन विधि से रैखिक समीकरण हल करना, ढाल और अंतःखंड सहित सरल रेखा ग्राफ़ y = mx + c, और युगपत समीकरण।",
+      "hindi_full": true,
+      "illustration": "line",
+      "illustration_alt": "A pair of axes on squared paper with a straight line rising from left to right and a small triangle marking its gradient.",
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "Solving linear equations",
+          "heading_hi": "रैखिक समीकरण हल करना",
+          "standard": "A **linear equation** contains a variable (usually x) with no powers or products, such as `3x + 5 = 20`. Solving means finding the value of x that makes both sides equal.\n\nThink of the equation as a **balance**: whatever you do to one side you must do to the other. To isolate x, undo the operations in reverse order. For 3x + 5 = 20: subtract 5 from both sides (3x = 15), then divide both sides by 3 (x = 5). Check by substituting: 3 × 5 + 5 = 20. ✓\n\nWhen x appears on both sides, collect the x-terms on one side and the numbers on the other: `5x − 3 = 2x + 9` → subtract 2x: 3x − 3 = 9 → add 3: 3x = 12 → x = 4. If there are brackets, expand them first; if there are fractions, multiply every term by the common denominator first.",
+          "simple": "A linear equation is like `3x + 5 = 20`. We want to find the number x.\n\nImagine a balance scale. Keep it level: whatever you do to the left side, do to the right side too.\n\n3x + 5 = 20\nTake 5 from both sides: 3x = 15\nDivide both sides by 3: x = 5\n\nCheck: 3 × 5 + 5 = 20. Correct.\n\nIf x is on both sides, move all the x's to one side first. If there are brackets, multiply them out first.",
+          "standard_hi": "**रैखिक समीकरण** में एक चर (प्रायः x) होता है जिसमें कोई घात या गुणनफल नहीं होता, जैसे `3x + 5 = 20`। हल करने का अर्थ है x का वह मान ढूँढना जिससे दोनों पक्ष बराबर हों।\n\nसमीकरण को एक **तुला** की तरह सोचें: जो एक पक्ष के साथ करें, वही दूसरे पक्ष के साथ भी करें। x को अलग करने के लिए संक्रियाओं को उल्टे क्रम में पलटें। 3x + 5 = 20 के लिए: दोनों पक्षों से 5 घटाएँ (3x = 15), फिर दोनों पक्षों को 3 से भाग दें (x = 5)। प्रतिस्थापन से जाँचें: 3 × 5 + 5 = 20। ✓\n\nजब x दोनों पक्षों में हो, x-पदों को एक पक्ष में और संख्याओं को दूसरे में इकट्ठा करें: `5x − 3 = 2x + 9` → 2x घटाएँ: 3x − 3 = 9 → 3 जोड़ें: 3x = 12 → x = 4। कोष्ठक हों तो पहले उन्हें खोलें; भिन्न हों तो पहले हर पद को सार्व हर से गुणा करें।",
+          "simple_hi": "रैखिक समीकरण ऐसा होता है: `3x + 5 = 20`। हमें संख्या x ढूँढनी है।\n\nएक तराज़ू की कल्पना करें। उसे संतुलित रखें: जो बाएँ पक्ष के साथ करें, वही दाएँ के साथ भी करें।\n\n3x + 5 = 20\nदोनों ओर से 5 घटाएँ: 3x = 15\nदोनों ओर 3 से भाग दें: x = 5\n\nजाँच: 3 × 5 + 5 = 20। सही।\n\nअगर x दोनों ओर है, तो पहले सारे x एक ओर ले जाएँ। अगर कोष्ठक हैं, तो पहले उन्हें खोलें।"
+        },
+        {
+          "id": "s2",
+          "heading": "Straight-line graphs: y = mx + c",
+          "heading_hi": "सरल रेखा ग्राफ़: y = mx + c",
+          "standard": "Every straight line can be written as `y = mx + c`. The number **m** is the **gradient** (slope): how much y rises for each 1 unit increase in x. The number **c** is the **y-intercept**: where the line crosses the y-axis (the value of y when x = 0).\n\nA positive gradient slopes upward to the right; a negative gradient slopes downward; a gradient of 0 is horizontal. To find the gradient between two points (x₁, y₁) and (x₂, y₂): `m = (y₂ − y₁) / (x₂ − x₁)` — \"rise over run\".\n\nTo find the equation of a line through two points, first find m, then substitute one point into y = mx + c to find c. Through (1, 3) and (3, 7): m = (7 − 3)/(3 − 1) = 2; then 3 = 2 × 1 + c gives c = 1, so y = 2x + 1.\n\nParallel lines have equal gradients. Perpendicular lines have gradients whose product is −1.",
+          "simple": "Any straight line has an equation `y = mx + c`.\n\nm is the gradient: how steep the line is. Go 1 step right, and the line goes up m steps. A negative m means the line goes down.\n\nc is where the line crosses the y-axis.\n\nTo find the gradient from two points: divide the change in y by the change in x. From (1, 3) to (3, 7): y went up 4, x went right 2, so m = 4 ÷ 2 = 2.\n\nThen put one point into y = 2x + c to find c: 3 = 2 + c, so c = 1. The line is y = 2x + 1.",
+          "standard_hi": "हर सरल रेखा को `y = mx + c` के रूप में लिखा जा सकता है। संख्या **m** **ढाल** (प्रवणता) है: x में 1 इकाई वृद्धि पर y कितना बढ़ता है। संख्या **c** **y-अंतःखंड** है: जहाँ रेखा y-अक्ष को काटती है (x = 0 पर y का मान)।\n\nधनात्मक ढाल दाईं ओर ऊपर जाती है; ऋणात्मक ढाल नीचे; 0 ढाल क्षैतिज है। दो बिंदुओं (x₁, y₁) और (x₂, y₂) के बीच ढाल: `m = (y₂ − y₁) / (x₂ − x₁)` — \"ऊँचाई बटा दूरी\"।\n\nदो बिंदुओं से गुज़रने वाली रेखा का समीकरण निकालने के लिए, पहले m ज्ञात करें, फिर एक बिंदु को y = mx + c में रखकर c निकालें। (1, 3) और (3, 7) से: m = (7 − 3)/(3 − 1) = 2; फिर 3 = 2 × 1 + c से c = 1, अतः y = 2x + 1।\n\nसमांतर रेखाओं की ढाल बराबर होती है। लंब रेखाओं की ढालों का गुणनफल −1 होता है।",
+          "simple_hi": "किसी भी सरल रेखा का समीकरण `y = mx + c` होता है।\n\nm ढाल है: रेखा कितनी खड़ी है। 1 कदम दाएँ जाएँ, रेखा m कदम ऊपर जाती है। ऋणात्मक m का मतलब रेखा नीचे जाती है।\n\nc वह जगह है जहाँ रेखा y-अक्ष को काटती है।\n\nदो बिंदुओं से ढाल निकालने के लिए: y में बदलाव को x में बदलाव से भाग दें। (1, 3) से (3, 7) तक: y 4 ऊपर गया, x 2 दाएँ गया, तो m = 4 ÷ 2 = 2।\n\nफिर एक बिंदु को y = 2x + c में रखकर c निकालें: 3 = 2 + c, तो c = 1। रेखा है y = 2x + 1।"
+        },
+        {
+          "id": "s3",
+          "heading": "Simultaneous equations",
+          "heading_hi": "युगपत समीकरण",
+          "standard": "Two linear equations in two unknowns are solved together (**simultaneously**); the solution is the point where the two lines cross.\n\n**Elimination**: arrange the equations so that adding or subtracting them removes one variable. For x + y = 10 and x − y = 4, adding gives 2x = 14, so x = 7, and then y = 3. If the coefficients do not match, multiply one or both equations first.\n\n**Substitution**: rearrange one equation to give one variable in terms of the other, then substitute into the second. From 3x − y = 7, y = 3x − 7; substituting into 2x + 3y = 12 gives 2x + 9x − 21 = 12, so 11x = 33, x = 3, y = 2.\n\nAlways check the answer in both original equations. If the lines are parallel there is no solution; if they are the same line there are infinitely many.",
+          "simple": "Sometimes you have two equations and two unknowns, like x + y = 10 and x − y = 4. You need values of x and y that work in both.\n\nElimination: add the equations so one letter disappears. (x + y) + (x − y) = 10 + 4 gives 2x = 14, so x = 7. Then y = 3.\n\nSubstitution: make one equation say y = something, then put that into the other equation.\n\nCheck your answer in both equations. On a graph, the answer is where the two lines cross.",
+          "standard_hi": "दो अज्ञात वाले दो रैखिक समीकरणों को एक साथ (**युगपत**) हल किया जाता है; हल वह बिंदु है जहाँ दोनों रेखाएँ मिलती हैं।\n\n**विलोपन**: समीकरणों को ऐसे रखें कि जोड़ने या घटाने पर एक चर हट जाए। x + y = 10 और x − y = 4 के लिए, जोड़ने पर 2x = 14, अतः x = 7, और फिर y = 3। यदि गुणांक मेल न खाएँ, तो पहले एक या दोनों समीकरणों को गुणा करें।\n\n**प्रतिस्थापन**: एक समीकरण को पुनर्व्यवस्थित कर एक चर को दूसरे के रूप में लिखें, फिर दूसरे समीकरण में रखें। 3x − y = 7 से, y = 3x − 7; इसे 2x + 3y = 12 में रखने पर 2x + 9x − 21 = 12, अतः 11x = 33, x = 3, y = 2।\n\nउत्तर को दोनों मूल समीकरणों में हमेशा जाँचें। यदि रेखाएँ समांतर हों तो कोई हल नहीं; यदि एक ही रेखा हो तो अनंत हल।",
+          "simple_hi": "कभी-कभी दो समीकरण और दो अज्ञात होते हैं, जैसे x + y = 10 और x − y = 4। आपको x और y के ऐसे मान चाहिए जो दोनों में सही हों।\n\nविलोपन: समीकरणों को जोड़ें ताकि एक अक्षर गायब हो जाए। (x + y) + (x − y) = 10 + 4 से 2x = 14, तो x = 7। फिर y = 3।\n\nप्रतिस्थापन: एक समीकरण से y = कुछ बनाएँ, फिर उसे दूसरे समीकरण में रख दें।\n\nअपना उत्तर दोनों समीकरणों में जाँचें। ग्राफ़ पर, उत्तर वह जगह है जहाँ दोनों रेखाएँ मिलती हैं।"
+        }
+      ],
+      "formulas": [
+        { "name": "Straight line", "expr": "y = mx + c", "note": "m = gradient, c = y-intercept." },
+        { "name": "Gradient between two points", "expr": "m = (y₂ − y₁) / (x₂ − x₁)", "note": "Rise over run." },
+        { "name": "x-intercept", "expr": "x = −c / m", "note": "Set y = 0 in y = mx + c." },
+        { "name": "Perpendicular gradients", "expr": "m₁ × m₂ = −1", "note": "Parallel lines: m₁ = m₂." }
+      ],
+      "examples": [
+        {
+          "title": "Equation of a line through two points",
+          "problem": "Find the equation of the straight line through (1, 3) and (3, 7).",
+          "steps": [
+            "Gradient: m = (7 − 3) / (3 − 1) = 4 / 2 = 2.",
+            "The line has the form y = 2x + c. Substitute the point (1, 3): 3 = 2 × 1 + c, so c = 1.",
+            "Equation: y = 2x + 1. Check with (3, 7): 2 × 3 + 1 = 7. ✓"
+          ],
+          "steps_simple": [
+            "Going from (1, 3) to (3, 7), y rises by 4 while x moves 2 to the right. Gradient = 4 ÷ 2 = 2.",
+            "So the line is y = 2x + c. To find c, put in the first point: 3 = 2 × 1 + c, which gives c = 1.",
+            "The answer is y = 2x + 1. Test the other point: 2 × 3 + 1 = 7. It works."
+          ],
+          "answer": "y = 2x + 1"
+        }
+      ],
+      "quiz": [
+        { "type": "numeric", "q": "Solve 4x − 7 = 13.", "answer": 5, "tolerance": 0, "unit": "", "explain": "Add 7: 4x = 20. Divide by 4: x = 5." },
+        { "type": "mcq", "q": "What is the gradient of the line y = −3x + 2?", "options": ["2", "−3", "3", "−2"], "answer": 1, "explain": "In y = mx + c the gradient is the coefficient of x, which is −3." },
+        { "type": "numeric", "q": "What is the y-intercept of the line 2y = 6x + 8?", "answer": 4, "tolerance": 0, "unit": "", "explain": "Divide by 2: y = 3x + 4, so the intercept is 4." },
+        { "type": "numeric", "q": "Solve simultaneously: x + y = 10 and x − y = 4. Give the value of x.", "answer": 7, "tolerance": 0, "unit": "", "explain": "Adding the equations: 2x = 14, so x = 7 (and y = 3)." }
+      ],
+      "problems": [
+        {
+          "difficulty": 1,
+          "title": "Brackets on both sides",
+          "statement": "Solve 5(x − 2) = 3x + 4.",
+          "steps": [
+            "Expand the bracket: 5x − 10 = 3x + 4.",
+            "Subtract 3x from both sides: 2x − 10 = 4.",
+            "Add 10: 2x = 14, so x = 7. Check: 5 × 5 = 25 and 3 × 7 + 4 = 25. ✓"
+          ],
+          "answer": "x = 7"
+        },
+        {
+          "difficulty": 2,
+          "title": "Line through two points, and where it crosses the x-axis",
+          "statement": "A line passes through (2, 5) and (6, 13). Find its equation and the point where it crosses the x-axis.",
+          "steps": [
+            "Gradient: m = (13 − 5) / (6 − 2) = 8 / 4 = 2.",
+            "Substitute (2, 5) into y = 2x + c: 5 = 4 + c, so c = 1. The line is y = 2x + 1.",
+            "On the x-axis y = 0: 0 = 2x + 1, so x = −0.5.",
+            "The line crosses the x-axis at (−0.5, 0)."
+          ],
+          "answer": "y = 2x + 1; crosses the x-axis at (−0.5, 0)"
+        },
+        {
+          "difficulty": 3,
+          "title": "Simultaneous equations by substitution",
+          "statement": "Solve 2x + 3y = 12 and 3x − y = 7.",
+          "steps": [
+            "Rearrange the second equation for y (it has the simplest y-term): y = 3x − 7.",
+            "Substitute into the first: 2x + 3(3x − 7) = 12.",
+            "Expand: 2x + 9x − 21 = 12, so 11x = 33 and x = 3.",
+            "Back-substitute: y = 3 × 3 − 7 = 2.",
+            "Check in both: 2 × 3 + 3 × 2 = 12 ✓ and 3 × 3 − 2 = 7 ✓. The lines cross at (3, 2)."
+          ],
+          "answer": "x = 3, y = 2"
+        }
+      ],
+      "glossary": [
+        { "term": "variable", "def": "A symbol, usually a letter, standing for an unknown or changing number.", "def_hi": "एक प्रतीक, प्रायः अक्षर, जो किसी अज्ञात या बदलती संख्या का प्रतिनिधित्व करता है।" },
+        { "term": "coefficient", "def": "The number multiplying a variable; in 3x the coefficient is 3.", "def_hi": "किसी चर को गुणा करने वाली संख्या; 3x में गुणांक 3 है।" },
+        { "term": "gradient", "def": "The steepness of a line: the change in y per unit change in x.", "def_hi": "रेखा की ढलान: x में प्रति इकाई परिवर्तन पर y में परिवर्तन।" },
+        { "term": "intercept", "def": "The point where a graph crosses an axis; the y-intercept is the value of y when x = 0.", "def_hi": "वह बिंदु जहाँ ग्राफ़ अक्ष को काटता है; y-अंतःखंड x = 0 पर y का मान है।" },
+        { "term": "simultaneous equations", "def": "Two or more equations that must be satisfied by the same values of the unknowns at once.", "def_hi": "दो या अधिक समीकरण जिन्हें अज्ञातों के एक ही मानों से एक साथ संतुष्ट होना चाहिए।" }
+      ],
+      "constants": []
+    },
+    {
+      "id": "math-quadratic",
+      "order": 2,
+      "title": "Quadratic equations",
+      "title_hi": "द्विघात समीकरण",
+      "level": "Standard",
+      "summary": "Recognising quadratics, solving by factorising and by the quadratic formula, and using the discriminant to predict how many real roots there are.",
+      "summary_hi": "द्विघात समीकरण पहचानना, गुणनखंडन और द्विघात सूत्र से हल करना, और विविक्तकर से वास्तविक मूलों की संख्या का अनुमान।",
+      "hindi_full": true,
+      "illustration": "parabola",
+      "illustration_alt": "A U-shaped curve on axes, crossing the x-axis at two marked points with its lowest point labelled.",
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "What a quadratic is",
+          "heading_hi": "द्विघात क्या है",
+          "standard": "A **quadratic** expression has an x² term as its highest power: `ax² + bx + c` with a ≠ 0. A quadratic equation sets it equal to zero: `ax² + bx + c = 0`. Its graph is a **parabola** — a U-shape opening upward if a > 0, or an upside-down U if a < 0.\n\nThe solutions of the equation are called **roots**; they are the x-values where the parabola crosses the x-axis. A quadratic can have two, one (repeated) or no real roots depending on whether the curve crosses, touches, or misses the axis.\n\nThe lowest (or highest) point is the **vertex**, at `x = −b / (2a)`; the parabola is symmetric about the vertical line through it. Quadratics appear whenever something depends on a square: areas, projectile heights, braking distances.",
+          "simple": "A quadratic has an x² in it, like `x² − 5x + 6`. A quadratic equation is a quadratic set equal to zero.\n\nIts graph is a U-shape called a parabola. If the x² has a minus in front, the U is upside down.\n\nThe roots are the x-values where the curve crosses the x-axis — the answers to the equation. There can be two, one, or none.\n\nThe bottom of the U (or the top, if it is upside down) is the vertex.",
+          "standard_hi": "**द्विघात** व्यंजक में सबसे बड़ी घात x² होती है: `ax² + bx + c`, जहाँ a ≠ 0। द्विघात समीकरण इसे शून्य के बराबर रखता है: `ax² + bx + c = 0`। इसका ग्राफ़ एक **परवलय** है — a > 0 पर ऊपर खुलने वाला U-आकार, a < 0 पर उल्टा U।\n\nसमीकरण के हल **मूल** कहलाते हैं; ये वे x-मान हैं जहाँ परवलय x-अक्ष को काटता है। द्विघात के दो, एक (पुनरावृत्त) या कोई वास्तविक मूल नहीं हो सकते, इस पर निर्भर कि वक्र अक्ष को काटता है, छूता है, या छोड़ देता है।\n\nसबसे नीचा (या ऊँचा) बिंदु **शीर्ष** है, `x = −b / (2a)` पर; परवलय इससे गुज़रने वाली ऊर्ध्वाधर रेखा के सापेक्ष सममित है। द्विघात वहाँ आते हैं जहाँ कुछ वर्ग पर निर्भर हो: क्षेत्रफल, प्रक्षेप्य की ऊँचाई, ब्रेक की दूरी।",
+          "simple_hi": "द्विघात में x² होता है, जैसे `x² − 5x + 6`। द्विघात समीकरण इसे शून्य के बराबर रखता है।\n\nइसका ग्राफ़ U-आकार का होता है जिसे परवलय कहते हैं। अगर x² के आगे ऋण चिह्न हो, तो U उल्टा होता है।\n\nमूल वे x-मान हैं जहाँ वक्र x-अक्ष को काटता है — समीकरण के उत्तर। ये दो, एक, या कोई नहीं हो सकते।\n\nU का सबसे निचला बिंदु (या उल्टे U का सबसे ऊपरी) शीर्ष कहलाता है।"
+        },
+        {
+          "id": "s2",
+          "heading": "Solving by factorising",
+          "heading_hi": "गुणनखंडन से हल करना",
+          "standard": "If a product is zero, one of the factors must be zero. So if you can write the quadratic as two brackets, `(x − p)(x − q) = 0`, the roots are x = p and x = q.\n\nFor `x² + bx + c`, look for two numbers that **multiply to c and add to b**. For x² − 5x + 6: the numbers −2 and −3 multiply to 6 and add to −5, so x² − 5x + 6 = (x − 2)(x − 3), and the roots are 2 and 3.\n\nWhen a ≠ 1, look for numbers that multiply to a × c and add to b, then split the middle term and factorise in pairs. Two special patterns: the **difference of two squares** `x² − k² = (x − k)(x + k)`, and a common factor, e.g. `x² − 4x = x(x − 4)` with roots 0 and 4.\n\nNot every quadratic factorises neatly; when the numbers do not appear, use the formula in the next section.",
+          "simple": "If two things multiply to give zero, one of them must be zero. That is the trick behind factorising.\n\nFor x² − 5x + 6, find two numbers that multiply to make 6 and add to make −5. They are −2 and −3.\n\nSo x² − 5x + 6 = (x − 2)(x − 3). Set each bracket to zero: x = 2 or x = 3.\n\nSpecial cases: x² − 9 = (x − 3)(x + 3). And x² − 4x = x(x − 4), so x = 0 or 4.\n\nIf you cannot find the numbers, use the quadratic formula instead.",
+          "standard_hi": "यदि कोई गुणनफल शून्य है, तो उसका कोई एक गुणनखंड शून्य होना चाहिए। अतः यदि द्विघात को दो कोष्ठकों में लिखा जा सके, `(x − p)(x − q) = 0`, तो मूल x = p और x = q हैं।\n\n`x² + bx + c` के लिए, ऐसी दो संख्याएँ खोजें जिनका **गुणनफल c और योग b** हो। x² − 5x + 6 के लिए: −2 और −3 का गुणनफल 6 और योग −5 है, अतः x² − 5x + 6 = (x − 2)(x − 3), और मूल 2 और 3 हैं।\n\nजब a ≠ 1 हो, ऐसी संख्याएँ खोजें जिनका गुणनफल a × c और योग b हो, फिर बीच के पद को बाँटकर जोड़ों में गुणनखंड करें। दो विशेष रूप: **दो वर्गों का अंतर** `x² − k² = (x − k)(x + k)`, और उभयनिष्ठ गुणनखंड, जैसे `x² − 4x = x(x − 4)` जिसके मूल 0 और 4 हैं।\n\nहर द्विघात का साफ़ गुणनखंड नहीं होता; जब संख्याएँ न मिलें, तो अगले भाग का सूत्र प्रयोग करें।",
+          "simple_hi": "अगर दो चीज़ों का गुणनफल शून्य है, तो उनमें से एक शून्य होनी चाहिए। गुणनखंडन के पीछे यही तरकीब है।\n\nx² − 5x + 6 के लिए, दो ऐसी संख्याएँ खोजें जिनका गुणा 6 और जोड़ −5 हो। वे हैं −2 और −3।\n\nतो x² − 5x + 6 = (x − 2)(x − 3)। हर कोष्ठक को शून्य रखें: x = 2 या x = 3।\n\nविशेष रूप: x² − 9 = (x − 3)(x + 3)। और x² − 4x = x(x − 4), तो x = 0 या 4।\n\nअगर संख्याएँ न मिलें, तो द्विघात सूत्र का प्रयोग करें।"
+        },
+        {
+          "id": "s3",
+          "heading": "The quadratic formula and the discriminant",
+          "heading_hi": "द्विघात सूत्र और विविक्तकर",
+          "standard": "For any quadratic `ax² + bx + c = 0`, the roots are\n\n`x = (−b ± √(b² − 4ac)) / (2a)`\n\nThe expression under the square root, `D = b² − 4ac`, is the **discriminant** and it tells you how many real roots there are before you finish the calculation:\n\n- D > 0: two distinct real roots (the parabola crosses the x-axis twice)\n- D = 0: one repeated root (the parabola just touches the axis)\n- D < 0: no real roots (the parabola misses the axis entirely)\n\nFor 2x² + 3x − 2 = 0: a = 2, b = 3, c = −2, so D = 9 + 16 = 25 and x = (−3 ± 5)/4, giving x = ½ or x = −2.\n\nTwo useful facts: the roots add to `−b/a` and multiply to `c/a`. They provide a quick check of any answer.",
+          "simple": "This formula works for every quadratic, even ones that will not factorise:\n\n`x = (−b ± √(b² − 4ac)) / (2a)`\n\nThe ± means you get two answers: one with plus, one with minus.\n\nThe part under the square root, b² − 4ac, is called the discriminant. It tells you how many answers to expect:\n\n- Positive: two answers\n- Zero: one answer\n- Negative: no real answers (you cannot square-root a negative)\n\nExample: 2x² + 3x − 2 = 0. Here a = 2, b = 3, c = −2. Under the root: 9 + 16 = 25, and √25 = 5. So x = (−3 + 5)/4 = ½ or x = (−3 − 5)/4 = −2.",
+          "standard_hi": "किसी भी द्विघात `ax² + bx + c = 0` के मूल हैं\n\n`x = (−b ± √(b² − 4ac)) / (2a)`\n\nवर्गमूल के नीचे का व्यंजक, `D = b² − 4ac`, **विविक्तकर** है और यह गणना पूरी करने से पहले ही बताता है कि कितने वास्तविक मूल हैं:\n\n- D > 0: दो भिन्न वास्तविक मूल (परवलय x-अक्ष को दो बार काटता है)\n- D = 0: एक पुनरावृत्त मूल (परवलय अक्ष को बस छूता है)\n- D < 0: कोई वास्तविक मूल नहीं (परवलय अक्ष को बिल्कुल नहीं छूता)\n\n2x² + 3x − 2 = 0 के लिए: a = 2, b = 3, c = −2, अतः D = 9 + 16 = 25 और x = (−3 ± 5)/4, जिससे x = ½ या x = −2।\n\nदो उपयोगी तथ्य: मूलों का योग `−b/a` और गुणनफल `c/a` होता है। ये किसी भी उत्तर की त्वरित जाँच देते हैं।",
+          "simple_hi": "यह सूत्र हर द्विघात पर काम करता है, उन पर भी जिनका गुणनखंड नहीं होता:\n\n`x = (−b ± √(b² − 4ac)) / (2a)`\n\n± का मतलब है दो उत्तर मिलते हैं: एक धन के साथ, एक ऋण के साथ।\n\nवर्गमूल के नीचे का भाग, b² − 4ac, विविक्तकर कहलाता है। यह बताता है कितने उत्तर मिलेंगे:\n\n- धनात्मक: दो उत्तर\n- शून्य: एक उत्तर\n- ऋणात्मक: कोई वास्तविक उत्तर नहीं (ऋणात्मक का वर्गमूल नहीं निकलता)\n\nउदाहरण: 2x² + 3x − 2 = 0। यहाँ a = 2, b = 3, c = −2। मूल के नीचे: 9 + 16 = 25, और √25 = 5। तो x = (−3 + 5)/4 = ½ या x = (−3 − 5)/4 = −2।"
+        }
+      ],
+      "formulas": [
+        { "name": "Quadratic formula", "expr": "x = (−b ± √(b² − 4ac)) / (2a)", "note": "For ax² + bx + c = 0." },
+        { "name": "Discriminant", "expr": "D = b² − 4ac", "note": "D > 0 two roots; D = 0 one repeated; D < 0 none real." },
+        { "name": "Sum and product of roots", "expr": "α + β = −b/a, αβ = c/a", "note": "Quick check of answers." },
+        { "name": "Vertex", "expr": "x = −b / (2a)", "note": "Axis of symmetry of the parabola." },
+        { "name": "Difference of two squares", "expr": "x² − k² = (x − k)(x + k)", "note": "" }
+      ],
+      "examples": [
+        {
+          "title": "Using the quadratic formula",
+          "problem": "Solve 2x² + 3x − 2 = 0.",
+          "steps": [
+            "Identify a = 2, b = 3, c = −2.",
+            "Discriminant: D = b² − 4ac = 9 − 4 × 2 × (−2) = 9 + 16 = 25. Positive, so two real roots; and 25 is a perfect square, so the roots are rational.",
+            "Apply the formula: x = (−3 ± √25) / (2 × 2) = (−3 ± 5) / 4.",
+            "x = 2/4 = ½ or x = −8/4 = −2.",
+            "Check: sum of roots = ½ − 2 = −1.5 = −b/a = −3/2 ✓; product = −1 = c/a = −2/2 ✓."
+          ],
+          "steps_simple": [
+            "Read off the numbers: a = 2 (in front of x²), b = 3 (in front of x), c = −2 (on its own).",
+            "Work out b² − 4ac: 3 × 3 = 9, and 4 × 2 × (−2) = −16, so 9 − (−16) = 25.",
+            "√25 = 5. Now x = (−3 ± 5) ÷ 4.",
+            "With plus: (−3 + 5) ÷ 4 = 2 ÷ 4 = ½. With minus: (−3 − 5) ÷ 4 = −8 ÷ 4 = −2.",
+            "Check one: 2 × (−2)² + 3 × (−2) − 2 = 8 − 6 − 2 = 0. Correct."
+          ],
+          "answer": "x = ½ or x = −2"
+        }
+      ],
+      "quiz": [
+        { "type": "numeric", "q": "What is the larger root of x² − 7x + 12 = 0?", "answer": 4, "tolerance": 0, "unit": "", "explain": "Factorise: (x − 3)(x − 4) = 0, roots 3 and 4." },
+        { "type": "mcq", "q": "If the discriminant of a quadratic is negative, the equation has…", "options": ["two distinct real roots", "one repeated root", "no real roots", "infinitely many roots"], "answer": 2, "explain": "A negative number has no real square root, so the formula gives no real values." },
+        { "type": "numeric", "q": "Calculate the discriminant of x² + 4x + 4 = 0.", "answer": 0, "tolerance": 0, "unit": "", "explain": "D = 16 − 16 = 0: one repeated root, x = −2." },
+        { "type": "numeric", "q": "What is the sum of the roots of 3x² − 12x + 5 = 0?", "answer": 4, "tolerance": 0.01, "unit": "", "explain": "Sum = −b/a = 12/3 = 4." }
+      ],
+      "problems": [
+        {
+          "difficulty": 1,
+          "title": "Factorise and solve",
+          "statement": "Solve x² + 8x + 15 = 0 by factorising.",
+          "steps": [
+            "Find two numbers that multiply to 15 and add to 8: 3 and 5.",
+            "So x² + 8x + 15 = (x + 3)(x + 5) = 0.",
+            "Roots: x = −3 or x = −5. Check: (−3)² + 8(−3) + 15 = 9 − 24 + 15 = 0 ✓."
+          ],
+          "answer": "x = −3 or x = −5"
+        },
+        {
+          "difficulty": 2,
+          "title": "A quadratic with a ≠ 1",
+          "statement": "Solve 3x² − 5x − 2 = 0.",
+          "steps": [
+            "a = 3, b = −5, c = −2. Discriminant D = 25 + 24 = 49, a perfect square, so it will factorise.",
+            "By formula: x = (5 ± 7) / 6, giving x = 2 or x = −1/3.",
+            "Alternatively factorise: numbers multiplying to 3 × (−2) = −6 and adding to −5 are −6 and +1. Split: 3x² − 6x + x − 2 = 3x(x − 2) + 1(x − 2) = (3x + 1)(x − 2).",
+            "Check: sum of roots 2 − 1/3 = 5/3 = −b/a ✓."
+          ],
+          "answer": "x = 2 or x = −⅓"
+        },
+        {
+          "difficulty": 3,
+          "title": "Condition on a parameter",
+          "statement": "For which values of k does the equation kx² + 4x + 1 = 0 have two distinct real roots?",
+          "steps": [
+            "Two distinct real roots require the discriminant to be strictly positive: D = b² − 4ac > 0.",
+            "Here a = k, b = 4, c = 1, so D = 16 − 4k.",
+            "16 − 4k > 0 → 4k < 16 → k < 4.",
+            "But the equation must actually be quadratic, so k ≠ 0 (if k = 0 it becomes 4x + 1 = 0, a linear equation with one root).",
+            "Answer: k < 4 and k ≠ 0. Check an example: k = 1 gives x² + 4x + 1 = 0 with D = 12 > 0 ✓; k = 4 gives D = 0, a repeated root, correctly excluded."
+          ],
+          "answer": "k < 4, k ≠ 0"
+        }
+      ],
+      "glossary": [
+        { "term": "quadratic", "def": "An expression or equation whose highest power of the variable is 2.", "def_hi": "ऐसा व्यंजक या समीकरण जिसमें चर की सबसे बड़ी घात 2 हो।" },
+        { "term": "root", "def": "A solution of an equation; for a quadratic, an x-value where the graph meets the x-axis.", "def_hi": "समीकरण का हल; द्विघात के लिए, वह x-मान जहाँ ग्राफ़ x-अक्ष से मिलता है।" },
+        { "term": "discriminant", "def": "b² − 4ac; its sign tells how many real roots a quadratic has.", "def_hi": "b² − 4ac; इसका चिह्न बताता है कि द्विघात के कितने वास्तविक मूल हैं।" },
+        { "term": "factorise", "def": "To write an expression as a product of simpler factors, e.g. x² − 5x + 6 = (x − 2)(x − 3).", "def_hi": "किसी व्यंजक को सरल गुणनखंडों के गुणनफल के रूप में लिखना, जैसे x² − 5x + 6 = (x − 2)(x − 3)।" },
+        { "term": "parabola", "def": "The U-shaped graph of a quadratic function.", "def_hi": "द्विघात फलन का U-आकार का ग्राफ़।" },
+        { "term": "vertex", "def": "The turning point of a parabola, at x = −b/(2a).", "def_hi": "परवलय का मोड़ बिंदु, x = −b/(2a) पर।" }
+      ],
+      "constants": []
+    },
+    {
+      "id": "math-functions",
+      "order": 3,
+      "title": "Functions and their graphs",
+      "title_hi": "फलन और उनके ग्राफ़",
+      "level": "Standard",
+      "summary": "Function notation, domain and range, the main families of graphs, composite and inverse functions, and how transformations move and stretch a graph. Includes a function grapher.",
+      "summary_hi": "फलन संकेतन, प्रांत और परिसर, ग्राफ़ के मुख्य परिवार, संयुक्त और प्रतिलोम फलन, और रूपांतरण ग्राफ़ को कैसे खिसकाते व खींचते हैं। फलन ग्राफ़र सहित।",
+      "hindi_full": false,
+      "illustration": "machine",
+      "illustration_alt": "A box labelled f with an arrow entering on the left marked x and an arrow leaving on the right marked f(x).",
+      "sim": "grapher",
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "What a function is",
+          "standard": "A **function** is a rule that takes an input and gives exactly one output. We write `f(x)` for the output when the input is x: if f(x) = 2x + 1, then f(3) = 7. Think of a machine: x goes in, f(x) comes out.\n\nThe **domain** is the set of inputs the function accepts; the **range** is the set of outputs it can produce. For f(x) = √x the domain is x ≥ 0 (you cannot square-root a negative real number) and the range is f(x) ≥ 0. For g(x) = x² the domain is all real numbers but the range is g(x) ≥ 0.\n\nA graph is the set of points (x, f(x)). Because each input has only one output, a vertical line crosses the graph of a function at most once — the **vertical line test**.",
+          "simple": "A function is a rule. You put a number in, and exactly one number comes out.\n\nf(x) = 2x + 1 means: double the number, then add 1. So f(3) = 7.\n\nThe domain is the set of numbers you are allowed to put in. The range is the set of numbers that can come out.\n\nFor square root, you can only put in 0 or positive numbers. For x², you can put in anything, but only 0 or positive numbers come out.\n\nOn a graph, a function never has two points directly above each other."
+        },
+        {
+          "id": "s2",
+          "heading": "Families of graphs; composite and inverse functions",
+          "standard": "Learn the shapes of the basic families: **linear** y = mx + c (a straight line); **quadratic** y = x² (a parabola); **cubic** y = x³ (an S-shape through the origin); **reciprocal** y = 1/x (two curves with the axes as asymptotes); **exponential** y = 2ˣ (growing ever faster, always positive); **sine** y = sin x (a wave between −1 and 1 repeating every 360° or 2π).\n\nA **composite function** applies one function after another: `f(g(x))` means do g first, then f. With f(x) = 2x + 1 and g(x) = x², f(g(3)) = f(9) = 19 but g(f(3)) = g(7) = 49 — the order matters.\n\nThe **inverse function** f⁻¹ undoes f: f⁻¹(f(x)) = x. To find it, write y = f(x), swap x and y, and solve for y. For f(x) = 2x + 1: x = 2y + 1 gives y = (x − 1)/2, so f⁻¹(x) = (x − 1)/2. The graph of f⁻¹ is the reflection of f in the line y = x. Only one-to-one functions have inverses.",
+          "simple": "Some shapes to know: a straight line (y = mx + c), a U-shape (y = x²), an S-shape (y = x³), a curve that shoots up (y = 2ˣ), and a wave (y = sin x). Try each one in the grapher.\n\nA composite function means doing two rules one after another. f(g(x)) means: do g first, then f. The order matters.\n\nAn inverse function undoes the original. If f doubles and adds 1, then f⁻¹ subtracts 1 and halves. To find it, swap x and y in the equation and solve for y."
+        },
+        {
+          "id": "s3",
+          "heading": "Transformations of graphs",
+          "standard": "Starting from y = f(x), simple changes to the formula move or stretch the graph in predictable ways:\n\n- `y = f(x) + a`: translate **up** by a\n- `y = f(x − a)`: translate **right** by a (note the sign: subtracting moves right)\n- `y = k f(x)`: stretch **vertically** by factor k (squash if 0 < k < 1)\n- `y = f(kx)`: stretch **horizontally** by factor 1/k\n- `y = −f(x)`: reflect in the **x-axis**\n- `y = f(−x)`: reflect in the **y-axis**\n\nChanges *outside* the function affect y (vertical); changes *inside* the brackets affect x (horizontal) and act in the opposite direction to what you might expect.\n\nFor y = −2(x − 3)² + 1, starting from y = x²: translate right 3, stretch vertically by 2, reflect in the x-axis, translate up 1. The vertex moves from (0, 0) to (3, 1).",
+          "simple": "Small changes to a formula move its graph:\n\n- Add a number on the end: the graph moves up.\n- Subtract a number inside the bracket, like f(x − 3): the graph moves right by 3. (Yes, the opposite of what it looks like.)\n- Multiply the whole thing by 2: the graph gets twice as tall.\n- Put a minus in front: the graph flips upside down.\n\nOutside the bracket changes up-and-down. Inside the bracket changes left-and-right.\n\nTry it in the grapher: type x^2, then (x-3)^2, then 2*(x-3)^2, and watch the U move and stretch."
+        }
+      ],
+      "formulas": [
+        { "name": "Function notation", "expr": "f: x ↦ f(x)", "note": "f(a) is the output for input a." },
+        { "name": "Composite function", "expr": "(f ∘ g)(x) = f(g(x))", "note": "Apply g first, then f." },
+        { "name": "Inverse function", "expr": "f⁻¹(f(x)) = x", "note": "Swap x and y, then solve for y." },
+        { "name": "Vertical translation", "expr": "y = f(x) + a", "note": "Moves up by a." },
+        { "name": "Horizontal translation", "expr": "y = f(x − a)", "note": "Moves right by a." },
+        { "name": "Vertical stretch", "expr": "y = k f(x)", "note": "Factor k; k < 0 also reflects." }
+      ],
+      "examples": [
+        {
+          "title": "Composite and inverse",
+          "problem": "Let f(x) = 2x + 1 and g(x) = x². Find f(g(3)), g(f(3)) and f⁻¹(x).",
+          "steps": [
+            "f(g(3)): do g first. g(3) = 9. Then f(9) = 2 × 9 + 1 = 19.",
+            "g(f(3)): do f first. f(3) = 7. Then g(7) = 49. Different order, different answer.",
+            "Inverse of f: write y = 2x + 1, swap to x = 2y + 1, solve: y = (x − 1)/2. So f⁻¹(x) = (x − 1)/2.",
+            "Check: f⁻¹(f(3)) = f⁻¹(7) = (7 − 1)/2 = 3 ✓."
+          ],
+          "steps_simple": [
+            "f(g(3)) means: first use g on 3, then use f on the result. g(3) = 3² = 9. f(9) = 2 × 9 + 1 = 19.",
+            "g(f(3)) is the other way round. f(3) = 7. g(7) = 49. See how the order changes the answer.",
+            "The inverse undoes f. f doubles and adds 1, so the inverse must take away 1 and then halve: f⁻¹(x) = (x − 1)/2.",
+            "Test: f(3) = 7, and f⁻¹(7) = (7 − 1)/2 = 3. Back to where we started."
+          ],
+          "answer": "f(g(3)) = 19, g(f(3)) = 49, f⁻¹(x) = (x − 1)/2"
+        }
+      ],
+      "quiz": [
+        { "type": "numeric", "q": "If f(x) = x² − 3, what is f(4)?", "answer": 13, "tolerance": 0, "unit": "", "explain": "4² − 3 = 16 − 3 = 13." },
+        { "type": "mcq", "q": "The graph of y = f(x) + 2 is the graph of y = f(x)…", "options": ["shifted up by 2", "shifted right by 2", "stretched by factor 2", "shifted down by 2"], "answer": 0, "explain": "Adding outside the function adds 2 to every y-value: a vertical shift upward." },
+        { "type": "numeric", "q": "If f(x) = 3x − 2, what is f⁻¹(7)?", "answer": 3, "tolerance": 0, "unit": "", "explain": "Solve 3x − 2 = 7: x = 3. (f⁻¹(x) = (x + 2)/3.)" },
+        { "type": "mcq", "q": "For real x, the range of y = x² is…", "options": ["all real numbers", "y ≥ 0", "y > 0", "y ≤ 0"], "answer": 1, "explain": "A square is never negative, and y = 0 occurs at x = 0, so the range is y ≥ 0." }
+      ],
+      "problems": [
+        {
+          "difficulty": 1,
+          "title": "Evaluate and solve",
+          "statement": "Given f(x) = 5 − 2x, find f(−3) and the value of x for which f(x) = 0.",
+          "steps": [
+            "f(−3) = 5 − 2 × (−3) = 5 + 6 = 11.",
+            "f(x) = 0: 5 − 2x = 0 → 2x = 5 → x = 2.5.",
+            "Graphically, (2.5, 0) is where the line y = 5 − 2x crosses the x-axis."
+          ],
+          "answer": "f(−3) = 11; f(x) = 0 when x = 2.5"
+        },
+        {
+          "difficulty": 2,
+          "title": "Composite with a square root",
+          "statement": "Let g(x) = x² + 1 and h(x) = √x. Write h(g(x)), evaluate it at x = 2, and state its domain.",
+          "steps": [
+            "h(g(x)) = √(g(x)) = √(x² + 1).",
+            "At x = 2: √(4 + 1) = √5 ≈ 2.236.",
+            "Domain: √ needs a non-negative input. x² + 1 ≥ 1 > 0 for every real x, so the domain is all real numbers.",
+            "Note g(h(x)) = (√x)² + 1 = x + 1 is different and has domain x ≥ 0."
+          ],
+          "answer": "h(g(x)) = √(x² + 1); value √5 ≈ 2.24; domain all real x"
+        },
+        {
+          "difficulty": 3,
+          "title": "Describing a chain of transformations",
+          "statement": "Describe, in order, the transformations that map y = x² onto y = −2(x − 3)² + 1, and give the coordinates of the vertex of the new graph.",
+          "steps": [
+            "Work from the inside out. (x − 3)² : translate y = x² right by 3. Vertex (0, 0) → (3, 0).",
+            "2(x − 3)² : stretch vertically by factor 2. Vertex unchanged at (3, 0), but the U becomes narrower.",
+            "−2(x − 3)² : reflect in the x-axis. The parabola now opens downward; vertex still (3, 0).",
+            "−2(x − 3)² + 1 : translate up by 1. Vertex (3, 0) → (3, 1).",
+            "So the vertex is (3, 1) and it is a maximum. Check by expanding: y = −2x² + 12x − 17, and −b/(2a) = −12/(−4) = 3 ✓, y(3) = −18 + 36 − 17 = 1 ✓."
+          ],
+          "answer": "Right 3, vertical stretch ×2, reflect in x-axis, up 1; vertex (3, 1), a maximum"
+        }
+      ],
+      "glossary": [
+        { "term": "function", "def": "A rule assigning exactly one output to each input in its domain." },
+        { "term": "domain", "def": "The set of allowed inputs of a function." },
+        { "term": "range", "def": "The set of all outputs a function can produce." },
+        { "term": "composite function", "def": "A function formed by applying one function to the output of another, f(g(x))." },
+        { "term": "inverse function", "def": "The function f⁻¹ that reverses f, so that f⁻¹(f(x)) = x." },
+        { "term": "transformation", "def": "A translation, stretch or reflection that maps one graph onto another." },
+        { "term": "asymptote", "def": "A line that a graph approaches ever more closely but never reaches, such as the axes for y = 1/x." }
+      ],
+      "constants": []
+    },
+    {
+      "id": "math-derivative",
+      "order": 4,
+      "title": "Introduction to derivatives",
+      "title_hi": "अवकलज का परिचय",
+      "level": "Advanced",
+      "summary": "The gradient of a curve as a limit, differentiating powers and sums, and using derivatives to find tangents, stationary points and maximum or minimum values.",
+      "summary_hi": "सीमा के रूप में वक्र की ढाल, घातों और योगों का अवकलन, और स्पर्शरेखाएँ, स्थिर बिंदु व अधिकतम-न्यूनतम मान ज्ञात करने में अवकलज का उपयोग।",
+      "hindi_full": false,
+      "illustration": "tangent",
+      "illustration_alt": "A smooth curve with a straight tangent line touching it at one marked point.",
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "Gradient of a curve",
+          "standard": "A straight line has one gradient. A curve has a different gradient at every point: the gradient of the **tangent** there. The **derivative** f′(x) (also written dy/dx) is the function that gives this gradient at each x.\n\nTo define it, take a second point a small distance h along the curve. The chord between (x, f(x)) and (x + h, f(x + h)) has gradient `(f(x + h) − f(x)) / h`. As h shrinks to zero the chord becomes the tangent:\n\n`f′(x) = lim_{h→0} (f(x + h) − f(x)) / h`\n\nFor f(x) = x²: (x + h)² − x² = 2xh + h², divide by h to get 2x + h, and let h → 0: f′(x) = 2x. So the gradient of y = x² at x = 3 is 6.\n\nThe derivative is a **rate of change**: if s(t) is position, s′(t) is velocity; if v(t) is velocity, v′(t) is acceleration.",
+          "simple": "A curve is steeper in some places than others. The derivative tells you how steep the curve is at any point.\n\nTo find it, pick two points on the curve very close together, join them with a straight line, and find its gradient. As the points get closer and closer, that gradient settles down to one value: the derivative.\n\nFor y = x², the derivative turns out to be 2x. So at x = 3 the curve has gradient 6; at x = −1 it has gradient −2 (sloping down).\n\nThe derivative is a rate of change. The derivative of position is speed."
+        },
+        {
+          "id": "s2",
+          "heading": "Rules for differentiating",
+          "standard": "You do not need the limit every time. Three rules cover all polynomials:\n\n- **Power rule**: `d/dx (xⁿ) = n xⁿ⁻¹` for any real n. So x³ → 3x², x → 1, x⁻¹ → −x⁻², √x = x^½ → ½ x^(−½).\n- **Constant rule**: the derivative of a constant is 0 (a horizontal line has zero gradient).\n- **Sum and constant-multiple rule**: differentiate term by term, keeping numerical factors: `d/dx (a f + b g) = a f′ + b g′`.\n\nExample: f(x) = 4x³ − 2x + 7 gives f′(x) = 12x² − 2.\n\nThe **second derivative** f″(x) is the derivative of f′(x); it measures how the gradient itself is changing (curvature). Products, quotients and functions-of-functions need the product, quotient and chain rules, which are beyond this lesson.",
+          "simple": "Three rules do most of the work:\n\n1. Power rule: bring the power down in front, then take 1 off the power. x³ becomes 3x². x⁵ becomes 5x⁴. x on its own becomes 1.\n2. A number on its own disappears (its derivative is 0).\n3. Do each term separately and keep any number in front. 4x³ becomes 4 × 3x² = 12x².\n\nSo 4x³ − 2x + 7 becomes 12x² − 2.\n\nYou can differentiate again to get the second derivative, which tells you whether the curve is bending upward or downward."
+        },
+        {
+          "id": "s3",
+          "heading": "Using derivatives: tangents and turning points",
+          "standard": "**Tangent line**: at x = a the tangent passes through (a, f(a)) with gradient f′(a), so its equation is `y − f(a) = f′(a)(x − a)`.\n\n**Stationary points** occur where the gradient is zero: solve f′(x) = 0. To classify them use the second derivative: f″ > 0 means a **minimum** (curve bends upward), f″ < 0 a **maximum**, f″ = 0 is inconclusive (check the gradient either side).\n\nFor f(x) = x³ − 6x² + 9x: f′(x) = 3x² − 12x + 9 = 3(x − 1)(x − 3), zero at x = 1 and x = 3. f″(x) = 6x − 12: at x = 1, f″ = −6 < 0, maximum with value f(1) = 4; at x = 3, f″ = 6 > 0, minimum with value f(3) = 0.\n\nThis is how optimisation problems are solved: write the quantity to maximise as a function of one variable, differentiate, set to zero, check it is the right kind of turning point.",
+          "simple": "Tangent: a straight line that just touches the curve at one point. Its gradient is the derivative at that point. Use y − y₁ = m(x − x₁) to write its equation.\n\nTurning points are where the curve is flat for an instant — the top of a hill or the bottom of a valley. The gradient is zero there, so solve f′(x) = 0.\n\nTo tell a hill from a valley, use the second derivative: positive means a valley (minimum), negative means a hill (maximum).\n\nThis is how you find the biggest area or the cheapest cost in a real problem: write a formula, differentiate, set to zero."
+        }
+      ],
+      "formulas": [
+        { "name": "Definition of the derivative", "expr": "f′(x) = lim_{h→0} (f(x + h) − f(x)) / h", "note": "" },
+        { "name": "Power rule", "expr": "d/dx (xⁿ) = n xⁿ⁻¹", "note": "Any real n." },
+        { "name": "Linearity", "expr": "d/dx (a f + b g) = a f′ + b g′", "note": "Differentiate term by term." },
+        { "name": "Tangent at x = a", "expr": "y − f(a) = f′(a)(x − a)", "note": "" },
+        { "name": "Stationary points", "expr": "f′(x) = 0", "note": "f″ > 0 minimum; f″ < 0 maximum." }
+      ],
+      "examples": [
+        {
+          "title": "Finding and classifying turning points",
+          "problem": "Find the stationary points of f(x) = x³ − 6x² + 9x and decide whether each is a maximum or a minimum.",
+          "steps": [
+            "Differentiate: f′(x) = 3x² − 12x + 9.",
+            "Set to zero and factorise: 3(x² − 4x + 3) = 3(x − 1)(x − 3) = 0, so x = 1 or x = 3.",
+            "Find the y-values: f(1) = 1 − 6 + 9 = 4; f(3) = 27 − 54 + 27 = 0.",
+            "Second derivative: f″(x) = 6x − 12. At x = 1, f″ = −6 < 0 → maximum at (1, 4). At x = 3, f″ = 6 > 0 → minimum at (3, 0).",
+            "Sketch check: a positive cubic rises, peaks at (1, 4), dips to (3, 0), then rises again — consistent."
+          ],
+          "steps_simple": [
+            "Differentiate each term: x³ → 3x², −6x² → −12x, 9x → 9. So f′(x) = 3x² − 12x + 9.",
+            "Flat points are where f′ = 0. Divide by 3: x² − 4x + 3 = 0, which factorises as (x − 1)(x − 3). So x = 1 or 3.",
+            "Put those back in to get the heights: f(1) = 4 and f(3) = 0.",
+            "Differentiate again: f″(x) = 6x − 12. At x = 1 it is −6 (negative: a hilltop). At x = 3 it is +6 (positive: a valley).",
+            "So (1, 4) is a maximum and (3, 0) is a minimum."
+          ],
+          "answer": "Maximum at (1, 4), minimum at (3, 0)"
+        }
+      ],
+      "quiz": [
+        { "type": "numeric", "q": "What is the derivative of x⁴ at x = 2?", "answer": 32, "tolerance": 0, "unit": "", "explain": "d/dx(x⁴) = 4x³; at x = 2 that is 4 × 8 = 32." },
+        { "type": "mcq", "q": "The derivative of a constant is…", "options": ["the constant itself", "1", "0", "undefined"], "answer": 2, "explain": "A constant function is a horizontal line with zero gradient everywhere." },
+        { "type": "numeric", "q": "Find the gradient of y = 3x² − 2x at x = 1.", "answer": 4, "tolerance": 0, "unit": "", "explain": "dy/dx = 6x − 2; at x = 1, 6 − 2 = 4." },
+        { "type": "numeric", "q": "At what x-value does y = x² − 6x + 1 have its minimum?", "answer": 3, "tolerance": 0, "unit": "", "explain": "dy/dx = 2x − 6 = 0 gives x = 3; second derivative 2 > 0 confirms a minimum." }
+      ],
+      "problems": [
+        {
+          "difficulty": 1,
+          "title": "Differentiate a polynomial",
+          "statement": "Differentiate f(x) = 4x³ − 2x + 7 and evaluate f′(−1).",
+          "steps": [
+            "Term by term: 4x³ → 12x²; −2x → −2; 7 → 0.",
+            "f′(x) = 12x² − 2.",
+            "f′(−1) = 12 × 1 − 2 = 10."
+          ],
+          "answer": "f′(x) = 12x² − 2; f′(−1) = 10"
+        },
+        {
+          "difficulty": 2,
+          "title": "Equation of a tangent",
+          "statement": "Find the equation of the tangent to y = x² at the point where x = 3.",
+          "steps": [
+            "Point of contact: y = 3² = 9, so (3, 9).",
+            "Gradient: dy/dx = 2x = 6 at x = 3.",
+            "Tangent: y − 9 = 6(x − 3) → y = 6x − 9.",
+            "Check: at x = 3, 6 × 3 − 9 = 9 ✓. The line touches the parabola only at (3, 9): solving x² = 6x − 9 gives (x − 3)² = 0, a repeated root, as a tangent should."
+          ],
+          "answer": "y = 6x − 9"
+        },
+        {
+          "difficulty": 3,
+          "title": "Largest enclosure against a wall",
+          "statement": "A farmer has 40 m of fencing and wants to enclose a rectangular pen against a long straight wall, so that fencing is needed on only three sides. What dimensions give the largest area, and what is that area?",
+          "steps": [
+            "Let the two sides perpendicular to the wall each have length x. The side parallel to the wall then has length 40 − 2x (the total fencing is 40).",
+            "Area: A(x) = x(40 − 2x) = 40x − 2x². The domain is 0 < x < 20 so that all sides are positive.",
+            "Differentiate: A′(x) = 40 − 4x. Set to zero: x = 10.",
+            "Classify: A″(x) = −4 < 0, so x = 10 gives a maximum.",
+            "Dimensions: x = 10 m (twice) and 40 − 20 = 20 m along the wall. Area = 10 × 20 = 200 m².",
+            "Sanity check: a square pen of side 40/3 ≈ 13.3 m would give only 178 m², so using the wall to allow a longer parallel side is better, as the calculus shows."
+          ],
+          "answer": "10 m × 20 m (20 m side along the wall), area 200 m²"
+        }
+      ],
+      "glossary": [
+        { "term": "derivative", "def": "The function giving the gradient of a curve at each point; the rate of change of one quantity with respect to another." },
+        { "term": "tangent", "def": "A straight line touching a curve at a point with the same gradient as the curve there." },
+        { "term": "limit", "def": "The value a quantity approaches as a variable gets arbitrarily close to some point, such as h → 0." },
+        { "term": "stationary point", "def": "A point where the derivative is zero: a maximum, a minimum or a point of inflection." },
+        { "term": "second derivative", "def": "The derivative of the derivative, f″(x), describing how the gradient changes; its sign classifies stationary points." }
+      ],
+      "constants": []
+    }
+  ]
+}

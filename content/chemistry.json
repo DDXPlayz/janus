@@ -1,0 +1,465 @@
+{
+  "subject": "chemistry",
+  "name": "Chemistry",
+  "name_hi": "रसायन विज्ञान",
+  "version": "1.0.0",
+  "lessons": [
+    {
+      "id": "chem-atoms",
+      "order": 1,
+      "title": "Atoms, elements and the periodic table",
+      "title_hi": "परमाणु, तत्व और आवर्त सारणी",
+      "level": "Foundation",
+      "summary": "Protons, neutrons and electrons; atomic number, mass number and isotopes; how the periodic table is organised and what it predicts.",
+      "summary_hi": "प्रोटॉन, न्यूट्रॉन और इलेक्ट्रॉन; परमाणु क्रमांक, द्रव्यमान संख्या और समस्थानिक; आवर्त सारणी की व्यवस्था और उसकी भविष्यवाणियाँ।",
+      "hindi_full": false,
+      "illustration": "atom",
+      "illustration_alt": "A simple atom diagram: a nucleus drawn as a cluster of small circles, with two concentric electron shells holding dots.",
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "Inside the atom",
+          "standard": "An atom has a tiny, dense **nucleus** containing **protons** (charge +1) and **neutrons** (no charge), surrounded by **electrons** (charge −1) in shells. Protons and neutrons each have a relative mass of about 1; an electron's mass is about 1/1840 of that, so nearly all the mass is in the nucleus.\n\nAtoms are electrically neutral, so the number of electrons equals the number of protons. The nucleus is around 10⁻¹⁵ m across while the whole atom is around 10⁻¹⁰ m — if the nucleus were a pea, the atom would be a football stadium, and almost all of it would be empty space.\n\nElectrons occupy shells of increasing energy. For the first 20 elements the shells hold up to 2, 8 and 8 electrons. Sodium (11 electrons) is written 2,8,1. The **outer-shell electrons** decide how an element reacts.",
+          "simple": "Atoms are made of three kinds of particle. Protons (positive) and neutrons (no charge) sit in the middle, in the nucleus. Electrons (negative) move around the outside in layers called shells.\n\nAn atom has the same number of protons and electrons, so overall it has no charge.\n\nAlmost all the weight is in the nucleus, but the nucleus is tiny. Most of an atom is empty space.\n\nShells fill up in order: 2 electrons in the first, then 8, then 8. Sodium has 11 electrons: 2, 8, 1. The electrons in the last shell decide how the atom behaves."
+        },
+        {
+          "id": "s2",
+          "heading": "Atomic number, mass number and isotopes",
+          "standard": "The **atomic number** Z is the number of protons; it defines the element (every atom with 6 protons is carbon). The **mass number** A is the total number of protons and neutrons, so the number of neutrons is `A − Z`. We write an atom as element-A, for example carbon-12 or chlorine-37.\n\n**Isotopes** are atoms of the same element (same Z) with different numbers of neutrons (different A). Chlorine-35 and chlorine-37 both have 17 protons; they have 18 and 20 neutrons respectively. Isotopes have the same chemistry because they have the same electrons.\n\nThe **relative atomic mass** A_r on the periodic table is the weighted average of the isotope masses. Chlorine is 75 % Cl-35 and 25 % Cl-37, so `A_r = 0.75 × 35 + 0.25 × 37 = 35.5`.",
+          "simple": "The atomic number is the number of protons. It tells you which element you have. 6 protons is always carbon.\n\nThe mass number is protons + neutrons. To find the neutrons, subtract: neutrons = mass number − atomic number.\n\nIsotopes are versions of the same element with different numbers of neutrons. Chlorine-35 has 18 neutrons; chlorine-37 has 20. They behave the same in reactions.\n\nThe mass shown on the periodic table is an average of the isotopes. Chlorine is 35.5 because it is a mix of 35 and 37."
+        },
+        {
+          "id": "s3",
+          "heading": "The periodic table",
+          "standard": "Elements are arranged in order of atomic number. A row is a **period**: each new period starts a new electron shell. A column is a **group**: elements in a group have the same number of outer-shell electrons and so react in similar ways. Group 1 (the alkali metals) all have one outer electron and react vigorously with water; group 17 (halogens) have seven and readily gain one; group 18 (noble gases) have full outer shells and are unreactive.\n\nMetals sit on the left and centre; non-metals on the right. Going down a group, atoms get larger and metals become more reactive (the outer electron is further from the nucleus and easier to lose) while halogens become less reactive. Going across a period, atoms get smaller and the elements change from metallic to non-metallic.\n\nMendeleev's 1869 table left gaps for undiscovered elements and predicted their properties — gallium and germanium were found within 20 years, matching his predictions.",
+          "simple": "The periodic table lists the elements in order of their number of protons.\n\nEach row is called a period. Each column is called a group. Elements in the same group have the same number of outer electrons, so they behave in similar ways.\n\nGroup 1 metals (like sodium) are very reactive. Group 17 (like chlorine) are reactive non-metals. Group 18 (like neon) hardly react at all because their outer shell is full.\n\nMetals are on the left, non-metals on the right. Mendeleev built the table in 1869 and correctly predicted elements nobody had found yet."
+        }
+      ],
+      "formulas": [
+        { "name": "Mass number", "expr": "A = Z + N", "note": "Z = protons, N = neutrons." },
+        { "name": "Number of neutrons", "expr": "N = A − Z", "note": "" },
+        { "name": "Electrons in a neutral atom", "expr": "electrons = Z", "note": "For an ion, adjust by the charge." },
+        { "name": "Relative atomic mass", "expr": "A_r = Σ (fraction × isotope mass)", "note": "Weighted average over natural abundances." }
+      ],
+      "examples": [
+        {
+          "title": "Chlorine-37",
+          "problem": "Chlorine has atomic number 17. For the isotope chlorine-37, state the number of protons, neutrons and electrons, and write its electron configuration.",
+          "steps": [
+            "Protons = atomic number = 17.",
+            "Neutrons = mass number − atomic number = 37 − 17 = 20.",
+            "The atom is neutral, so electrons = protons = 17.",
+            "Fill shells in order 2, 8, then the remainder: 17 = 2 + 8 + 7, so the configuration is 2,8,7. Seven outer electrons places chlorine in group 17."
+          ],
+          "steps_simple": [
+            "The atomic number is 17, so there are 17 protons.",
+            "Take the atomic number away from the mass number: 37 − 17 = 20 neutrons.",
+            "A neutral atom has as many electrons as protons: 17.",
+            "Put 2 in the first shell, 8 in the second, and the remaining 7 in the third: 2,8,7."
+          ],
+          "answer": "17 p, 20 n, 17 e; configuration 2,8,7"
+        }
+      ],
+      "quiz": [
+        { "type": "mcq", "q": "Which particle has no electric charge?", "options": ["Proton", "Neutron", "Electron", "Ion"], "answer": 1, "explain": "Neutrons are neutral. Protons are +1, electrons −1, and an ion is a charged atom." },
+        { "type": "numeric", "q": "Sodium-23 has atomic number 11. How many neutrons does it have?", "answer": 12, "tolerance": 0, "unit": "neutrons", "explain": "N = A − Z = 23 − 11 = 12." },
+        { "type": "mcq", "q": "Elements in the same group of the periodic table have the same…", "options": ["number of electron shells", "number of outer-shell electrons", "relative atomic mass", "number of neutrons"], "answer": 1, "explain": "The group number reflects the outer electrons, which is why group members react similarly." },
+        { "type": "numeric", "q": "Copper is 69.2 % Cu-63 and 30.8 % Cu-65. Calculate its relative atomic mass to one decimal place.", "answer": 63.6, "tolerance": 0.1, "unit": "", "explain": "0.692 × 63 + 0.308 × 65 = 43.60 + 20.02 = 63.6." }
+      ],
+      "problems": [
+        {
+          "difficulty": 1,
+          "title": "Magnesium-24",
+          "statement": "Magnesium has atomic number 12. For magnesium-24, give the numbers of protons, neutrons and electrons, its electron configuration and its group.",
+          "steps": [
+            "Protons = 12; electrons = 12 (neutral atom).",
+            "Neutrons = 24 − 12 = 12.",
+            "Configuration: 2,8,2. Two outer electrons, so magnesium is in group 2."
+          ],
+          "answer": "12 p, 12 n, 12 e; 2,8,2; group 2"
+        },
+        {
+          "difficulty": 2,
+          "title": "Relative atomic mass of boron",
+          "statement": "Natural boron is 19.9 % boron-10 and 80.1 % boron-11. Calculate its relative atomic mass to two decimal places.",
+          "steps": [
+            "Convert the percentages to fractions: 0.199 and 0.801.",
+            "Multiply each fraction by its isotope mass: 0.199 × 10 = 1.99; 0.801 × 11 = 8.811.",
+            "Add: 1.99 + 8.811 = 10.80. The value is closer to 11 because boron-11 is more abundant."
+          ],
+          "answer": "A_r(B) ≈ 10.80"
+        },
+        {
+          "difficulty": 3,
+          "title": "Identify the ion",
+          "statement": "An ion X²⁻ contains 18 electrons and 16 neutrons. Find its atomic number and mass number, identify the element, and write its electron configuration.",
+          "steps": [
+            "A 2− charge means the ion has gained two electrons compared with the neutral atom. So the neutral atom has 18 − 2 = 16 electrons.",
+            "A neutral atom has equal protons and electrons, so Z = 16. Element 16 is sulfur, S.",
+            "Mass number A = Z + N = 16 + 16 = 32. The ion is ³²S²⁻ (sulfide).",
+            "Electron configuration of the ion (18 electrons): 2,8,8 — the same as argon. Gaining two electrons completes sulfur's outer shell, which is why it forms a 2− ion."
+          ],
+          "answer": "Z = 16, A = 32, sulfide ion S²⁻, configuration 2,8,8"
+        }
+      ],
+      "glossary": [
+        { "term": "atom", "def": "The smallest particle of an element that keeps its chemical identity: a nucleus of protons and neutrons surrounded by electrons." },
+        { "term": "isotope", "def": "Atoms of the same element with different numbers of neutrons, and therefore different mass numbers." },
+        { "term": "atomic number", "def": "The number of protons in the nucleus, symbol Z. It identifies the element." },
+        { "term": "mass number", "def": "The total number of protons and neutrons in a nucleus, symbol A." },
+        { "term": "group", "def": "A column of the periodic table; members share the same number of outer-shell electrons." },
+        { "term": "period", "def": "A row of the periodic table; members have the same number of occupied electron shells." }
+      ],
+      "constants": [
+        { "name": "Proton mass", "symbol": "m_p", "value": "1.673 × 10⁻²⁷", "unit": "kg" },
+        { "name": "Electron mass", "symbol": "m_e", "value": "9.109 × 10⁻³¹", "unit": "kg" },
+        { "name": "Elementary charge", "symbol": "e", "value": "1.602 × 10⁻¹⁹", "unit": "C" }
+      ]
+    },
+    {
+      "id": "chem-bonding",
+      "order": 2,
+      "title": "Chemical bonding",
+      "title_hi": "रासायनिक आबंधन",
+      "level": "Standard",
+      "summary": "Ionic, covalent and metallic bonding: how atoms transfer or share electrons, how to work out formulas, and how bonding explains melting points and conductivity.",
+      "summary_hi": "आयनिक, सहसंयोजक और धात्विक आबंधन: परमाणु इलेक्ट्रॉन कैसे स्थानांतरित या साझा करते हैं, सूत्र कैसे निकालें, और आबंधन गलनांक व चालकता को कैसे समझाता है।",
+      "hindi_full": false,
+      "illustration": "bonding",
+      "illustration_alt": "Two overlapping circles sharing a pair of dots, next to a separate pair of circles with a plus and a minus sign.",
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "Ionic bonding",
+          "standard": "When a metal reacts with a non-metal, the metal atom **loses** its outer electrons and the non-metal **gains** them. Both end up with full outer shells. The metal becomes a positive ion (cation) and the non-metal a negative ion (anion); the electrostatic attraction between opposite charges is the **ionic bond**.\n\nSodium (2,8,1) gives one electron to chlorine (2,8,7), forming Na⁺ (2,8) and Cl⁻ (2,8,8). The charge on an ion follows from the group: group 1 → +1, group 2 → +2, group 16 → −2, group 17 → −1.\n\nIons pack into a giant **lattice** in which every ion is surrounded by ions of the opposite charge. Breaking the many strong attractions needs a lot of energy, so ionic compounds have high melting points. They do not conduct as solids (ions cannot move) but do conduct when molten or dissolved.\n\nTo write a formula, balance the charges: Mg²⁺ with Cl⁻ needs two chlorides, MgCl₂; Al³⁺ with O²⁻ needs 2 Al and 3 O, Al₂O₃.",
+          "simple": "A metal atom gives away its outer electrons. A non-metal atom takes them. Now the metal is positive and the non-metal is negative, and opposite charges attract. That attraction is an ionic bond.\n\nSodium gives one electron to chlorine, making Na⁺ and Cl⁻: table salt.\n\nThe ions stack into a huge regular pile called a lattice. It takes a lot of heat to break it apart, so ionic compounds melt at high temperatures.\n\nThey conduct electricity only when melted or dissolved, because then the ions can move.\n\nFormulas must balance the charges: one Mg²⁺ needs two Cl⁻, so magnesium chloride is MgCl₂."
+        },
+        {
+          "id": "s2",
+          "heading": "Covalent bonding",
+          "standard": "Two non-metal atoms both want to gain electrons, so instead they **share** pairs. A shared pair of electrons is a **covalent bond**; two shared pairs make a double bond, three make a triple bond. Hydrogen shares one pair (H–H), oxygen in O₂ shares two (O=O), nitrogen in N₂ shares three (N≡N).\n\nA **dot-and-cross diagram** shows the outer electrons of each atom and which pairs are shared. In water, oxygen (6 outer electrons) shares one pair with each of two hydrogens, leaving two lone pairs on the oxygen.\n\nSimple covalent substances (H₂O, CO₂, CH₄) form small **molecules**. The bonds within a molecule are strong, but the forces *between* molecules are weak, so these substances have low melting and boiling points and do not conduct electricity.\n\n**Giant covalent** structures such as diamond and silicon dioxide are one enormous network of covalent bonds, giving very high melting points and great hardness.",
+          "simple": "Two non-metal atoms can both fill their outer shells by sharing electrons. A shared pair is a covalent bond.\n\nH₂ shares one pair. O₂ shares two pairs (a double bond). N₂ shares three (a triple bond).\n\nDot-and-cross diagrams draw the outer electrons of each atom so you can see which are shared.\n\nSmall covalent molecules like water and carbon dioxide have strong bonds inside each molecule but only weak pulls between molecules. So they melt and boil easily and do not conduct.\n\nDiamond is different: every carbon is bonded to four others in one giant network, so it is extremely hard and melts only at very high temperatures."
+        },
+        {
+          "id": "s3",
+          "heading": "Metallic bonding and properties",
+          "standard": "In a metal the atoms release their outer electrons into a shared **sea of delocalised electrons**. The lattice of positive metal ions is held together by attraction to this electron sea. Because the electrons are free to move, metals **conduct electricity and heat**. Because layers of ions can slide over each other without breaking the bonding, metals are **malleable** and **ductile**.\n\nAlloys are mixtures of a metal with other elements; the different-sized atoms disrupt the layers so they slide less easily, which is why bronze and steel are harder than copper and iron.\n\nThe type of bonding therefore predicts properties: ionic → high melting point, conducts only when molten or dissolved; simple covalent → low melting point, no conduction; giant covalent → very high melting point, no conduction (except graphite, whose delocalised electrons between layers let it conduct); metallic → conducts, malleable, usually high melting point.",
+          "simple": "In a metal, the outer electrons drift freely between the atoms, like a sea. The positive metal ions are held in place by this sea of electrons.\n\nFree electrons are why metals conduct electricity and heat.\n\nLayers of metal ions can slide past each other, so metals can be bent and hammered into shape.\n\nAlloys mix in atoms of different sizes to stop the layers sliding, which makes them harder. Steel is harder than pure iron for this reason.\n\nRemember: ionic conducts only when melted; molecules do not conduct; metals always conduct."
+        }
+      ],
+      "formulas": [
+        { "name": "Ion charge from group", "expr": "group 1 → +1, group 2 → +2, group 16 → −2, group 17 → −1", "note": "Rule of thumb for main-group elements." },
+        { "name": "Ionic formula rule", "expr": "total positive charge = total negative charge", "note": "e.g. Al³⁺ and O²⁻ → Al₂O₃ (2 × 3 = 3 × 2)." },
+        { "name": "Bond order", "expr": "single = 1 shared pair, double = 2, triple = 3", "note": "" }
+      ],
+      "examples": [
+        {
+          "title": "Formula of magnesium chloride",
+          "problem": "Magnesium is in group 2 and chlorine in group 17. Work out the formula of magnesium chloride and describe the bonding.",
+          "steps": [
+            "Magnesium (2,8,2) loses two electrons to form Mg²⁺ (2,8).",
+            "Chlorine (2,8,7) gains one electron to form Cl⁻ (2,8,8). Each chlorine can only accept one electron.",
+            "One magnesium supplies two electrons, so two chlorine atoms are needed: MgCl₂.",
+            "Check the charges: (+2) + 2 × (−1) = 0. The compound is a giant ionic lattice of Mg²⁺ and Cl⁻ ions."
+          ],
+          "steps_simple": [
+            "Magnesium has 2 outer electrons to give away. It becomes Mg²⁺.",
+            "Chlorine needs 1 electron. It becomes Cl⁻.",
+            "Two electrons to give, one needed per chlorine: so one Mg and two Cl. The formula is MgCl₂.",
+            "Check: +2 and −1 −1 add up to zero."
+          ],
+          "answer": "MgCl₂, ionic (giant lattice of Mg²⁺ and Cl⁻)"
+        }
+      ],
+      "quiz": [
+        { "type": "mcq", "q": "What type of bonding is present in sodium chloride?", "options": ["Ionic", "Covalent", "Metallic", "Hydrogen"], "answer": 0, "explain": "A metal (Na) and a non-metal (Cl) transfer electrons, forming Na⁺ and Cl⁻ ions." },
+        { "type": "mcq", "q": "A white solid has a high melting point, does not conduct as a solid but conducts when molten. It is most likely…", "options": ["a metal", "an ionic compound", "a simple molecular compound", "a giant covalent compound"], "answer": 1, "explain": "Ions are fixed in the solid lattice but free to move when molten, giving conduction only in the liquid." },
+        { "type": "numeric", "q": "How many shared electron pairs are there in a nitrogen molecule, N₂?", "answer": 3, "tolerance": 0, "unit": "pairs", "explain": "Each nitrogen has 5 outer electrons and needs 3 more, so they share three pairs: a triple bond." },
+        { "type": "mcq", "q": "Metals conduct electricity because…", "options": ["their ions can move through the solid", "they contain delocalised electrons", "they contain covalent bonds", "they have extra neutrons"], "answer": 1, "explain": "The sea of delocalised electrons carries charge through the metal." }
+      ],
+      "problems": [
+        {
+          "difficulty": 1,
+          "title": "Two ionic formulas",
+          "statement": "Write the formulas of calcium oxide and aluminium sulfate. (Ca is in group 2, O in group 16, Al forms Al³⁺, sulfate is SO₄²⁻.)",
+          "steps": [
+            "Calcium oxide: Ca²⁺ and O²⁻. One of each balances: CaO.",
+            "Aluminium sulfate: Al³⁺ and SO₄²⁻. The lowest common multiple of 3 and 2 is 6, so use 2 Al³⁺ (+6) and 3 SO₄²⁻ (−6).",
+            "Put brackets around the polyatomic ion: Al₂(SO₄)₃."
+          ],
+          "answer": "CaO and Al₂(SO₄)₃"
+        },
+        {
+          "difficulty": 2,
+          "title": "Bonding in carbon dioxide",
+          "statement": "Carbon has 4 outer electrons and oxygen has 6. Describe the bonding in CO₂ and count the shared pairs.",
+          "steps": [
+            "Carbon needs 4 more electrons to reach 8; each oxygen needs 2 more.",
+            "Carbon shares two pairs with each oxygen (a double bond to each), gaining 4 electrons in total. Each oxygen gains 2 from its double bond.",
+            "Structure: O=C=O. There are 4 shared pairs in total, and each oxygen keeps two lone pairs.",
+            "CO₂ is a small molecule with weak forces between molecules, which is why it is a gas at room temperature despite its strong double bonds."
+          ],
+          "answer": "O=C=O: two double bonds, 4 shared pairs in total"
+        },
+        {
+          "difficulty": 3,
+          "title": "Diamond versus graphite",
+          "statement": "Diamond and graphite are both pure carbon. Explain why diamond is extremely hard and does not conduct electricity, while graphite is soft and does conduct.",
+          "steps": [
+            "In diamond every carbon atom forms four covalent bonds to four neighbours in a rigid three-dimensional network. All four outer electrons are used in bonds.",
+            "Breaking or deforming diamond means breaking many strong covalent bonds, so it is very hard with a very high melting point.",
+            "Because every outer electron is locked in a bond, there are no free charge carriers: diamond does not conduct.",
+            "In graphite each carbon bonds to only three neighbours, forming flat hexagonal layers. The fourth outer electron from each atom is delocalised across the layer.",
+            "The layers are held together only by weak forces, so they slide over each other easily: graphite is soft and is used in pencils and as a lubricant.",
+            "The delocalised electrons can move along the layers, so graphite conducts electricity — the exception among giant covalent structures."
+          ],
+          "answer": "Diamond: 4 bonds per atom, rigid 3-D network, no free electrons. Graphite: 3 bonds per atom, layers that slide, one delocalised electron per atom that carries current."
+        }
+      ],
+      "glossary": [
+        { "term": "ion", "def": "An atom or group of atoms that has lost or gained electrons and so carries a charge." },
+        { "term": "ionic bond", "def": "The electrostatic attraction between oppositely charged ions, formed by electron transfer from a metal to a non-metal." },
+        { "term": "covalent bond", "def": "A bond formed when two atoms share a pair of electrons." },
+        { "term": "lattice", "def": "A regular repeating three-dimensional arrangement of particles in a solid." },
+        { "term": "delocalised electron", "def": "An electron that is not attached to one particular atom or bond and is free to move through a structure, as in metals and graphite." },
+        { "term": "lone pair", "def": "A pair of outer-shell electrons not involved in bonding." }
+      ],
+      "constants": []
+    },
+    {
+      "id": "chem-mole",
+      "order": 3,
+      "title": "The mole and stoichiometry",
+      "title_hi": "मोल और रससमीकरणमिति",
+      "level": "Standard",
+      "summary": "Counting atoms by weighing: the mole, molar mass, reacting masses from balanced equations, gas volumes and the limiting reagent.",
+      "summary_hi": "तौलकर परमाणु गिनना: मोल, मोलर द्रव्यमान, संतुलित समीकरणों से अभिकारक द्रव्यमान, गैस आयतन और सीमांत अभिकर्मक।",
+      "hindi_full": false,
+      "illustration": "balance",
+      "illustration_alt": "A two-pan balance with a beaker on one side and a stack of small cubes on the other.",
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "What a mole is",
+          "standard": "Atoms are far too small to count, so chemists count them in huge bundles. One **mole** is 6.022 × 10²³ particles — the **Avogadro constant**, N_A. The number was chosen so that one mole of an element has a mass in grams equal to its relative atomic mass: 12 g of carbon-12 contains exactly one mole of atoms.\n\nThe **molar mass** M (in g/mol) of any substance is the sum of the relative atomic masses in its formula. For water, M(H₂O) = 2 × 1 + 16 = 18 g/mol. For calcium carbonate, M(CaCO₃) = 40 + 12 + 3 × 16 = 100 g/mol.\n\nThe central conversion is `n = m / M`: number of moles = mass ÷ molar mass. Multiply n by N_A to get the number of particles.",
+          "simple": "Atoms are too small to count one by one, so we count them in a very big bundle called a mole. One mole is 602 200 000 000 000 000 000 000 particles.\n\nThe bundle size was chosen cleverly: one mole of carbon weighs 12 g, one mole of hydrogen atoms weighs 1 g, and so on. The mass in grams of one mole is the molar mass.\n\nFor a compound, add up the atoms. Water H₂O: 1 + 1 + 16 = 18 g per mole.\n\nTo find moles: divide the mass by the molar mass. 36 g of water is 36 ÷ 18 = 2 moles."
+        },
+        {
+          "id": "s2",
+          "heading": "Reacting masses",
+          "standard": "A balanced equation gives the **mole ratio** in which substances react. In `2H₂ + O₂ → 2H₂O`, two moles of hydrogen react with one mole of oxygen to give two moles of water.\n\nTo find a reacting mass: (1) convert the known mass to moles with n = m/M; (2) use the ratio from the equation to find the moles of the substance you want; (3) convert back to mass with m = nM.\n\nFor example, 4 g of H₂ is 4/2 = 2 mol. The ratio H₂ : H₂O is 2 : 2, so 2 mol of water forms, with mass 2 × 18 = 36 g. Mass is conserved: 4 g H₂ + 32 g O₂ = 36 g H₂O.\n\nAt room temperature and pressure (RTP, 20 °C and 1 atm) one mole of any gas occupies about **24 dm³**, so gas volumes can be converted with `n = V / 24`.",
+          "simple": "A balanced equation is a recipe. `2H₂ + O₂ → 2H₂O` says: 2 moles of hydrogen + 1 mole of oxygen make 2 moles of water.\n\nThree steps every time:\n\n1. Turn the mass you know into moles (divide by molar mass).\n2. Use the recipe numbers to find the moles of what you want.\n3. Turn those moles back into a mass (multiply by molar mass).\n\nExample: 4 g of hydrogen is 2 moles. The recipe gives 2 moles of water. 2 × 18 = 36 g of water.\n\nGases are easier: at room temperature 1 mole of any gas fills 24 dm³ (24 litres)."
+        },
+        {
+          "id": "s3",
+          "heading": "Limiting reagent and yield",
+          "standard": "In a real reaction the reactants are rarely in the exact ratio of the equation. The one that runs out first is the **limiting reagent**; it decides how much product can form. The other reactant is in excess.\n\nTo find it, convert both reactant masses to moles and compare with the equation ratio. In `2H₂ + O₂ → 2H₂O` with 5 mol H₂ and 2 mol O₂: 2 mol O₂ would need 4 mol H₂, and we have 5, so O₂ is limiting and 1 mol H₂ is left over.\n\nThe **theoretical yield** is the product mass calculated from the limiting reagent. The **percentage yield** is `actual yield / theoretical yield × 100`; it is below 100 % because of side reactions, incomplete reaction and losses during separation.",
+          "simple": "Reactants are like ingredients. If you have 10 buns and 6 burgers, you can only make 6 burgers-in-buns. The burgers run out first: they are the limiting reagent.\n\nTo find which chemical runs out first, change both masses into moles and compare with the recipe numbers in the equation.\n\nThe limiting reagent decides how much product you can possibly make. That maximum is the theoretical yield.\n\nIn practice you get less. Percentage yield = what you actually got ÷ the maximum × 100."
+        }
+      ],
+      "formulas": [
+        { "name": "Moles from mass", "expr": "n = m / M", "note": "m in grams, M in g/mol." },
+        { "name": "Number of particles", "expr": "N = n × N_A", "note": "N_A = 6.022 × 10²³ mol⁻¹." },
+        { "name": "Gas volume at RTP", "expr": "n = V / 24", "note": "V in dm³ at 20 °C and 1 atm." },
+        { "name": "Concentration", "expr": "c = n / V", "note": "mol/dm³, with V in dm³." },
+        { "name": "Percentage yield", "expr": "% yield = actual / theoretical × 100", "note": "" }
+      ],
+      "examples": [
+        {
+          "title": "Water from hydrogen",
+          "problem": "What mass of water is produced when 4 g of hydrogen burns completely in oxygen? (A_r: H = 1, O = 16)",
+          "steps": [
+            "Balanced equation: 2H₂ + O₂ → 2H₂O.",
+            "Moles of hydrogen: M(H₂) = 2 g/mol, so n = 4 / 2 = 2 mol.",
+            "Mole ratio H₂ : H₂O = 2 : 2 = 1 : 1, so 2 mol of water forms.",
+            "Mass of water: M(H₂O) = 18 g/mol, so m = 2 × 18 = 36 g."
+          ],
+          "steps_simple": [
+            "Write the recipe: 2H₂ + O₂ → 2H₂O.",
+            "Hydrogen gas H₂ weighs 2 g per mole. 4 g is 4 ÷ 2 = 2 moles.",
+            "The recipe says 2 moles of H₂ make 2 moles of water. So we get 2 moles of water.",
+            "Water weighs 18 g per mole. 2 × 18 = 36 g."
+          ],
+          "answer": "36 g of water"
+        }
+      ],
+      "quiz": [
+        { "type": "numeric", "q": "How many moles are there in 44 g of carbon dioxide? (M(CO₂) = 44 g/mol)", "answer": 1, "tolerance": 0.01, "unit": "mol", "explain": "n = m/M = 44/44 = 1 mol." },
+        { "type": "mcq", "q": "The Avogadro constant is approximately…", "options": ["6.02 × 10²³ mol⁻¹", "6.02 × 10²² mol⁻¹", "3.01 × 10²³ mol⁻¹", "1.60 × 10⁻¹⁹ mol⁻¹"], "answer": 0, "explain": "One mole contains 6.022 × 10²³ particles." },
+        { "type": "numeric", "q": "What is the mass, in grams, of 0.5 mol of sodium chloride? (M(NaCl) = 58.5 g/mol)", "answer": 29.25, "tolerance": 0.1, "unit": "g", "explain": "m = nM = 0.5 × 58.5 = 29.25 g." },
+        { "type": "numeric", "q": "CaCO₃ → CaO + CO₂. What mass of CO₂ (in g) is released when 100 g of calcium carbonate decomposes completely? (M: CaCO₃ = 100, CO₂ = 44)", "answer": 44, "tolerance": 0.5, "unit": "g", "explain": "100 g CaCO₃ = 1 mol; ratio 1 : 1 gives 1 mol CO₂ = 44 g." }
+      ],
+      "problems": [
+        {
+          "difficulty": 1,
+          "title": "Moles of oxygen",
+          "statement": "How many moles of oxygen molecules are in 8 g of O₂? How many molecules is that?",
+          "steps": [
+            "M(O₂) = 2 × 16 = 32 g/mol.",
+            "n = 8 / 32 = 0.25 mol.",
+            "Molecules = 0.25 × 6.022 × 10²³ = 1.51 × 10²³."
+          ],
+          "answer": "0.25 mol, about 1.5 × 10²³ molecules"
+        },
+        {
+          "difficulty": 2,
+          "title": "Hydrogen from magnesium",
+          "statement": "Magnesium reacts with hydrochloric acid: Mg + 2HCl → MgCl₂ + H₂. What volume of hydrogen at RTP is produced from 4.8 g of magnesium? (A_r(Mg) = 24; 1 mol gas = 24 dm³ at RTP)",
+          "steps": [
+            "Moles of magnesium: n = 4.8 / 24 = 0.2 mol.",
+            "From the equation, Mg : H₂ = 1 : 1, so 0.2 mol of H₂ is produced.",
+            "Volume at RTP: V = n × 24 = 0.2 × 24 = 4.8 dm³.",
+            "This assumes excess acid, so that magnesium is the limiting reagent."
+          ],
+          "answer": "4.8 dm³ of hydrogen"
+        },
+        {
+          "difficulty": 3,
+          "title": "Limiting reagent",
+          "statement": "10 g of hydrogen is mixed with 64 g of oxygen and ignited. Which reactant is limiting, what mass of water forms, and what mass of the excess reactant remains? (A_r: H = 1, O = 16)",
+          "steps": [
+            "Equation: 2H₂ + O₂ → 2H₂O.",
+            "Moles available: n(H₂) = 10 / 2 = 5 mol; n(O₂) = 64 / 32 = 2 mol.",
+            "The equation needs 2 mol H₂ per 1 mol O₂. To use all 2 mol O₂ requires 4 mol H₂, and we have 5 mol. So oxygen runs out first: O₂ is the limiting reagent and H₂ is in excess.",
+            "Water formed is set by the limiting reagent: O₂ : H₂O = 1 : 2, so 2 mol O₂ → 4 mol H₂O = 4 × 18 = 72 g.",
+            "Hydrogen used = 4 mol = 8 g; hydrogen left over = 10 − 8 = 2 g.",
+            "Mass check: 8 g H₂ + 64 g O₂ = 72 g H₂O. Conserved."
+          ],
+          "answer": "O₂ is limiting; 72 g of water forms; 2 g of H₂ remains"
+        }
+      ],
+      "glossary": [
+        { "term": "mole", "def": "The amount of substance containing 6.022 × 10²³ particles; the chemist's counting unit." },
+        { "term": "molar mass", "def": "The mass of one mole of a substance in g/mol, found by adding the relative atomic masses in its formula." },
+        { "term": "Avogadro constant", "def": "N_A = 6.022 × 10²³ per mole, the number of particles in one mole." },
+        { "term": "limiting reagent", "def": "The reactant that is completely used up first and so determines the maximum amount of product." },
+        { "term": "stoichiometry", "def": "The quantitative relationships between reactants and products given by a balanced equation." },
+        { "term": "RTP", "def": "Room temperature and pressure, 20 °C and 1 atm, at which one mole of gas occupies about 24 dm³." }
+      ],
+      "constants": [
+        { "name": "Avogadro constant", "symbol": "N_A", "value": "6.022 × 10²³", "unit": "mol⁻¹" },
+        { "name": "Molar gas volume at RTP", "symbol": "V_m", "value": "24", "unit": "dm³/mol" },
+        { "name": "Molar gas volume at STP (0 °C, 1 atm)", "symbol": "V_m", "value": "22.4", "unit": "dm³/mol" }
+      ]
+    },
+    {
+      "id": "chem-rates",
+      "order": 4,
+      "title": "Reaction rates and temperature",
+      "title_hi": "अभिक्रिया दर और तापमान",
+      "level": "Advanced",
+      "summary": "Collision theory, the factors that speed reactions up, the Arrhenius equation for the effect of temperature, and reading rates from graphs. Includes a reaction-rate simulation.",
+      "summary_hi": "संघट्ट सिद्धांत, अभिक्रिया को तेज़ करने वाले कारक, तापमान के प्रभाव के लिए आरेनियस समीकरण, और ग्राफ़ से दर पढ़ना। अभिक्रिया-दर सिमुलेशन सहित।",
+      "hindi_full": false,
+      "illustration": "reaction",
+      "illustration_alt": "A flask over a flame with small circles inside bouncing off each other, and a rising curve drawn beside it.",
+      "sim": "reaction",
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "Collision theory",
+          "standard": "Particles must **collide** to react, and only collisions with enough energy and the right orientation succeed. The minimum energy needed is the **activation energy**, E_a. The **rate of reaction** is the number of successful collisions per second, usually measured as the change in concentration (or mass, or gas volume) per unit time.\n\nAnything that increases the frequency of collisions or the fraction that are successful increases the rate:\n\n- **Concentration** (or gas pressure): more particles per unit volume means more frequent collisions.\n- **Surface area**: powdered solids expose more particles, so they react faster than lumps.\n- **Temperature**: particles move faster (more collisions) and, more importantly, a much larger fraction have energy above E_a.\n- **Catalysts**: provide an alternative route with lower E_a, so more collisions succeed. The catalyst is not used up.",
+          "simple": "For two chemicals to react, their particles have to bump into each other hard enough. The minimum energy needed is called the activation energy.\n\nThe rate is how fast the reaction goes: how much product appears each second.\n\nWays to make a reaction faster:\n\n- More concentrated: more particles squeezed together, more bumps.\n- Powder instead of lumps: more surface for bumps to happen on.\n- Hotter: particles move faster and hit harder.\n- A catalyst: lowers the energy needed, so more bumps count. It is not used up."
+        },
+        {
+          "id": "s2",
+          "heading": "Temperature and the Arrhenius equation",
+          "standard": "Temperature has a dramatic effect because the fraction of particles with energy above E_a grows **exponentially** with temperature. The **Arrhenius equation** captures this:\n\n`k = A e^(−E_a / RT)`\n\nwhere k is the rate constant, A the pre-exponential (frequency) factor, R = 8.314 J/(mol·K) and T the temperature in **kelvin**. Taking logarithms: `ln k = ln A − E_a / (RT)`, so a plot of ln k against 1/T is a straight line of slope −E_a/R — a standard way of measuring activation energy.\n\nA useful rule of thumb: for many reactions with E_a around 50 kJ/mol near room temperature, a 10 °C rise roughly **doubles** the rate. Higher activation energies are more temperature-sensitive.\n\nComparing two temperatures: `ln (k₂/k₁) = (E_a / R)(1/T₁ − 1/T₂)`.",
+          "simple": "Heating a reaction makes it much faster, not just a little. The reason is that the number of particles with enough energy grows very quickly as the temperature goes up.\n\nThe Arrhenius equation puts a number on this: `k = A e^(−E_a / RT)`. k is a measure of speed, T must be in kelvin, and R is a constant (8.314).\n\nRule of thumb: 10 °C hotter, about twice as fast, for many everyday reactions. This is why food keeps longer in a fridge.\n\nThe simulation lets you drag the temperature and watch how many collisions succeed."
+        },
+        {
+          "id": "s3",
+          "heading": "Measuring rates from graphs",
+          "standard": "A typical experiment records the volume of gas produced or the mass lost over time. The graph starts steep (reactants concentrated, fast rate) and flattens as reactants are used up, becoming horizontal when the reaction is complete.\n\nThe **average rate** over an interval is `Δ(amount) / Δt`. The **instantaneous rate** at a moment is the gradient of the tangent to the curve at that time.\n\nWhen comparing conditions, a faster reaction gives a steeper initial slope but the same final amount of product if the limiting reagent is unchanged. A catalyst or higher temperature changes the slope, not the end point; more limiting reagent changes both.",
+          "simple": "In an experiment you might measure how much gas is made every 10 seconds and plot it.\n\nThe graph is steep at the start (fast) and levels off at the end (finished).\n\nRate over a period = amount made ÷ time taken. Rate at one instant = the steepness of the curve at that moment.\n\nA hotter or catalysed reaction gives a steeper start but ends at the same place, because you still have the same amount of reactant to use up."
+        }
+      ],
+      "formulas": [
+        { "name": "Average rate", "expr": "rate = Δ(amount) / Δt", "note": "e.g. cm³/s of gas, or mol/(dm³·s)." },
+        { "name": "Arrhenius equation", "expr": "k = A e^(−E_a / RT)", "note": "T in kelvin; R = 8.314 J/(mol·K)." },
+        { "name": "Logarithmic form", "expr": "ln k = ln A − E_a / (RT)", "note": "Plot ln k vs 1/T: slope = −E_a/R." },
+        { "name": "Two-temperature form", "expr": "ln(k₂/k₁) = (E_a/R)(1/T₁ − 1/T₂)", "note": "" },
+        { "name": "Kelvin conversion", "expr": "T(K) = T(°C) + 273.15", "note": "" }
+      ],
+      "examples": [
+        {
+          "title": "How much faster at 35 °C?",
+          "problem": "A reaction has an activation energy of 50 kJ/mol. By what factor does its rate constant increase when the temperature rises from 25 °C to 35 °C?",
+          "steps": [
+            "Convert to kelvin: T₁ = 298 K, T₂ = 308 K. E_a = 50 000 J/mol.",
+            "Use ln(k₂/k₁) = (E_a/R)(1/T₁ − 1/T₂). E_a/R = 50 000 / 8.314 = 6 014 K.",
+            "1/298 − 1/308 = 0.003356 − 0.003247 = 1.0895 × 10⁻⁴ K⁻¹.",
+            "ln(k₂/k₁) = 6 014 × 1.0895 × 10⁻⁴ = 0.655, so k₂/k₁ = e^0.655 = 1.93.",
+            "The rate almost doubles for a 10 °C rise, matching the rule of thumb."
+          ],
+          "steps_simple": [
+            "Change the temperatures to kelvin by adding 273: 298 K and 308 K.",
+            "The formula compares the two temperatures: ln(k₂/k₁) = (E_a/R) × (1/T₁ − 1/T₂).",
+            "E_a/R is 50 000 ÷ 8.314 ≈ 6 014. The bracket is 1/298 − 1/308 ≈ 0.000109.",
+            "Multiply: about 0.655. Then e^0.655 ≈ 1.93.",
+            "So the reaction goes about 1.9 times faster — nearly double for 10 degrees."
+          ],
+          "answer": "k increases by a factor of about 1.9"
+        }
+      ],
+      "quiz": [
+        { "type": "mcq", "q": "A catalyst speeds up a reaction by…", "options": ["raising the temperature", "providing a route with a lower activation energy", "increasing the concentration of reactants", "being used up to release energy"], "answer": 1, "explain": "A catalyst offers an alternative pathway with lower E_a, so a larger fraction of collisions succeed. It is not consumed." },
+        { "type": "numeric", "q": "Convert 0 °C to kelvin.", "answer": 273.15, "tolerance": 0.2, "unit": "K", "explain": "T(K) = T(°C) + 273.15." },
+        { "type": "mcq", "q": "Powdered marble reacts with acid faster than a lump of the same mass because…", "options": ["the powder is hotter", "the powder has a larger surface area", "the powder has a lower activation energy", "the powder is more concentrated"], "answer": 1, "explain": "More particles are exposed at the surface, so collisions with the acid are more frequent." },
+        { "type": "numeric", "q": "20 cm³ of gas is collected in the first 40 s of a reaction. What is the average rate in cm³/s?", "answer": 0.5, "tolerance": 0.01, "unit": "cm³/s", "explain": "rate = 20 / 40 = 0.5 cm³/s." }
+      ],
+      "problems": [
+        {
+          "difficulty": 1,
+          "title": "Rate from data",
+          "statement": "In an experiment 48 cm³ of hydrogen is collected in the first 60 s, then a further 12 cm³ in the next 60 s. Find the average rate in each minute and explain the difference.",
+          "steps": [
+            "First minute: rate = 48 / 60 = 0.8 cm³/s.",
+            "Second minute: rate = 12 / 60 = 0.2 cm³/s.",
+            "The rate falls because reactants are being used up, so their concentration drops and collisions become less frequent."
+          ],
+          "answer": "0.8 cm³/s then 0.2 cm³/s; reactant concentration falls over time"
+        },
+        {
+          "difficulty": 2,
+          "title": "A higher activation energy",
+          "statement": "A reaction with E_a = 75 kJ/mol is run at 25 °C and then at 45 °C. By what factor does the rate constant increase? Compare with the 10 °C-doubling rule.",
+          "steps": [
+            "T₁ = 298 K, T₂ = 318 K, E_a/R = 75 000 / 8.314 = 9 021 K.",
+            "1/298 − 1/318 = 0.0033557 − 0.0031447 = 2.110 × 10⁻⁴ K⁻¹.",
+            "ln(k₂/k₁) = 9 021 × 2.110 × 10⁻⁴ = 1.904.",
+            "k₂/k₁ = e^1.904 = 6.7.",
+            "The doubling rule would predict 2 × 2 = 4 for a 20 °C rise; the actual factor is larger because this activation energy is higher than the ~50 kJ/mol the rule assumes."
+          ],
+          "answer": "About 6.7 times faster (versus ~4 from the rule of thumb)"
+        },
+        {
+          "difficulty": 3,
+          "title": "Finding E_a from two rate constants",
+          "statement": "The rate constant of a reaction is 2.0 × 10⁻³ s⁻¹ at 300 K and 8.0 × 10⁻³ s⁻¹ at 320 K. Calculate the activation energy.",
+          "steps": [
+            "Use the two-temperature form: ln(k₂/k₁) = (E_a/R)(1/T₁ − 1/T₂).",
+            "Left side: ln(8.0 × 10⁻³ / 2.0 × 10⁻³) = ln 4 = 1.386.",
+            "Bracket: 1/300 − 1/320 = 0.0033333 − 0.0031250 = 2.083 × 10⁻⁴ K⁻¹.",
+            "So E_a/R = 1.386 / 2.083 × 10⁻⁴ = 6 654 K.",
+            "E_a = 6 654 × 8.314 = 55 300 J/mol ≈ 55 kJ/mol.",
+            "Check the units: E_a/R has units of kelvin because R is in J/(mol·K); multiplying by R returns J/mol. The value is typical for a reaction that roughly doubles per 10 °C, consistent with quadrupling over 20 K."
+          ],
+          "answer": "E_a ≈ 55 kJ/mol"
+        }
+      ],
+      "glossary": [
+        { "term": "activation energy", "def": "The minimum energy colliding particles need for a reaction to occur, symbol E_a, in kJ/mol." },
+        { "term": "collision theory", "def": "The model that reactions happen when particles collide with enough energy and the correct orientation." },
+        { "term": "catalyst", "def": "A substance that speeds up a reaction by lowering the activation energy without being consumed." },
+        { "term": "rate of reaction", "def": "The change in amount of reactant or product per unit time." },
+        { "term": "Arrhenius equation", "def": "k = A e^(−E_a/RT), describing how the rate constant depends on temperature." },
+        { "term": "rate constant", "def": "The proportionality constant k in a rate equation; it depends on temperature but not on concentration." }
+      ],
+      "constants": [
+        { "name": "Gas constant", "symbol": "R", "value": "8.314", "unit": "J/(mol·K)" },
+        { "name": "Absolute zero", "symbol": "0 K", "value": "−273.15", "unit": "°C" }
+      ]
+    }
+  ]
+}

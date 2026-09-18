@@ -1,0 +1,476 @@
+{
+  "subject": "engineering",
+  "name": "Engineering",
+  "name_hi": "अभियांत्रिकी",
+  "version": "1.0.0",
+  "lessons": [
+    {
+      "id": "eng-levers",
+      "order": 1,
+      "title": "Forces, levers and simple machines",
+      "title_hi": "बल, उत्तोलक और सरल मशीनें",
+      "level": "Foundation",
+      "summary": "Moments and the principle of moments, the three classes of lever, mechanical advantage, and how pulleys, ramps and gears trade force for distance. Includes a lever balance simulation.",
+      "summary_hi": "आघूर्ण और आघूर्णों का सिद्धांत, उत्तोलक के तीन वर्ग, यांत्रिक लाभ, और घिरनी, ढलान व गियर बल के बदले दूरी कैसे बदलते हैं। उत्तोलक संतुलन सिमुलेशन सहित।",
+      "hindi_full": false,
+      "illustration": "lever",
+      "illustration_alt": "A beam balanced on a triangular pivot with a large weight close to the pivot on one side and a small weight far from it on the other.",
+      "sim": "lever",
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "Moments and the principle of moments",
+          "standard": "A force applied away from a pivot tends to turn the object. The turning effect is the **moment** (or **torque**): `moment = force × perpendicular distance from the pivot`, measured in newton-metres (N·m). The same push produces a larger moment further from the pivot, which is why door handles are on the far edge from the hinges.\n\nThe **principle of moments** states that a body is in rotational equilibrium (balanced, not turning) when the total clockwise moment about any pivot equals the total anticlockwise moment: `Σ M_clockwise = Σ M_anticlockwise`.\n\nFor a see-saw with a 40 kg child 2 m from the pivot, a 60 kg adult balances it at 40 × 9.8 × 2 = 60 × 9.8 × d, so d = 1.33 m. Because g appears on both sides, you can balance with masses directly when only weights are involved.\n\nThe weight of a uniform beam acts at its centre. If the pivot is at the centre, the beam's own weight has no moment.",
+          "simple": "Pushing something far from its pivot turns it more easily than pushing near the pivot. The turning effect is called the moment: `moment = force × distance from the pivot`.\n\nThis is why a door handle is far from the hinges, and why a long spanner loosens a tight nut.\n\nA see-saw balances when the turning effect on one side equals the turning effect on the other: clockwise moment = anticlockwise moment.\n\nA 40 kg child 2 m from the middle balances a 60 kg adult sitting 1.33 m from the middle, because 40 × 2 = 60 × 1.33.\n\nTry it in the simulation: move the weights until the beam is level."
+        },
+        {
+          "id": "s2",
+          "heading": "Levers and mechanical advantage",
+          "standard": "A **lever** is a rigid bar that turns about a **fulcrum**. The **effort** is the force you apply; the **load** is the force you overcome. By the principle of moments, `effort × effort arm = load × load arm`, so a long effort arm and a short load arm let a small effort move a large load.\n\n**Mechanical advantage** is `MA = load / effort = effort arm / load arm` (for an ideal, weightless, frictionless lever). A crowbar with a 1.2 m effort arm and a 0.1 m load arm has MA = 12: 50 N of effort lifts 600 N.\n\nThe three classes: **first class** — fulcrum between effort and load (see-saw, scissors, crowbar); **second class** — load between fulcrum and effort (wheelbarrow, nutcracker; MA always > 1); **third class** — effort between fulcrum and load (tweezers, fishing rod, the human forearm; MA < 1 but the load moves further and faster than the effort).\n\nNothing comes free: the effort moves through a proportionally larger distance, so work in = work out (ideally).",
+          "simple": "A lever is a bar that turns on a pivot (the fulcrum). You push at one end (the effort) to move something at the other (the load).\n\nA long push-arm and a short load-arm let you lift something heavy with a small push. How much easier it gets is the mechanical advantage: `MA = load ÷ effort`.\n\nThree types:\n\n- Pivot in the middle: see-saw, scissors.\n- Load in the middle: wheelbarrow, nutcracker. Always makes lifting easier.\n- Effort in the middle: tweezers, your forearm. Harder to push, but the load moves far and fast.\n\nThe catch: with a lever you push less hard, but you push through a longer distance."
+        },
+        {
+          "id": "s3",
+          "heading": "Pulleys, inclined planes and gears",
+          "standard": "All simple machines trade force for distance. The **velocity ratio** (VR) is `distance moved by effort / distance moved by load`; for an ideal machine MA = VR, and in a real one `efficiency = MA / VR = work out / work in`, always below 100 % because of friction and the weight of moving parts.\n\n**Pulleys**: a single fixed pulley only changes the direction of the pull (VR = 1). In a block and tackle, the VR equals the number of rope segments supporting the load: four supporting ropes let you lift 400 N with about 100 N, pulling 4 m of rope for each metre the load rises.\n\n**Inclined plane**: pushing a load up a ramp of length L to a height h has VR = L/h. A 5 m ramp to a 1 m loading bay reduces the force needed to a fifth of the load's weight (ignoring friction).\n\n**Gears**: two meshing gears with N₁ and N₂ teeth have `speed ratio = N₂ / N₁` and inversely for torque. A small gear driving a large one reduces speed and multiplies torque — a bicycle's low gear.",
+          "simple": "Pulleys, ramps and gears are all the same deal: use less force, but move it further.\n\nPulley: one fixed pulley only changes the direction you pull. With several pulleys, count the ropes holding the load up. Four ropes means you pull with a quarter of the weight, but pull four times as much rope.\n\nRamp: a longer, gentler ramp needs less push. A 5 m ramp to reach 1 m height needs only a fifth of the force.\n\nGears: a small gear turning a big gear makes it turn slower but with more twisting force. That is a low gear on a bicycle.\n\nReal machines waste some energy on friction, so their efficiency is always below 100 %."
+        }
+      ],
+      "formulas": [
+        { "name": "Moment", "expr": "M = F × d", "note": "d is the perpendicular distance from the pivot; N·m." },
+        { "name": "Principle of moments", "expr": "Σ M_clockwise = Σ M_anticlockwise", "note": "Condition for balance." },
+        { "name": "Mechanical advantage", "expr": "MA = load / effort", "note": "= effort arm / load arm for an ideal lever." },
+        { "name": "Velocity ratio", "expr": "VR = distance moved by effort / distance moved by load", "note": "" },
+        { "name": "Efficiency", "expr": "η = MA / VR = work out / work in", "note": "Below 1 for real machines." },
+        { "name": "Gear ratio", "expr": "speed ratio = N₂ / N₁", "note": "Torque ratio is the inverse." }
+      ],
+      "examples": [
+        {
+          "title": "Balancing a see-saw",
+          "problem": "A 40 kg child sits 2 m from the pivot of a see-saw. How far from the pivot must a 60 kg adult sit on the other side to balance it?",
+          "steps": [
+            "Take moments about the pivot. Child's weight: 40 × 9.8 = 392 N at 2 m gives an anticlockwise moment of 784 N·m.",
+            "Adult's weight: 60 × 9.8 = 588 N at distance d gives a clockwise moment of 588d.",
+            "Balance: 588d = 784, so d = 1.33 m.",
+            "Shortcut: since g cancels, 40 × 2 = 60 × d gives the same d = 1.33 m directly."
+          ],
+          "steps_simple": [
+            "The child's turning effect is 40 kg × 2 m = 80 (we can leave out g because it appears on both sides).",
+            "The adult's turning effect is 60 kg × d.",
+            "Set them equal: 60 × d = 80, so d = 80 ÷ 60 = 1.33 m.",
+            "Heavier person, closer to the middle. That matches everyday experience."
+          ],
+          "answer": "1.33 m from the pivot"
+        }
+      ],
+      "quiz": [
+        { "type": "numeric", "q": "A 20 N force acts 0.5 m from a pivot, at right angles to the bar. What is the moment in N·m?", "answer": 10, "tolerance": 0.01, "unit": "N·m", "explain": "M = F × d = 20 × 0.5 = 10 N·m." },
+        { "type": "mcq", "q": "In which class of lever is the load between the fulcrum and the effort?", "options": ["First class", "Second class", "Third class", "None — that is not a lever"], "answer": 1, "explain": "Second-class levers, such as a wheelbarrow, have the load in the middle and always give MA > 1." },
+        { "type": "numeric", "q": "A 3 kg mass hangs 40 cm from the pivot of a balanced beam. What mass (in kg) hangs 60 cm from the pivot on the other side?", "answer": 2, "tolerance": 0.01, "unit": "kg", "explain": "3 × 40 = m × 60 gives m = 2 kg." },
+        { "type": "mcq", "q": "A pulley system has four rope segments supporting the load. Its velocity ratio is…", "options": ["1", "2", "4", "8"], "answer": 2, "explain": "VR equals the number of supporting rope segments: the effort end moves 4 m for every 1 m the load rises." }
+      ],
+      "problems": [
+        {
+          "difficulty": 1,
+          "title": "Moment of a spanner",
+          "statement": "A mechanic pushes with 15 N at right angles to a spanner, 30 cm from the nut. Find the moment. What force is needed with a 45 cm spanner for the same moment?",
+          "steps": [
+            "Convert to metres: 30 cm = 0.30 m. Moment = 15 × 0.30 = 4.5 N·m.",
+            "For the same 4.5 N·m with d = 0.45 m: F = 4.5 / 0.45 = 10 N.",
+            "A longer spanner means a smaller force for the same turning effect."
+          ],
+          "answer": "4.5 N·m; 10 N with the longer spanner"
+        },
+        {
+          "difficulty": 2,
+          "title": "Balancing a beam pivoted at its centre",
+          "statement": "A uniform 4 m beam of mass 20 kg is pivoted at its centre. A 30 kg mass is placed 1.5 m to the left of the pivot. Where must a 45 kg mass be placed to balance the beam?",
+          "steps": [
+            "The beam is uniform and pivoted at its centre, so its own weight acts through the pivot and produces no moment. It can be ignored for the balance.",
+            "Anticlockwise moment from the 30 kg mass: 30g × 1.5 = 45g N·m.",
+            "Clockwise moment from the 45 kg mass at distance d to the right: 45g × d.",
+            "Balance: 45g × d = 45g → d = 1.0 m to the right of the pivot."
+          ],
+          "answer": "1.0 m to the right of the pivot"
+        },
+        {
+          "difficulty": 3,
+          "title": "Reactions at two supports",
+          "statement": "A uniform plank 3 m long and weighing 200 N rests horizontally on two supports, A at the left end and B at the right end. A person weighing 500 N stands 1 m from A. Find the upward reaction forces at A and B.",
+          "steps": [
+            "Draw the forces: R_A up at A (x = 0), R_B up at B (x = 3 m), plank weight 200 N down at its centre (x = 1.5 m), person 500 N down at x = 1 m.",
+            "Take moments about A to eliminate the unknown R_A (its distance from A is zero). Clockwise: 200 × 1.5 + 500 × 1 = 300 + 500 = 800 N·m. Anticlockwise: R_B × 3.",
+            "Principle of moments: 3 R_B = 800 → R_B = 266.7 N.",
+            "Vertical equilibrium: R_A + R_B = 200 + 500 = 700 N, so R_A = 700 − 266.7 = 433.3 N.",
+            "Check by taking moments about B: clockwise R_A × 3 = 1300; anticlockwise 200 × 1.5 + 500 × 2 = 300 + 1000 = 1300 ✓.",
+            "Interpretation: the support nearer the person carries more load, as expected."
+          ],
+          "answer": "R_A ≈ 433 N, R_B ≈ 267 N"
+        }
+      ],
+      "glossary": [
+        { "term": "moment", "def": "The turning effect of a force about a pivot: force × perpendicular distance, in N·m. Also called torque." },
+        { "term": "torque", "def": "Another name for moment, used especially for rotating shafts and engines." },
+        { "term": "fulcrum", "def": "The pivot point about which a lever turns." },
+        { "term": "mechanical advantage", "def": "Load divided by effort: how many times a machine multiplies the applied force." },
+        { "term": "velocity ratio", "def": "Distance moved by the effort divided by distance moved by the load." },
+        { "term": "efficiency", "def": "Useful work output divided by work input, as a fraction or percentage." }
+      ],
+      "constants": [
+        { "name": "Acceleration due to gravity", "symbol": "g", "value": "9.8", "unit": "m/s²" }
+      ]
+    },
+    {
+      "id": "eng-circuits",
+      "order": 2,
+      "title": "Electric circuits and Ohm's law",
+      "title_hi": "विद्युत परिपथ और ओम का नियम",
+      "level": "Standard",
+      "summary": "Current, voltage and resistance; Ohm's law and electrical power; series and parallel combinations of resistors. Includes an interactive circuit.",
+      "summary_hi": "धारा, वोल्टता और प्रतिरोध; ओम का नियम और विद्युत शक्ति; प्रतिरोधकों के श्रेणी और समांतर संयोजन। इंटरैक्टिव परिपथ सहित।",
+      "hindi_full": false,
+      "illustration": "circuit",
+      "illustration_alt": "A simple circuit drawn as a rectangle: a battery symbol on the left, a zigzag resistor on the right, and a small bulb at the top.",
+      "sim": "circuit",
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "Current, voltage and resistance",
+          "standard": "**Current** I is the rate of flow of electric charge: `I = Q / t`, in amperes (A); one ampere is one coulomb per second. **Voltage** (potential difference) V, in volts, is the energy transferred per coulomb of charge between two points: `V = E / Q`. **Resistance** R, in ohms (Ω), is how strongly a component opposes current.\n\nThe water analogy helps: current is the flow rate of water, voltage is the pressure difference pushing it, resistance is a narrow pipe. Batteries and generators supply voltage; wires carry current; resistors, bulbs and motors resist it and convert electrical energy into heat, light or motion.\n\nAn ammeter is placed in **series** (in the path) to measure current; a voltmeter is placed in **parallel** (across a component) to measure the voltage across it.",
+          "simple": "Current is how much electric charge flows past each second. Measured in amps (A).\n\nVoltage is the push that makes the charge flow. Measured in volts (V). Batteries provide it.\n\nResistance is how much a component slows the flow. Measured in ohms (Ω).\n\nThink of water in pipes: current is the flow, voltage is the pressure, resistance is how narrow the pipe is.\n\nAn ammeter goes in the loop to measure current. A voltmeter goes across a component to measure voltage."
+        },
+        {
+          "id": "s2",
+          "heading": "Ohm's law and power",
+          "standard": "For many conductors at constant temperature, current is proportional to voltage — **Ohm's law**: `V = I R`. A 12 V battery across a 4 Ω resistor drives I = 12/4 = 3 A. Components that obey this have a straight-line I–V graph; filament bulbs and diodes do not (their resistance changes with temperature or direction).\n\nElectrical **power** is the rate of energy transfer: `P = V I`. Combining with Ohm's law gives `P = I² R = V² / R`. The 4 Ω resistor above dissipates 12 × 3 = 36 W as heat.\n\nEnergy transferred in time t is `E = P t`; a 2 kW heater running for 3 hours uses 6 kWh, the unit on electricity bills (1 kWh = 3.6 MJ).",
+          "simple": "Ohm's law: `V = I × R`. Voltage equals current times resistance. Rearrange to find whichever you need: I = V ÷ R, or R = V ÷ I.\n\nExample: 12 volts across 4 ohms gives 12 ÷ 4 = 3 amps.\n\nPower is how fast energy is used: `P = V × I`, in watts. 12 V × 3 A = 36 W.\n\nEnergy = power × time. Your electricity bill counts kilowatt-hours: a 2 kW heater for 3 hours uses 6 kWh.\n\nDrag the sliders in the circuit simulation to see how current changes."
+        },
+        {
+          "id": "s3",
+          "heading": "Series and parallel",
+          "standard": "In **series** components sit one after another in a single loop. The same current flows through each, the voltages add up to the supply voltage, and resistances add: `R_total = R₁ + R₂ + …`. If one component breaks, the whole circuit stops — the weakness of old-style fairy lights.\n\nIn **parallel** components sit on separate branches between the same two points. Each branch has the full supply voltage, the currents in the branches add up to the total, and the combined resistance is smaller than any single branch: `1/R_total = 1/R₁ + 1/R₂ + …`. For two resistors this is `R_total = R₁R₂ / (R₁ + R₂)`. Household circuits are parallel so every appliance gets mains voltage independently.\n\nMixed circuits are solved by collapsing parallel groups into single equivalent resistors, then adding in series, finding the total current, and working back out to each component.",
+          "simple": "Series: components in one loop, one after the other. The same current goes through all of them. Their resistances add up. If one breaks, everything goes off.\n\nParallel: components on separate branches. Each branch gets the full voltage. The total resistance goes down when you add branches, because there are more paths for current. Home wiring is parallel so each appliance works on its own.\n\nTwo resistors in parallel: `R = R₁ × R₂ ÷ (R₁ + R₂)`. Two 10 Ω resistors in parallel give 5 Ω.\n\nFor mixed circuits, simplify the parallel parts first, then add the series parts."
+        }
+      ],
+      "formulas": [
+        { "name": "Current", "expr": "I = Q / t", "note": "Coulombs per second = amperes." },
+        { "name": "Ohm's law", "expr": "V = I R", "note": "" },
+        { "name": "Power", "expr": "P = V I = I² R = V² / R", "note": "Watts." },
+        { "name": "Energy", "expr": "E = P t", "note": "Joules; 1 kWh = 3.6 × 10⁶ J." },
+        { "name": "Series resistors", "expr": "R = R₁ + R₂ + …", "note": "Same current through each." },
+        { "name": "Parallel resistors", "expr": "1/R = 1/R₁ + 1/R₂ + …", "note": "Same voltage across each." }
+      ],
+      "examples": [
+        {
+          "title": "A mixed series–parallel circuit",
+          "problem": "A 6 Ω and a 3 Ω resistor are connected in parallel, and this pair is in series with a 4 Ω resistor across a 12 V battery. Find the total resistance, the current from the battery, and the voltage across the parallel pair.",
+          "steps": [
+            "Parallel pair: R_p = (6 × 3)/(6 + 3) = 18/9 = 2 Ω.",
+            "Series total: R = 2 + 4 = 6 Ω.",
+            "Battery current: I = V/R = 12/6 = 2 A.",
+            "Voltage across the parallel pair: V_p = I R_p = 2 × 2 = 4 V. (The 4 Ω resistor takes the other 8 V: 4 + 8 = 12 ✓.)",
+            "Branch currents: 4/6 = 0.67 A through the 6 Ω and 4/3 = 1.33 A through the 3 Ω; they add to 2 A ✓."
+          ],
+          "steps_simple": [
+            "First deal with the two resistors side by side. Two in parallel: 6 × 3 ÷ (6 + 3) = 2 Ω. Replace them with one 2 Ω resistor in your head.",
+            "Now it is a simple loop: 2 Ω + 4 Ω = 6 Ω in total.",
+            "Current = voltage ÷ resistance = 12 ÷ 6 = 2 A.",
+            "The 2 Ω part gets 2 A × 2 Ω = 4 V. The 4 Ω part gets 2 A × 4 Ω = 8 V. Together 12 V, the whole battery."
+          ],
+          "answer": "R = 6 Ω, I = 2 A, 4 V across the parallel pair"
+        }
+      ],
+      "quiz": [
+        { "type": "numeric", "q": "A 9 V battery is connected across a 3 Ω resistor. What current flows, in amps?", "answer": 3, "tolerance": 0.01, "unit": "A", "explain": "I = V/R = 9/3 = 3 A." },
+        { "type": "mcq", "q": "Adding another resistor in parallel to a circuit…", "options": ["increases the total resistance", "decreases the total resistance", "leaves the total resistance unchanged", "stops the current"], "answer": 1, "explain": "An extra branch gives current another path, so the combined resistance falls." },
+        { "type": "numeric", "q": "Two 10 Ω resistors are connected in parallel. What is their combined resistance in ohms?", "answer": 5, "tolerance": 0.01, "unit": "Ω", "explain": "1/R = 1/10 + 1/10 = 2/10, so R = 5 Ω." },
+        { "type": "numeric", "q": "A kettle on a 230 V supply draws 8.7 A. What is its power in watts?", "answer": 2001, "tolerance": 15, "unit": "W", "explain": "P = VI = 230 × 8.7 = 2 001 W, about 2 kW." }
+      ],
+      "problems": [
+        {
+          "difficulty": 1,
+          "title": "Resistance of a bulb",
+          "statement": "A bulb draws 0.5 A from a 12 V supply. Find its resistance and its power.",
+          "steps": [
+            "R = V / I = 12 / 0.5 = 24 Ω.",
+            "P = V I = 12 × 0.5 = 6 W."
+          ],
+          "answer": "24 Ω, 6 W"
+        },
+        {
+          "difficulty": 2,
+          "title": "Three resistors in series",
+          "statement": "Resistors of 2 Ω, 3 Ω and 5 Ω are connected in series across a 20 V supply. Find the current and the voltage across the 5 Ω resistor.",
+          "steps": [
+            "Series total: R = 2 + 3 + 5 = 10 Ω.",
+            "Current (the same everywhere in series): I = 20 / 10 = 2 A.",
+            "Voltage across the 5 Ω: V = I R = 2 × 5 = 10 V.",
+            "Check: 2 × 2 + 2 × 3 + 2 × 5 = 4 + 6 + 10 = 20 V, the full supply ✓."
+          ],
+          "answer": "I = 2 A; 10 V across the 5 Ω resistor"
+        },
+        {
+          "difficulty": 3,
+          "title": "Currents and power in a mixed circuit",
+          "statement": "A 12 V battery drives a 4 Ω resistor R₁ in series with a parallel pair R₂ = 6 Ω and R₃ = 12 Ω. Find the total current, the current through each of R₂ and R₃, and the power dissipated in R₁.",
+          "steps": [
+            "Parallel pair: R_p = (6 × 12)/(6 + 12) = 72/18 = 4 Ω.",
+            "Total resistance: 4 + 4 = 8 Ω. Total current: I = 12/8 = 1.5 A.",
+            "Voltage across R₁: 1.5 × 4 = 6 V. So the parallel pair gets the remaining 12 − 6 = 6 V.",
+            "Branch currents: I₂ = 6/6 = 1.0 A; I₃ = 6/12 = 0.5 A. They add to 1.5 A ✓ (current is conserved at the junction).",
+            "Power in R₁: P = I² R = 1.5² × 4 = 9 W. (Check: total battery power 12 × 1.5 = 18 W = 9 W in R₁ + 6 × 1.0 + 6 × 0.5 = 9 W in the pair ✓.)"
+          ],
+          "answer": "I = 1.5 A; I₂ = 1.0 A, I₃ = 0.5 A; P₁ = 9 W"
+        }
+      ],
+      "glossary": [
+        { "term": "current", "def": "The rate of flow of electric charge, in amperes (coulombs per second)." },
+        { "term": "potential difference", "def": "Voltage: the energy transferred per unit charge between two points, in volts." },
+        { "term": "resistance", "def": "The opposition of a component to current, R = V/I, in ohms." },
+        { "term": "ohm", "def": "The unit of resistance: one volt per ampere." },
+        { "term": "series", "def": "Components connected end to end in a single path, sharing the same current." },
+        { "term": "parallel", "def": "Components connected across the same two points, sharing the same voltage." },
+        { "term": "power", "def": "The rate of energy transfer, P = VI, in watts." }
+      ],
+      "constants": [
+        { "name": "Elementary charge", "symbol": "e", "value": "1.602 × 10⁻¹⁹", "unit": "C" },
+        { "name": "Kilowatt-hour", "symbol": "kWh", "value": "3.6 × 10⁶", "unit": "J" }
+      ]
+    },
+    {
+      "id": "eng-materials",
+      "order": 3,
+      "title": "Materials: stress, strain and stiffness",
+      "title_hi": "पदार्थ: प्रतिबल, विकृति और दृढ़ता",
+      "level": "Standard",
+      "summary": "How engineers describe a material's response to load: stress, strain, Young's modulus, the stress–strain curve, and choosing materials for stiffness, strength and safety.",
+      "summary_hi": "इंजीनियर भार पर पदार्थ की प्रतिक्रिया कैसे वर्णित करते हैं: प्रतिबल, विकृति, यंग गुणांक, प्रतिबल–विकृति वक्र, और दृढ़ता, सामर्थ्य व सुरक्षा के लिए पदार्थ चयन।",
+      "hindi_full": false,
+      "illustration": "beam",
+      "illustration_alt": "A vertical rod fixed at the top with a weight hanging from the bottom, and a small bracket showing how much it has stretched.",
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "Stress and strain",
+          "standard": "Two rods of the same material but different thickness will support different loads, so engineers normalise. **Stress** is force per unit cross-sectional area: `σ = F / A`, in pascals (N/m²); real values are usually in MPa (10⁶ Pa) or GPa (10⁹ Pa). **Strain** is extension per unit original length: `ε = ΔL / L`, a pure ratio with no units (often quoted as a percentage or in microstrain).\n\nStress and strain describe the material rather than the particular specimen: a steel wire and a steel bridge cable at the same stress experience the same strain.\n\nTensile stress stretches, compressive stress squashes, and shear stress slides layers past each other. Bending a beam produces tension on one face and compression on the other.",
+          "simple": "A thick rod holds more than a thin rod of the same material. To compare materials fairly, engineers divide by the size.\n\nStress = force ÷ cross-section area. Units: pascals (Pa), or millions of pascals (MPa).\n\nStrain = how much it stretched ÷ how long it was. No units; it is just a fraction. 1 mm of stretch on a 1 m rod is a strain of 0.001.\n\nPulling is tension. Squashing is compression. Bending does both at once: one side stretches, the other squashes."
+        },
+        {
+          "id": "s2",
+          "heading": "Young's modulus and the stress–strain curve",
+          "standard": "For small loads most materials are **elastic**: strain is proportional to stress and the material springs back when unloaded (Hooke's law). The constant of proportionality is **Young's modulus**: `E = σ / ε`, a measure of **stiffness**. Steel has E ≈ 200 GPa, aluminium ≈ 69 GPa, concrete ≈ 30 GPa, wood along the grain ≈ 11 GPa, rubber ≈ 0.01–0.1 GPa.\n\nA stress–strain curve from a tensile test shows: a straight elastic region with slope E up to the **limit of proportionality**; the **elastic limit** beyond which permanent (plastic) deformation remains; the **yield strength** σ_y where plastic flow begins; the **ultimate tensile strength** (UTS), the peak stress; and fracture. The area under the curve is the energy absorbed per unit volume, a measure of **toughness**.\n\nBrittle materials (glass, ceramics, cast iron) fracture with little plastic deformation; ductile ones (mild steel, copper) stretch a great deal before breaking, giving visible warning.",
+          "simple": "For small loads, stretch is proportional to force, and the material springs back when you let go. This is elastic behaviour.\n\nYoung's modulus E measures stiffness: `E = stress ÷ strain`. A high E means hard to stretch. Steel is about 200 GPa; rubber is thousands of times lower.\n\nLoad a metal too far and it stops springing back — it has yielded and is permanently bent. Load it further and it eventually breaks. The highest stress it survives is its ultimate tensile strength.\n\nBrittle things like glass snap without warning. Ductile things like mild steel stretch a lot first, which is safer."
+        },
+        {
+          "id": "s3",
+          "heading": "Choosing materials and safety factors",
+          "standard": "Stiffness, strength and toughness are different properties and a design may need any combination. A bicycle frame must be stiff (small deflection) and strong (no yield) but also light, so the relevant figure of merit is often **specific stiffness** E/ρ or **specific strength** σ_y/ρ, where ρ is density. Aluminium and steel have almost the same E/ρ; carbon-fibre composites are far higher.\n\nEngineers never design right up to the yield stress. A **safety factor** n divides the yield strength to give the **allowable stress** `σ_allow = σ_y / n`; typical values are 1.5–2 for well-characterised static loads, 3–4 for impact or uncertain conditions, higher for lifting equipment. The required cross-section is then `A = F / σ_allow`.\n\nRepeated loading can cause **fatigue** failure well below the yield stress — the reason aircraft and bridges are inspected for cracks — and stiffness matters for **buckling** of slender columns, which fail by bending sideways rather than by crushing.",
+          "simple": "Stiff, strong and tough are three different things. Stiff means it does not bend much. Strong means it does not break or permanently bend. Tough means it absorbs energy without cracking.\n\nWeight matters too. For a bicycle or a plane, engineers compare stiffness per kilogram.\n\nEngineers always leave a margin. A safety factor of 2 means the part is designed to carry twice the expected load before it would yield. Bigger margins for anything unpredictable or dangerous.\n\nLoading something over and over can crack it even if each load is small. This is fatigue, and it is why bridges and planes are inspected regularly."
+        }
+      ],
+      "formulas": [
+        { "name": "Stress", "expr": "σ = F / A", "note": "Pa = N/m²; 1 MPa = 10⁶ Pa." },
+        { "name": "Strain", "expr": "ε = ΔL / L", "note": "Dimensionless." },
+        { "name": "Young's modulus", "expr": "E = σ / ε", "note": "Stiffness; Pa, usually GPa." },
+        { "name": "Extension of a bar", "expr": "ΔL = F L / (A E)", "note": "From the three equations above." },
+        { "name": "Allowable stress", "expr": "σ_allow = σ_y / n", "note": "n = safety factor." },
+        { "name": "Area of a round bar", "expr": "A = π d² / 4", "note": "" }
+      ],
+      "examples": [
+        {
+          "title": "Stretch of a steel rod",
+          "problem": "A steel rod 2 m long and 10 mm in diameter carries a tensile load of 10 kN. Taking E = 200 GPa, find the stress, the strain and the extension.",
+          "steps": [
+            "Cross-sectional area: A = π d²/4 = π × (0.010)²/4 = 7.854 × 10⁻⁵ m².",
+            "Stress: σ = F/A = 10 000 / 7.854 × 10⁻⁵ = 1.273 × 10⁸ Pa = 127 MPa. (Well below mild steel's yield of ~250 MPa.)",
+            "Strain: ε = σ/E = 1.273 × 10⁸ / 2.00 × 10¹¹ = 6.37 × 10⁻⁴.",
+            "Extension: ΔL = ε L = 6.37 × 10⁻⁴ × 2 = 1.27 × 10⁻³ m = 1.27 mm."
+          ],
+          "steps_simple": [
+            "First find the area of the rod's end: a circle of diameter 10 mm, area = π × 0.01² ÷ 4 ≈ 0.0000785 m².",
+            "Stress = force ÷ area = 10 000 ÷ 0.0000785 ≈ 127 000 000 Pa, or 127 MPa.",
+            "Strain = stress ÷ E = 127 000 000 ÷ 200 000 000 000 ≈ 0.00064.",
+            "Stretch = strain × length = 0.00064 × 2 m ≈ 0.0013 m, which is 1.3 mm. A 2 m steel rod barely stretches under a tonne."
+          ],
+          "answer": "σ ≈ 127 MPa, ε ≈ 6.4 × 10⁻⁴, ΔL ≈ 1.3 mm"
+        }
+      ],
+      "quiz": [
+        { "type": "numeric", "q": "A 500 N force acts on a cross-section of 0.002 m². What is the stress in pascals?", "answer": 250000, "tolerance": 1, "unit": "Pa", "explain": "σ = 500 / 0.002 = 250 000 Pa = 0.25 MPa." },
+        { "type": "mcq", "q": "Strain is measured in…", "options": ["pascals", "newtons", "no units (it is a ratio)", "metres"], "answer": 2, "explain": "Strain is a length divided by a length, so the units cancel." },
+        { "type": "numeric", "q": "A 3 m cable has a strain of 0.001. By how many millimetres has it stretched?", "answer": 3, "tolerance": 0.01, "unit": "mm", "explain": "ΔL = ε L = 0.001 × 3 m = 0.003 m = 3 mm." },
+        { "type": "mcq", "q": "Which material has the highest Young's modulus?", "options": ["Rubber", "Aluminium", "Steel", "Wood"], "answer": 2, "explain": "Steel ≈ 200 GPa, aluminium ≈ 69 GPa, wood ≈ 11 GPa, rubber < 0.1 GPa." }
+      ],
+      "problems": [
+        {
+          "difficulty": 1,
+          "title": "Strain in a wire",
+          "statement": "A 1.5 m wire extends by 0.75 mm under load. Calculate the strain.",
+          "steps": [
+            "Convert to the same units: 0.75 mm = 0.00075 m.",
+            "ε = ΔL / L = 0.00075 / 1.5 = 5 × 10⁻⁴ (0.05 %)."
+          ],
+          "answer": "ε = 5 × 10⁻⁴"
+        },
+        {
+          "difficulty": 2,
+          "title": "Aluminium bar",
+          "statement": "An aluminium bar of cross-section 2 × 10⁻⁴ m² and length 0.8 m carries 20 kN in tension. With E = 69 GPa, find the stress, strain and extension.",
+          "steps": [
+            "Stress: σ = 20 000 / 2 × 10⁻⁴ = 1.0 × 10⁸ Pa = 100 MPa.",
+            "Strain: ε = σ/E = 1.0 × 10⁸ / 6.9 × 10¹⁰ = 1.45 × 10⁻³.",
+            "Extension: ΔL = ε L = 1.45 × 10⁻³ × 0.8 = 1.16 × 10⁻³ m = 1.16 mm.",
+            "Compare: a steel bar of the same size would extend only 0.40 mm, because steel is about three times stiffer."
+          ],
+          "answer": "σ = 100 MPa, ε ≈ 1.45 × 10⁻³, ΔL ≈ 1.16 mm"
+        },
+        {
+          "difficulty": 3,
+          "title": "Sizing a steel cable",
+          "statement": "A lifting cable must carry a static load of 50 kN. The steel has a yield strength of 250 MPa and a safety factor of 2 against yield is required. Find the minimum cross-sectional area and the minimum diameter of a solid round cable.",
+          "steps": [
+            "Allowable stress: σ_allow = σ_y / n = 250 / 2 = 125 MPa = 1.25 × 10⁸ Pa.",
+            "Required area: A = F / σ_allow = 50 000 / 1.25 × 10⁸ = 4.0 × 10⁻⁴ m² (400 mm²).",
+            "For a round section A = π d²/4, so d = √(4A/π) = √(4 × 4.0 × 10⁻⁴ / π) = √(5.09 × 10⁻⁴) = 0.0226 m.",
+            "Minimum diameter ≈ 22.6 mm; in practice the next standard size up (25 mm) would be chosen.",
+            "Note: real lifting-gear codes require safety factors of 5 or more on the breaking load, because of dynamic loads, wear and fatigue. The factor of 2 here is for illustration."
+          ],
+          "answer": "A ≥ 4.0 × 10⁻⁴ m²; d ≥ 22.6 mm"
+        }
+      ],
+      "glossary": [
+        { "term": "stress", "def": "Force per unit cross-sectional area, σ = F/A, in pascals." },
+        { "term": "strain", "def": "Extension per unit original length, ε = ΔL/L, dimensionless." },
+        { "term": "Young's modulus", "def": "The ratio of stress to strain in the elastic region; a measure of stiffness, in pascals." },
+        { "term": "elastic limit", "def": "The greatest stress a material can take and still return to its original shape when unloaded." },
+        { "term": "yield strength", "def": "The stress at which a material begins to deform plastically (permanently)." },
+        { "term": "ultimate tensile strength", "def": "The maximum stress a material withstands before necking and fracture." },
+        { "term": "toughness", "def": "The energy a material can absorb before fracturing; the area under the stress–strain curve." },
+        { "term": "fatigue", "def": "Failure under repeated loading at stresses below the yield strength, by slow crack growth." }
+      ],
+      "constants": [
+        { "name": "Young's modulus, steel", "symbol": "E", "value": "≈ 200", "unit": "GPa" },
+        { "name": "Young's modulus, aluminium", "symbol": "E", "value": "≈ 69", "unit": "GPa" },
+        { "name": "Young's modulus, concrete", "symbol": "E", "value": "≈ 30", "unit": "GPa" },
+        { "name": "Yield strength, mild steel", "symbol": "σ_y", "value": "≈ 250", "unit": "MPa" }
+      ]
+    },
+    {
+      "id": "eng-energy",
+      "order": 4,
+      "title": "Energy, efficiency and heat engines",
+      "title_hi": "ऊर्जा, दक्षता और ऊष्मा इंजन",
+      "level": "Advanced",
+      "summary": "Energy conservation and Sankey diagrams, efficiency and where energy is lost, and the Carnot limit that caps every heat engine, from a car to a power station.",
+      "summary_hi": "ऊर्जा संरक्षण और सैंकी आरेख, दक्षता और ऊर्जा कहाँ खोती है, और कार्नो सीमा जो कार से लेकर बिजलीघर तक हर ऊष्मा इंजन को बाँधती है।",
+      "hindi_full": false,
+      "illustration": "sankey",
+      "illustration_alt": "A wide arrow entering from the left that splits into a narrower arrow continuing right and a second arrow bending downward, labelled waste heat.",
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "Energy conservation and Sankey diagrams",
+          "standard": "Energy cannot be created or destroyed, only transferred between stores: kinetic `KE = ½mv²`, gravitational potential `PE = mgh`, elastic, thermal, chemical, nuclear and electrical. Every device is an energy transfer, and the total in always equals the total out.\n\nA **Sankey diagram** draws these transfers as arrows whose widths are proportional to the energy. A filament bulb taking 100 J of electrical energy might show 5 J leaving as light and 95 J as heat. Useful output continues to the right; wasted output branches off, usually downward.\n\n**Power** is energy per unit time, `P = E / t`, in watts. A 60 kg person climbing 3 m of stairs in 4 s gains 60 × 9.8 × 3 = 1 764 J, a useful power of 441 W — briefly, close to half a horsepower.",
+          "simple": "Energy is never used up. It only moves from one form to another: movement, height, heat, light, electricity, chemical energy in fuel.\n\nWhat goes into a machine always equals what comes out, if you count the waste heat.\n\nA Sankey diagram shows this with arrows. Fat arrow in, thinner arrow of useful energy out, and a branch bending down for the waste. A light bulb's downward branch (heat) is much fatter than its useful branch (light).\n\nPower is energy per second, measured in watts."
+        },
+        {
+          "id": "s2",
+          "heading": "Efficiency and where energy goes",
+          "standard": "**Efficiency** is `η = useful energy out / total energy in` (or useful power out / power in), quoted as a fraction or percentage. It is never above 100 %, and in real devices the difference is almost always **heat** from friction, electrical resistance, or the fundamental limits of heat engines.\n\nTypical values: electric motors 85–95 %, LED lamps 30–50 % (light out per electrical energy in), filament lamps ~5 %, petrol engines 25–35 %, gas-turbine combined-cycle power stations up to ~60 %, solar photovoltaic panels 15–23 %, the human body as a machine ~20–25 %.\n\nEfficiencies multiply along a chain. A power station at 40 %, transmission at 94 % and an electric heater at 100 % delivers 0.40 × 0.94 × 1.00 = 38 % of the fuel energy as heat in your room; a heat pump can deliver more heat than the electrical energy it uses (a coefficient of performance of 3) because it moves heat rather than creating it.",
+          "simple": "Efficiency = useful energy out ÷ energy in. It is a fraction or a percentage, and it is always below 100 %.\n\nThe missing energy is almost always heat. Feel a phone charger, a laptop or a car bonnet after use.\n\nSome examples: electric motors are very good (about 90 %). Old-style bulbs are terrible (about 5 % light, 95 % heat). Petrol engines waste about two-thirds of the fuel's energy.\n\nWhen devices are chained together, multiply their efficiencies. 40 % × 94 % is only 38 %."
+        },
+        {
+          "id": "s3",
+          "heading": "Heat engines and the Carnot limit",
+          "standard": "A **heat engine** takes heat Q_h from a hot reservoir at temperature T_h, converts part of it to work W, and rejects the rest Q_c to a cold reservoir at T_c. Its efficiency is `η = W / Q_h = 1 − Q_c / Q_h`.\n\nThe second law of thermodynamics limits how much can be converted. The best possible efficiency for any engine working between two temperatures is the **Carnot efficiency**:\n\n`η_max = 1 − T_c / T_h` (temperatures in kelvin)\n\nA steam turbine at T_h = 800 K exhausting at T_c = 300 K cannot exceed 1 − 300/800 = 62.5 %, whatever its design; real turbines reach 40–45 %. This is why engineers push for higher operating temperatures (and better alloys — see the materials lesson) and why waste heat is inevitable, not a sign of sloppy engineering.\n\nRunning the cycle backwards gives a refrigerator or heat pump, using work to move heat from cold to hot.",
+          "simple": "A heat engine burns fuel to make something hot, then uses the heat to do work — turn wheels, spin a generator. Some heat always has to be thrown away to somewhere colder.\n\nThere is a hard limit on how good any heat engine can be. It depends only on the hot and cold temperatures (in kelvin):\n\n`best possible efficiency = 1 − T_cold / T_hot`\n\nHot side 800 K, cold side 300 K: at most 62.5 %. Real engines do worse.\n\nThis is a law of physics, not a design flaw. Hotter engines can be more efficient, which is why engineers care so much about heat-resistant materials.\n\nA fridge is a heat engine run in reverse: it uses electricity to pump heat out of the inside."
+        }
+      ],
+      "formulas": [
+        { "name": "Efficiency", "expr": "η = useful energy out / total energy in", "note": "Or useful power / power in." },
+        { "name": "Carnot efficiency", "expr": "η_max = 1 − T_c / T_h", "note": "Kelvin temperatures." },
+        { "name": "Heat-engine efficiency", "expr": "η = W / Q_h = 1 − Q_c / Q_h", "note": "" },
+        { "name": "Power", "expr": "P = E / t", "note": "Watts = joules per second." },
+        { "name": "Kinetic energy", "expr": "KE = ½ m v²", "note": "" },
+        { "name": "Gravitational potential energy", "expr": "PE = m g h", "note": "" }
+      ],
+      "examples": [
+        {
+          "title": "An engine between 600 K and 300 K",
+          "problem": "An engine takes 2 000 J of heat from a source at 600 K and exhausts to 300 K. Find the maximum possible work output. If the real engine is 30 % efficient, how much work does it do and how much heat does it reject?",
+          "steps": [
+            "Carnot limit: η_max = 1 − 300/600 = 0.50, so the maximum work is 0.50 × 2 000 = 1 000 J.",
+            "Real engine at 30 %: W = 0.30 × 2 000 = 600 J.",
+            "Heat rejected: Q_c = Q_h − W = 2 000 − 600 = 1 400 J.",
+            "Sankey view: 2 000 J in; 600 J useful work continues; 1 400 J bends away as waste heat. Of that, 1 000 J is unavoidable by the second law and 400 J is the engine's imperfection."
+          ],
+          "steps_simple": [
+            "Best case: 1 − 300 ÷ 600 = 0.5, so at most half of the 2 000 J can become work: 1 000 J.",
+            "A real engine at 30 % turns only 0.3 × 2 000 = 600 J into work.",
+            "The rest, 2 000 − 600 = 1 400 J, leaves as heat.",
+            "Even a perfect engine here would waste 1 000 J. The extra 400 J is this engine's own losses."
+          ],
+          "answer": "Max work 1 000 J; real engine 600 J work, 1 400 J rejected"
+        }
+      ],
+      "quiz": [
+        { "type": "numeric", "q": "A motor takes in 500 J of electrical energy and does 150 J of useful work. What is its efficiency as a percentage?", "answer": 30, "tolerance": 0.1, "unit": "%", "explain": "150/500 = 0.30 = 30 %." },
+        { "type": "mcq", "q": "The Carnot efficiency of a heat engine depends only on…", "options": ["the type of fuel", "the hot and cold reservoir temperatures", "the size of the engine", "the pressure of the working gas"], "answer": 1, "explain": "η_max = 1 − T_c/T_h involves nothing but the two temperatures." },
+        { "type": "numeric", "q": "Find the Carnot efficiency (as a percentage) of an engine operating between 500 K and 300 K.", "answer": 40, "tolerance": 0.1, "unit": "%", "explain": "1 − 300/500 = 0.40 = 40 %." },
+        { "type": "mcq", "q": "Most of the energy wasted by an electric motor leaves as…", "options": ["light", "heat", "sound", "mass"], "answer": 1, "explain": "Friction in bearings and resistance in the windings turn wasted energy into heat; sound is a tiny fraction." }
+      ],
+      "problems": [
+        {
+          "difficulty": 1,
+          "title": "Efficiency of a hoist",
+          "statement": "An electric hoist lifts a 50 kg load through 10 m in 20 s while consuming 6 000 J of electrical energy. Find the useful work, the efficiency and the useful power output (g = 9.8 m/s²).",
+          "steps": [
+            "Useful work = gain in potential energy = m g h = 50 × 9.8 × 10 = 4 900 J.",
+            "Efficiency = 4 900 / 6 000 = 0.817 = 81.7 %.",
+            "Useful power = 4 900 / 20 = 245 W. (Electrical power in = 6 000/20 = 300 W.)"
+          ],
+          "answer": "4 900 J; 81.7 %; 245 W"
+        },
+        {
+          "difficulty": 2,
+          "title": "Carnot limit of a steam plant",
+          "statement": "A steam power plant has steam at 500 °C and rejects heat to cooling water at 25 °C. What is its maximum possible efficiency? If it actually achieves 38 %, what fraction of the Carnot limit is that?",
+          "steps": [
+            "Convert to kelvin: T_h = 500 + 273 = 773 K; T_c = 25 + 273 = 298 K.",
+            "η_max = 1 − 298/773 = 1 − 0.3855 = 0.614 = 61.4 %.",
+            "Actual/Carnot = 38/61.4 = 0.62, so the plant reaches about 62 % of the theoretical limit.",
+            "Using Celsius values in the formula (1 − 25/500 = 95 %) would be wrong: Carnot needs absolute temperatures."
+          ],
+          "answer": "η_max ≈ 61.4 %; the real plant reaches about 62 % of that limit"
+        },
+        {
+          "difficulty": 3,
+          "title": "Fuel for a power station",
+          "statement": "A coal-fired power station delivers 1 000 MW of electrical power at an overall efficiency of 38 %. Coal releases 30 MJ per kg. Find the thermal input power, the rate of waste heat, and the coal consumption in kg/s and tonnes per hour.",
+          "steps": [
+            "Thermal input: P_in = P_out / η = 1 000 / 0.38 = 2 632 MW.",
+            "Waste heat: P_in − P_out = 2 632 − 1 000 = 1 632 MW, rejected to cooling towers or a river — more than the electricity produced.",
+            "Coal rate: 2 632 MJ/s ÷ 30 MJ/kg = 87.7 kg/s.",
+            "Per hour: 87.7 × 3 600 = 315 800 kg ≈ 316 tonnes of coal every hour.",
+            "Context: this is why efficiency gains of even one percentage point matter at power-station scale — 1 % here saves about 8 t of coal per hour — and why combined-cycle gas plants (~60 %) and heat recovery are pursued so aggressively."
+          ],
+          "answer": "Input ≈ 2 632 MW; waste ≈ 1 632 MW; coal ≈ 87.7 kg/s ≈ 316 t/h"
+        }
+      ],
+      "glossary": [
+        { "term": "efficiency", "def": "Useful energy (or power) output divided by total input, as a fraction or percentage." },
+        { "term": "Sankey diagram", "def": "A flow diagram in which arrow widths are proportional to the energy transferred." },
+        { "term": "heat engine", "def": "A device that converts heat flowing from a hot to a cold reservoir into work." },
+        { "term": "Carnot efficiency", "def": "The maximum efficiency of any heat engine between two temperatures, 1 − T_c/T_h." },
+        { "term": "reservoir", "def": "A body large enough to supply or absorb heat without changing temperature." },
+        { "term": "joule", "def": "The SI unit of energy: the work done by a force of 1 N over 1 m." },
+        { "term": "watt", "def": "The SI unit of power: one joule per second." }
+      ],
+      "constants": [
+        { "name": "Acceleration due to gravity", "symbol": "g", "value": "9.8", "unit": "m/s²" },
+        { "name": "Kilowatt-hour", "symbol": "kWh", "value": "3.6 × 10⁶", "unit": "J" },
+        { "name": "Energy density of coal (typical)", "symbol": "", "value": "≈ 30", "unit": "MJ/kg" }
+      ]
+    }
+  ]
+}

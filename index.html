@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JANUS — STEM that works without the internet</title>
+  <meta name="description" content="JANUS is an offline-first STEM learning environment: downloadable content packs, lessons at two reading levels, simulations, quizzes, problem sets, progress tracking and a local tutor that runs entirely on your device.">
+  <link rel="canonical" href="https://anantamracing.com/hackathon/janus/">
+  <meta name="theme-color" content="#B4502C">
+  <meta property="og:title" content="JANUS — STEM that works without the internet">
+  <meta property="og:description" content="Offline-first STEM learning with downloadable content packs, simulations, quizzes and a local tutor. No connection needed after the first visit.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://anantamracing.com/hackathon/janus/">
+  <link rel="icon" type="image/svg+xml" href="/hackathon/janus/favicon.svg">
+  <link rel="manifest" href="/hackathon/janus/manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link id="janus-fonts" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Nunito:wght@400;700;800&display=swap">
+  <script>
+    // Apply saved presentation settings before first paint; skip web fonts in low-bandwidth mode.
+    try { var s = JSON.parse(localStorage.getItem('janus:v1') || '{}'); var r = document.documentElement;
+      if (s.lowBandwidth) { r.classList.add('lb'); document.getElementById('janus-fonts').media = 'not all'; }
+      if (s.dyslexia) r.classList.add('dyslexia'); if (s.dyslexiaFont) r.classList.add('dyslexia-font');
+      if (s.highContrast) r.classList.add('hc'); if (s.reducedMotion) r.classList.add('rm');
+      if (s.textScale) r.style.fontSize = Math.round(s.textScale * 100) + '%'; } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="/hackathon/janus/janus.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/hackathon/janus/" aria-label="JANUS home">
+        <svg class="wordmark-svg" viewBox="0 0 44 40" width="40" height="36" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6h14a2 2 0 0 1 2 2v26a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/><path d="M22 8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v26a2 2 0 0 1-2 2H24a2 2 0 0 1-2-2"/><path d="M8 13h10M8 18h10M8 23h7" stroke-width="1.2"/><path d="M26 12c3-3 7-3 10 0M26 20c3 3 7 3 10 0" stroke-width="1.2"/></g><circle cx="29" cy="16" r="1" fill="currentColor"/><circle cx="35" cy="16" r="1" fill="currentColor"/></svg>
+        <span>JANUS<small>Offline-first STEM</small></span>
+      </a>
+      <nav class="site-nav" aria-label="Site">
+        <a href="/hackathon/janus/" aria-current="page">Home</a>
+        <a href="/hackathon/janus/app/">Open JANUS</a>
+        <a href="/hackathon/janus/docs/">Docs</a>
+        <a class="back" href="/hackathon/">← Back to Hackathon</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <p class="eyebrow">Offline-first STEM learning</p>
+          <h1>STEM that works without the internet.</h1>
+          <p class="lead">Many students cannot count on fast or continuous internet access. "AI-powered education" is useless without a connection. JANUS is a complete physics, chemistry, mathematics and engineering study environment that you download once and then use anywhere — on a bus, in a village, during a power cut on a shared phone.</p>
+          <div class="actions">
+            <a class="btn primary" href="/hackathon/janus/app/">Open JANUS</a>
+            <a class="btn ghost" href="#how">How it works offline</a>
+            <a class="btn ghost" href="/hackathon/janus/docs/">Read the docs</a>
+          </div>
+          <p class="small muted" style="margin-top:1rem" id="sw-state" aria-live="polite">Checking whether this browser can save JANUS for offline use…</p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 360 300" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M40 40h130a6 6 0 0 1 6 6v200a6 6 0 0 1-6 6H40a6 6 0 0 1-6-6V46a6 6 0 0 1 6-6z"/>
+            <path d="M176 46a6 6 0 0 1 6-6h130a6 6 0 0 1 6 6v200a6 6 0 0 1-6 6H182a6 6 0 0 1-6-6"/>
+            <path d="M52 70h100M52 92h100M52 114h72M52 136h100M52 158h60" stroke-width="1.2" stroke="#C6B48E"/>
+            <text x="52" y="66" font-family="Georgia, serif" font-size="13" fill="#2B2620" stroke="none">v = u + at</text>
+            <text x="52" y="88" font-family="Georgia, serif" font-size="13" fill="#2B2620" stroke="none">s = ut + ½at²</text>
+            <text x="52" y="110" font-family="Georgia, serif" font-size="13" fill="#2B2620" stroke="none">v² = u² + 2as</text>
+            <text x="52" y="154" font-family="Georgia, serif" font-size="12" fill="#B4502C" stroke="none">T = 2π√(r³/GM)</text>
+            <circle cx="247" cy="140" r="30" stroke="#2E4A6B"/>
+            <ellipse cx="247" cy="140" rx="60" ry="38" stroke-dasharray="4 5" stroke="#B4502C"/>
+            <circle cx="304" cy="126" r="5" fill="#B4502C" stroke="none"/>
+            <path d="M304 126L262 137" stroke="#5B6B33"/>
+            <path d="M200 200h94" stroke="#C6B48E" stroke-width="1.2"/><path d="M200 222h60" stroke="#C6B48E" stroke-width="1.2"/>
+            <path d="M120 270q30-20 60 0" stroke="#B4502C"/><path d="M150 262l-12 8 14 4" stroke="#B4502C"/>
+            <path d="M288 30q12-10 24 0M292 38q8-6 16 0" stroke="#5B6B33"/><path d="M286 44l28-20" stroke="#B4502C" stroke-width="2.5"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="problem">
+      <div class="wrap">
+        <p class="eyebrow">The problem</p>
+        <h2>Learning tools that assume a connection fail the students who need them most.</h2>
+        <div class="grid three" style="margin-top:1.5rem">
+          <article class="card">
+            <h3>Connections are bursty, not continuous</h3>
+            <p>A student may have signal for ten minutes at a market, then nothing for a day. A tool that needs a round trip to a server for every question is unusable for most of that day.</p>
+          </article>
+          <article class="card">
+            <h3>Data has a price</h3>
+            <p>Every megabyte re-downloaded is money. JANUS downloads a content pack once, sized to a limit you choose, and never fetches it again — the pack can even travel between phones as a file.</p>
+          </article>
+          <article class="card">
+            <h3>Devices are shared and small</h3>
+            <p>One phone may serve a family. JANUS keeps its whole footprint under a few megabytes, runs on system fonts if web fonts never load, and has a low-bandwidth mode that turns off everything decorative.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="wrap">
+        <p class="eyebrow">How it works offline</p>
+        <h2>Download once. Learn anywhere. Sync when you can.</h2>
+        <div class="grid three" style="margin-top:1.5rem">
+          <article class="card notebook">
+            <span class="step-num" aria-hidden="true">1</span>
+            <h3>Open JANUS once while connected</h3>
+            <p>A service worker saves the whole application — pages, styles, code, the lesson catalogue — into the browser's cache. From then on the app loads from the device, with the network used only as a fallback.</p>
+          </article>
+          <article class="card notebook">
+            <span class="step-num" aria-hidden="true">2</span>
+            <h3>Build a content pack</h3>
+            <p>Choose subjects, difficulty, languages and a storage limit. JANUS measures the real serialised size of every lesson, shows exactly what fits, and installs the pack into IndexedDB. Teachers can export a pack as a file and import it on another device with no internet at all.</p>
+          </article>
+          <article class="card notebook">
+            <span class="step-num" aria-hidden="true">3</span>
+            <h3>Study, then sync later</h3>
+            <p>Lessons, quizzes, problem sets, simulations and the local tutor all read from the device. Progress and results go into a sync queue while offline and are pushed when a connection returns — in this deployment to a local mirror, because no server is attached, and the app says so.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="inside">
+      <div class="wrap">
+        <p class="eyebrow">What is inside</p>
+        <h2>A real knowledge base, not a demo shelf.</h2>
+        <div class="grid" style="margin-top:1.5rem">
+          <article class="card feature"><h3><span id="n-lessons">16</span> lessons across four subjects</h3><p>Physics, chemistry, mathematics and engineering, from Foundation to Advanced. Each lesson has explanations at two reading levels, key formulas, a worked example, a quiz with tolerance-checked numeric answers, a three-problem set with step-by-step solutions, and reference entries.</p></article>
+          <article class="card feature"><h3><span id="n-sims">6</span> interactive simulations</h3><p>Orbits, projectiles, reaction rates, a lever balance, a function grapher and an Ohm's-law circuit — drawn on canvas, controllable from the keyboard, and throttled in low-bandwidth mode.</p></article>
+          <article class="card feature"><h3>A local tutor</h3><p>Ask a question and JANUS searches the lessons on your device with a ranked full-text index, quotes the best passage and links to it. It can switch to the simpler reading level, re-explain a step of a worked solution, pick a harder problem, or start a quiz. It is retrieval, not an AI model, and it tells you when it cannot find something.</p></article>
+          <article class="card feature"><h3>Hindi coverage, honestly stated</h3><p>Every lesson has a Hindi title and summary. <span id="n-hindi">4</span> of <span id="n-lessons-2">16</span> lessons — the first two in Physics and Mathematics — are fully translated at both reading levels. The interface shows this count rather than pretending.</p></article>
+          <article class="card feature"><h3>My notebook</h3><p>Sections read, best quiz scores, problems solved, streaks and per-subject completion, computed from timestamps on the device. Export it as a file, import it on another device.</p></article>
+          <article class="card feature"><h3>Built to be read by everyone</h3><p>Read-aloud with the browser's speech engine, a dyslexia-friendly mode, adjustable reading complexity and text size, high contrast, reduced motion, full keyboard navigation, and a connection state that is announced, not just coloured.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="install">
+      <div class="wrap">
+        <div class="grid two">
+          <div>
+            <p class="eyebrow">Install</p>
+            <h2>Put it on the home screen.</h2>
+            <p>JANUS is a progressive web app. After the first visit, most browsers offer <strong>Install app</strong> (desktop Chrome and Edge: the icon at the right of the address bar; Android Chrome: menu → <em>Add to Home screen</em>; iOS Safari: share → <em>Add to Home Screen</em>). It then opens in its own window, with no browser chrome, and works with the network switched off.</p>
+            <p>Nothing about installation is required: the same offline behaviour works in an ordinary browser tab, as long as the site data is not cleared.</p>
+            <p id="cache-report" class="small muted" aria-live="polite"></p>
+          </div>
+          <div class="card tinted">
+            <h3>What gets stored, and where</h3>
+            <ul>
+              <li><strong>App shell</strong> (pages, styles, code, catalogue) — browser cache, managed by the service worker. Versioned; old versions are removed on update.</li>
+              <li><strong>Content packs</strong> (lessons) — IndexedDB. Listed with size, version and date; removable one by one.</li>
+              <li><strong>Progress, quiz results, tutor history, sync queue</strong> — IndexedDB.</li>
+              <li><strong>Settings</strong> — localStorage under <code>janus:v1</code>.</li>
+              <li><strong>Web fonts</strong> — cached the first time they load; the app is fully usable with system fonts if they never do.</li>
+            </ul>
+            <p class="small muted">No account, no analytics, no third-party requests. The only network calls JANUS ever makes are to its own files.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="wrap">
+        <p class="eyebrow">Plain speaking</p>
+        <h2>What JANUS is not.</h2>
+        <div class="grid three" style="margin-top:1.5rem">
+          <article class="card flat"><h3>Not an AI</h3><p>The tutor is full-text retrieval over the content you downloaded, with a handful of explicit intents. It never generates text of its own and cannot answer outside its packs.</p></article>
+          <article class="card flat"><h3>Not connected to a server</h3><p>There is no backend in this deployment. Sync pushes queued records to a local mirror store so the whole pipeline can be exercised; the interface labels it as such.</p></article>
+          <article class="card flat"><h3>Not a full curriculum</h3><p>Sixteen substantial lessons is a foundation, not a syllabus. The content format is plain JSON so more can be authored and shipped as packs.</p></article>
+        </div>
+        <p style="margin-top:1.5rem"><a class="btn primary" href="/hackathon/janus/app/">Open JANUS</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>An independent project, supported and showcased by <a href="/hackathon/">Anantam Hackathon</a>.</p>
+      <p><a href="/hackathon/">← Back to Hackathon</a> · <a href="/hackathon/janus/docs/">Documentation</a></p>
+    </div>
+  </footer>
+  <script type="module" src="/hackathon/janus/js/landing.js"></script>
+</body>
+</html>

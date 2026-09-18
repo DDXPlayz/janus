@@ -1,0 +1,478 @@
+{
+  "subject": "physics",
+  "name": "Physics",
+  "name_hi": "भौतिकी",
+  "version": "1.0.0",
+  "lessons": [
+    {
+      "id": "phy-motion",
+      "order": 1,
+      "title": "Motion in a straight line",
+      "title_hi": "सरल रेखा में गति",
+      "level": "Foundation",
+      "summary": "Distance, displacement, speed, velocity and acceleration, and the three equations that describe motion with constant acceleration.",
+      "summary_hi": "दूरी, विस्थापन, चाल, वेग और त्वरण, तथा एकसमान त्वरण वाली गति के तीन समीकरण।",
+      "hindi_full": true,
+      "illustration": "motion",
+      "illustration_alt": "A sketch of a car on a straight road with an arrow marking its velocity and a second, longer arrow marking its acceleration.",
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "Distance, displacement, speed and velocity",
+          "heading_hi": "दूरी, विस्थापन, चाल और वेग",
+          "standard": "**Distance** is how much ground an object covers; it is a scalar (a size only). **Displacement** is the straight-line change in position from start to finish, including direction; it is a vector. If you walk 3 m east and then 3 m west, your distance is 6 m but your displacement is 0 m.\n\n**Speed** is distance per unit time, and **velocity** is displacement per unit time. Average velocity is `v_avg = Δx / Δt`, where Δx is the displacement and Δt the time taken. Velocity can be negative: a negative sign simply means motion in the direction you chose to call negative.\n\nOn a displacement–time graph the **gradient (slope)** at any point equals the velocity. A straight line means constant velocity; a curve means the velocity is changing.",
+          "simple": "Distance is the total length you travelled. Displacement is how far you ended up from where you started, and in which direction.\n\nWalk 3 m forward and 3 m back: you travelled 6 m, but you are back at the start, so your displacement is 0.\n\nSpeed says how fast. Velocity says how fast **and which way**. A minus sign just means \"the other way\".\n\nOn a graph of position against time, a steeper line means faster.",
+          "standard_hi": "**दूरी** वह कुल लंबाई है जो कोई वस्तु तय करती है; यह एक अदिश राशि है (केवल परिमाण)। **विस्थापन** प्रारंभ से अंत तक स्थिति में सीधी-रेखा परिवर्तन है, जिसमें दिशा भी शामिल है; यह सदिश राशि है। यदि आप 3 m पूर्व और फिर 3 m पश्चिम चलें, तो दूरी 6 m है पर विस्थापन 0 m है।\n\n**चाल** प्रति इकाई समय में तय की गई दूरी है, और **वेग** प्रति इकाई समय में विस्थापन है। औसत वेग `v_avg = Δx / Δt` है, जहाँ Δx विस्थापन और Δt लगा समय है। वेग ऋणात्मक भी हो सकता है: ऋण चिह्न का अर्थ बस यह है कि गति उस दिशा में है जिसे आपने ऋणात्मक माना है।\n\nविस्थापन–समय ग्राफ पर किसी भी बिंदु की **ढाल (प्रवणता)** वेग के बराबर होती है। सीधी रेखा का अर्थ है नियत वेग; वक्र का अर्थ है वेग बदल रहा है।",
+          "simple_hi": "दूरी वह कुल लंबाई है जो आपने तय की। विस्थापन बताता है कि आप शुरुआत से कितनी दूर और किस दिशा में पहुँचे।\n\n3 m आगे और 3 m पीछे चलें: आपने 6 m चला, पर आप शुरुआत पर ही हैं, इसलिए विस्थापन 0 है।\n\nचाल बताती है कितनी तेज़। वेग बताता है कितनी तेज़ **और किस ओर**। ऋण चिह्न का मतलब बस \"दूसरी ओर\" है।\n\nस्थिति–समय ग्राफ पर रेखा जितनी खड़ी, गति उतनी तेज़।"
+        },
+        {
+          "id": "s2",
+          "heading": "Acceleration",
+          "heading_hi": "त्वरण",
+          "standard": "**Acceleration** is the rate of change of velocity: `a = Δv / Δt`, measured in metres per second squared (m/s²). An acceleration of 2 m/s² means the velocity increases by 2 m/s every second.\n\nAcceleration is a vector. If velocity and acceleration point the same way, the object speeds up; if they point opposite ways, it slows down (this is often called deceleration, but it is still just acceleration with a negative sign).\n\nOn a velocity–time graph the gradient is the acceleration, and the **area under the line** is the displacement. A horizontal line means constant velocity and zero acceleration.\n\nNear the Earth's surface every freely falling object accelerates downward at about `g = 9.8 m/s²` (ignoring air resistance), regardless of its mass.",
+          "simple": "Acceleration tells you how quickly the velocity is changing. 2 m/s² means \"2 m/s faster every second\".\n\nIf the push is in the same direction as the motion, the object speeds up. If the push is against the motion, it slows down.\n\nOn a velocity–time graph, a sloping line means the object is accelerating. The area under the line tells you how far it went.\n\nAnything you drop speeds up by about 9.8 m/s every second. Heavy and light objects fall at the same rate if we ignore air.",
+          "standard_hi": "**त्वरण** वेग के परिवर्तन की दर है: `a = Δv / Δt`, इसकी इकाई मीटर प्रति सेकंड वर्ग (m/s²) है। 2 m/s² के त्वरण का अर्थ है कि वेग हर सेकंड 2 m/s बढ़ता है।\n\nत्वरण एक सदिश है। यदि वेग और त्वरण एक ही दिशा में हों तो वस्तु तेज़ होती है; विपरीत दिशा में हों तो धीमी होती है (इसे प्रायः मंदन कहते हैं, पर यह ऋण चिह्न वाला त्वरण ही है)।\n\nवेग–समय ग्राफ पर ढाल त्वरण है, और रेखा के नीचे का **क्षेत्रफल** विस्थापन है। क्षैतिज रेखा का अर्थ है नियत वेग और शून्य त्वरण।\n\nपृथ्वी की सतह के पास हर स्वतंत्र रूप से गिरती वस्तु लगभग `g = 9.8 m/s²` से नीचे की ओर त्वरित होती है (वायु प्रतिरोध को नज़रअंदाज़ करते हुए), चाहे उसका द्रव्यमान कुछ भी हो।",
+          "simple_hi": "त्वरण बताता है कि वेग कितनी जल्दी बदल रहा है। 2 m/s² का मतलब है \"हर सेकंड 2 m/s और तेज़\"।\n\nअगर धक्का गति की दिशा में है तो वस्तु तेज़ होती है। अगर धक्का गति के विरुद्ध है तो धीमी होती है।\n\nवेग–समय ग्राफ पर तिरछी रेखा का मतलब है वस्तु त्वरित हो रही है। रेखा के नीचे का क्षेत्रफल बताता है वह कितनी दूर गई।\n\nजो भी चीज़ आप गिराते हैं वह हर सेकंड लगभग 9.8 m/s तेज़ होती जाती है। हवा को नज़रअंदाज़ करें तो भारी और हल्की चीज़ें समान दर से गिरती हैं।"
+        },
+        {
+          "id": "s3",
+          "heading": "The equations of uniformly accelerated motion",
+          "heading_hi": "एकसमान त्वरित गति के समीकरण",
+          "standard": "When acceleration is constant, five quantities are linked: initial velocity u, final velocity v, acceleration a, time t and displacement s. Three equations connect them:\n\n- `v = u + at`\n- `s = ut + ½at²`\n- `v² = u² + 2as`\n\nEach equation leaves out one quantity, so choose the one that does not contain the thing you neither know nor need. Write down what you know first, keep the signs consistent (pick a positive direction and stick to it), and use SI units throughout.\n\nThese equations come directly from the definition of acceleration and from the area under a velocity–time graph. They only hold while the acceleration stays constant — for a car that brakes harder and harder, you would need calculus instead.",
+          "simple": "If the acceleration does not change, three formulas connect start speed (u), end speed (v), acceleration (a), time (t) and distance (s):\n\n- `v = u + at`\n- `s = ut + ½at²`\n- `v² = u² + 2as`\n\nWrite down what you know. Then pick the formula that has your unknown in it and does not need anything you don't have.\n\nAlways choose one direction as positive and keep it the same for the whole problem.",
+          "standard_hi": "जब त्वरण नियत हो, तो पाँच राशियाँ आपस में जुड़ी होती हैं: प्रारंभिक वेग u, अंतिम वेग v, त्वरण a, समय t और विस्थापन s। तीन समीकरण इन्हें जोड़ते हैं:\n\n- `v = u + at`\n- `s = ut + ½at²`\n- `v² = u² + 2as`\n\nहर समीकरण में एक राशि नहीं होती, इसलिए वह समीकरण चुनें जिसमें वह राशि न हो जिसे आप न जानते हैं और न चाहिए। पहले ज्ञात राशियाँ लिखें, चिह्नों में एकरूपता रखें (एक धनात्मक दिशा चुनें और उसी पर टिके रहें), और पूरे प्रश्न में SI इकाइयाँ प्रयोग करें।\n\nये समीकरण सीधे त्वरण की परिभाषा और वेग–समय ग्राफ के नीचे के क्षेत्रफल से आते हैं। ये तभी सही हैं जब त्वरण नियत रहे — ऐसी कार के लिए जो लगातार ज़्यादा ज़ोर से ब्रेक लगाए, कलन (कैलकुलस) की ज़रूरत होगी।",
+          "simple_hi": "अगर त्वरण नहीं बदलता, तो तीन सूत्र शुरुआती चाल (u), अंतिम चाल (v), त्वरण (a), समय (t) और दूरी (s) को जोड़ते हैं:\n\n- `v = u + at`\n- `s = ut + ½at²`\n- `v² = u² + 2as`\n\nजो पता है वह लिख लें। फिर वह सूत्र चुनें जिसमें आपका अज्ञात हो और जिसमें ऐसी कोई चीज़ न चाहिए जो आपके पास नहीं है।\n\nहमेशा एक दिशा को धनात्मक चुनें और पूरे प्रश्न में वही रखें।"
+        }
+      ],
+      "formulas": [
+        { "name": "Average velocity", "expr": "v_avg = Δx / Δt", "note": "Displacement divided by time taken." },
+        { "name": "Acceleration", "expr": "a = (v − u) / t", "note": "Change in velocity per second." },
+        { "name": "First equation of motion", "expr": "v = u + at", "note": "No displacement term." },
+        { "name": "Second equation of motion", "expr": "s = ut + ½at²", "note": "No final-velocity term." },
+        { "name": "Third equation of motion", "expr": "v² = u² + 2as", "note": "No time term." }
+      ],
+      "examples": [
+        {
+          "title": "A car accelerating from rest",
+          "problem": "A car starts from rest and accelerates uniformly at 2 m/s² for 5 s. Find its final velocity and the distance travelled.",
+          "steps": [
+            "List the knowns: u = 0 m/s, a = 2 m/s², t = 5 s. Unknowns: v and s.",
+            "Final velocity uses v = u + at: v = 0 + 2 × 5 = 10 m/s.",
+            "Distance uses s = ut + ½at²: s = 0 × 5 + ½ × 2 × 5² = 25 m.",
+            "Check with the third equation: v² = u² + 2as → 100 = 0 + 2 × 2 × 25 = 100. Consistent."
+          ],
+          "steps_simple": [
+            "Write down what we know. Start speed is 0. It speeds up by 2 m/s every second. It does this for 5 seconds.",
+            "After 5 seconds it has gained 2 × 5 = 10 m/s. So the final speed is 10 m/s.",
+            "For the distance use s = ut + ½at². The first part is 0. The second part is half of 2, times 5 squared: ½ × 2 × 25 = 25 m.",
+            "Quick check: the average speed was (0 + 10)/2 = 5 m/s, and 5 m/s for 5 s is 25 m. It matches."
+          ],
+          "answer": "v = 10 m/s, s = 25 m"
+        }
+      ],
+      "quiz": [
+        { "type": "mcq", "q": "Which of these quantities is a vector?", "options": ["Speed", "Distance", "Velocity", "Time"], "answer": 2, "explain": "Velocity has both magnitude and direction. Speed, distance and time are scalars." },
+        { "type": "numeric", "q": "A cyclist speeds up from 4 m/s to 10 m/s in 3 s. What is the acceleration in m/s²?", "answer": 2, "tolerance": 0.1, "unit": "m/s²", "explain": "a = (v − u)/t = (10 − 4)/3 = 2 m/s²." },
+        { "type": "mcq", "q": "The gradient of a displacement–time graph gives the…", "options": ["acceleration", "velocity", "distance", "force"], "answer": 1, "explain": "Gradient = change in displacement ÷ change in time = velocity." },
+        { "type": "numeric", "q": "A stone is dropped from rest. Taking g = 9.8 m/s², how fast is it moving after 2 s (in m/s)?", "answer": 19.6, "tolerance": 0.2, "unit": "m/s", "explain": "v = u + at = 0 + 9.8 × 2 = 19.6 m/s." }
+      ],
+      "problems": [
+        {
+          "difficulty": 1,
+          "title": "Braking train",
+          "statement": "A train moving at 20 m/s brakes uniformly and stops in 40 m. Find its deceleration.",
+          "steps": [
+            "Knowns: u = 20 m/s, v = 0 m/s, s = 40 m. Time is not given and not needed, so use v² = u² + 2as.",
+            "Substitute: 0 = 20² + 2 × a × 40 → 0 = 400 + 80a.",
+            "Solve: a = −400 / 80 = −5 m/s². The negative sign shows the train is slowing down."
+          ],
+          "answer": "Deceleration of 5 m/s² (a = −5 m/s²)"
+        },
+        {
+          "difficulty": 2,
+          "title": "Ball thrown upward",
+          "statement": "A ball is thrown straight up at 15 m/s. Taking g = 9.8 m/s², find the maximum height reached and the time taken to reach it.",
+          "steps": [
+            "Choose upward as positive. Then u = +15 m/s, a = −9.8 m/s². At the top the ball momentarily stops, so v = 0.",
+            "Time to the top from v = u + at: 0 = 15 − 9.8t → t = 15 / 9.8 = 1.53 s.",
+            "Height from v² = u² + 2as: 0 = 225 − 2 × 9.8 × s → s = 225 / 19.6 = 11.5 m.",
+            "Check with s = ut + ½at²: 15 × 1.53 − 4.9 × 1.53² = 22.96 − 11.47 = 11.5 m. Consistent."
+          ],
+          "answer": "Maximum height ≈ 11.5 m, reached after ≈ 1.53 s"
+        },
+        {
+          "difficulty": 3,
+          "title": "Two stones meeting",
+          "statement": "A stone A is dropped from rest from a 45 m tower. At the same instant, stone B is thrown vertically upward from the ground at 25 m/s. Taking g = 10 m/s², when and at what height do they meet?",
+          "steps": [
+            "Set up a common coordinate: height y measured upward from the ground, time t from release.",
+            "Stone A (dropped from 45 m): y_A = 45 − ½ × 10 × t² = 45 − 5t².",
+            "Stone B (thrown up at 25 m/s): y_B = 25t − ½ × 10 × t² = 25t − 5t².",
+            "They meet when y_A = y_B: 45 − 5t² = 25t − 5t². The t² terms cancel, leaving 45 = 25t, so t = 1.8 s.",
+            "Height at t = 1.8 s: y = 45 − 5 × 1.8² = 45 − 16.2 = 28.8 m. (Check with B: 25 × 1.8 − 16.2 = 28.8 m.)",
+            "Interpretation: the gravity terms cancel because both stones fall by the same amount in the same time; only the 25 m/s relative velocity matters, and 45 m ÷ 25 m/s = 1.8 s."
+          ],
+          "answer": "They meet after 1.8 s at a height of 28.8 m"
+        }
+      ],
+      "glossary": [
+        { "term": "displacement", "def": "The straight-line change in position from start to finish, with direction. A vector, measured in metres.", "def_hi": "प्रारंभ से अंत तक स्थिति में सीधी-रेखा परिवर्तन, दिशा सहित। एक सदिश राशि, मीटर में।" },
+        { "term": "velocity", "def": "Rate of change of displacement; speed with a direction. Measured in m/s.", "def_hi": "विस्थापन के परिवर्तन की दर; दिशा सहित चाल। इकाई m/s।" },
+        { "term": "acceleration", "def": "Rate of change of velocity, in m/s². It can be negative (slowing down) or point sideways (changing direction).", "def_hi": "वेग के परिवर्तन की दर, m/s² में। यह ऋणात्मक (धीमा होना) या बग़ल में (दिशा बदलना) हो सकता है।" },
+        { "term": "scalar", "def": "A quantity with size only, such as distance, speed, mass or time.", "def_hi": "केवल परिमाण वाली राशि, जैसे दूरी, चाल, द्रव्यमान या समय।" },
+        { "term": "vector", "def": "A quantity with size and direction, such as displacement, velocity, acceleration or force.", "def_hi": "परिमाण और दिशा वाली राशि, जैसे विस्थापन, वेग, त्वरण या बल।" }
+      ],
+      "constants": [
+        { "name": "Acceleration due to gravity (Earth's surface)", "symbol": "g", "value": "9.8", "unit": "m/s²" }
+      ]
+    },
+    {
+      "id": "phy-newton",
+      "order": 2,
+      "title": "Newton's laws of motion",
+      "title_hi": "न्यूटन के गति के नियम",
+      "level": "Foundation",
+      "summary": "Inertia, F = ma, and action–reaction pairs: how forces cause changes in motion, with weight, normal force and friction.",
+      "summary_hi": "जड़त्व, F = ma और क्रिया–प्रतिक्रिया युग्म: बल गति में परिवर्तन कैसे लाते हैं, भार, अभिलंब बल और घर्षण सहित।",
+      "hindi_full": true,
+      "illustration": "forces",
+      "illustration_alt": "A crate on a floor with arrows for the pulling force, friction, weight and the upward normal force.",
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "First law: inertia",
+          "heading_hi": "पहला नियम: जड़त्व",
+          "standard": "Newton's first law says that an object keeps its velocity — stays at rest, or keeps moving in a straight line at constant speed — unless a **net (resultant) force** acts on it. The tendency of matter to resist changes in its motion is called **inertia**, and mass is the measure of inertia.\n\nThe key word is *net*. A book on a table has two forces on it (weight down, normal force up) but they cancel, so the net force is zero and the book stays put. A car cruising at a steady 60 km/h has the engine's forward force exactly balanced by friction and air resistance.\n\nA passenger without a seatbelt keeps moving forward when the car brakes: the car is decelerated by its brakes, but nothing yet decelerates the passenger. That is inertia, not a force \"throwing\" them forward.",
+          "simple": "Things keep doing what they are already doing unless a force makes them change. Still things stay still; moving things keep moving in a straight line.\n\nThis property is called inertia. Heavier things have more inertia — they are harder to get moving and harder to stop.\n\nForces can cancel out. A book on a table is pulled down by gravity and pushed up by the table equally, so nothing changes.\n\nWhen a car stops suddenly, you keep moving forward. That is why seatbelts matter.",
+          "standard_hi": "न्यूटन का पहला नियम कहता है कि कोई वस्तु अपना वेग बनाए रखती है — विराम में रहती है, या सीधी रेखा में नियत चाल से चलती रहती है — जब तक उस पर कोई **नेट (परिणामी) बल** न लगे। पदार्थ की अपनी गति में परिवर्तन का विरोध करने की प्रवृत्ति **जड़त्व** कहलाती है, और द्रव्यमान जड़त्व की माप है।\n\nमुख्य शब्द *नेट* है। मेज़ पर रखी पुस्तक पर दो बल हैं (भार नीचे, अभिलंब बल ऊपर) पर वे एक-दूसरे को निरस्त करते हैं, इसलिए नेट बल शून्य है और पुस्तक वहीं रहती है। 60 km/h की स्थिर चाल से चलती कार में इंजन का अग्र बल घर्षण और वायु प्रतिरोध से ठीक संतुलित होता है।\n\nबिना सीटबेल्ट वाला यात्री कार के ब्रेक लगाने पर आगे बढ़ता रहता है: कार को ब्रेक धीमा करते हैं, पर यात्री को अभी कुछ भी धीमा नहीं कर रहा। यह जड़त्व है, कोई बल उन्हें आगे \"फेंक\" नहीं रहा।",
+          "simple_hi": "चीज़ें वही करती रहती हैं जो वे पहले से कर रही हैं, जब तक कोई बल उन्हें बदलने पर मजबूर न करे। रुकी चीज़ें रुकी रहती हैं; चलती चीज़ें सीधी रेखा में चलती रहती हैं।\n\nइस गुण को जड़त्व कहते हैं। भारी चीज़ों में ज़्यादा जड़त्व होता है — उन्हें चलाना और रोकना दोनों कठिन है।\n\nबल एक-दूसरे को काट सकते हैं। मेज़ पर रखी किताब को गुरुत्व नीचे खींचता है और मेज़ उतना ही ऊपर धकेलती है, इसलिए कुछ नहीं बदलता।\n\nजब कार अचानक रुकती है, आप आगे बढ़ते रहते हैं। इसीलिए सीटबेल्ट ज़रूरी है।"
+        },
+        {
+          "id": "s2",
+          "heading": "Second law: F = ma",
+          "heading_hi": "दूसरा नियम: F = ma",
+          "standard": "Newton's second law gives the size of the effect: the net force on an object equals its mass times its acceleration, `F_net = m a`. Force is in newtons (N), mass in kilograms, acceleration in m/s². One newton is the force that gives 1 kg an acceleration of 1 m/s².\n\nBecause force and acceleration are vectors, the acceleration is always in the direction of the *net* force. To use the law: draw a free-body diagram, add up the forces along each direction (taking signs into account), and set the total equal to ma.\n\nSome common forces: **weight** `W = mg` acts downward; the **normal force** N is the push from a surface, perpendicular to it; **friction** `f ≤ μN` opposes sliding, where μ is the coefficient of friction; tension acts along a rope.",
+          "simple": "A bigger force gives a bigger acceleration. A bigger mass gives a smaller acceleration. Written as a formula: `F = m × a`.\n\nF is the total (net) force in newtons, m is the mass in kilograms, a is the acceleration in m/s².\n\nThe object accelerates in the direction of the total force.\n\nWeight is the force of gravity: `W = m × g`. Friction pushes against sliding. The normal force is the surface pushing back up.",
+          "standard_hi": "न्यूटन का दूसरा नियम प्रभाव का परिमाण बताता है: किसी वस्तु पर नेट बल उसके द्रव्यमान और त्वरण के गुणनफल के बराबर है, `F_net = m a`। बल न्यूटन (N) में, द्रव्यमान किलोग्राम में, त्वरण m/s² में। एक न्यूटन वह बल है जो 1 kg को 1 m/s² का त्वरण देता है।\n\nचूँकि बल और त्वरण सदिश हैं, त्वरण सदैव *नेट* बल की दिशा में होता है। नियम का प्रयोग करने के लिए: मुक्त-पिंड आरेख बनाएँ, हर दिशा में बलों को (चिह्न सहित) जोड़ें, और योग को ma के बराबर रखें।\n\nकुछ सामान्य बल: **भार** `W = mg` नीचे की ओर लगता है; **अभिलंब बल** N सतह का धक्का है, सतह के लंबवत; **घर्षण** `f ≤ μN` फिसलन का विरोध करता है, जहाँ μ घर्षण गुणांक है; तनाव रस्सी के अनुदिश लगता है।",
+          "simple_hi": "बड़ा बल बड़ा त्वरण देता है। बड़ा द्रव्यमान छोटा त्वरण देता है। सूत्र के रूप में: `F = m × a`।\n\nF कुल (नेट) बल न्यूटन में, m द्रव्यमान किलोग्राम में, a त्वरण m/s² में।\n\nवस्तु कुल बल की दिशा में त्वरित होती है।\n\nभार गुरुत्व का बल है: `W = m × g`। घर्षण फिसलन के विरुद्ध धकेलता है। अभिलंब बल सतह का ऊपर की ओर धक्का है।"
+        },
+        {
+          "id": "s3",
+          "heading": "Third law: action and reaction",
+          "heading_hi": "तीसरा नियम: क्रिया और प्रतिक्रिया",
+          "standard": "Whenever object A exerts a force on object B, object B exerts a force of equal size and opposite direction on A. Forces always come in these **action–reaction pairs**, and the two forces of a pair act on *different* objects — which is why they never cancel each other out.\n\nWhen you push on a wall, the wall pushes back on you with the same force. When a rocket pushes exhaust gas downward, the gas pushes the rocket upward. When the Earth pulls you down with your weight, you pull the Earth up with exactly the same force; the Earth's acceleration is tiny only because its mass is enormous.\n\nA common mistake is to pair weight with the normal force. They are equal for a book resting on a table, but they both act on the book, so they are *not* an action–reaction pair. The reaction to the book's weight is the book pulling on the Earth.",
+          "simple": "Forces always come in pairs. If you push something, it pushes you back just as hard, in the opposite direction.\n\nThe two forces in a pair act on two different objects. That is why they do not cancel out.\n\nExamples: you push a wall, the wall pushes you. A rocket pushes gas down, the gas pushes the rocket up. You jump off a boat, and the boat moves the other way.",
+          "standard_hi": "जब भी वस्तु A वस्तु B पर बल लगाती है, वस्तु B, A पर समान परिमाण और विपरीत दिशा का बल लगाती है। बल सदैव ऐसे **क्रिया–प्रतिक्रिया युग्मों** में आते हैं, और युग्म के दोनों बल *अलग-अलग* वस्तुओं पर लगते हैं — इसीलिए वे कभी एक-दूसरे को निरस्त नहीं करते।\n\nजब आप दीवार को धकेलते हैं, दीवार आपको उतने ही बल से वापस धकेलती है। जब रॉकेट निकास गैस को नीचे धकेलता है, गैस रॉकेट को ऊपर धकेलती है। जब पृथ्वी आपको आपके भार से नीचे खींचती है, आप पृथ्वी को ठीक उतने ही बल से ऊपर खींचते हैं; पृथ्वी का त्वरण नगण्य इसलिए है क्योंकि उसका द्रव्यमान विशाल है।\n\nएक आम ग़लती भार और अभिलंब बल को युग्म मान लेना है। मेज़ पर रखी पुस्तक के लिए वे बराबर हैं, पर दोनों पुस्तक पर ही लगते हैं, इसलिए वे क्रिया–प्रतिक्रिया युग्म *नहीं* हैं। पुस्तक के भार की प्रतिक्रिया पुस्तक द्वारा पृथ्वी को खींचना है।",
+          "simple_hi": "बल हमेशा जोड़ी में आते हैं। अगर आप किसी चीज़ को धकेलते हैं, वह आपको उतनी ही ज़ोर से विपरीत दिशा में धकेलती है।\n\nजोड़ी के दोनों बल दो अलग-अलग वस्तुओं पर लगते हैं। इसीलिए वे एक-दूसरे को नहीं काटते।\n\nउदाहरण: आप दीवार को धकेलते हैं, दीवार आपको धकेलती है। रॉकेट गैस को नीचे धकेलता है, गैस रॉकेट को ऊपर। आप नाव से कूदते हैं, और नाव दूसरी ओर चलती है।"
+        }
+      ],
+      "formulas": [
+        { "name": "Newton's second law", "expr": "F_net = m a", "note": "Net force in newtons; acceleration in the direction of the net force." },
+        { "name": "Weight", "expr": "W = m g", "note": "g ≈ 9.8 m/s² near Earth's surface." },
+        { "name": "Friction (sliding)", "expr": "f = μ N", "note": "μ is the coefficient of friction; N is the normal force." },
+        { "name": "Momentum", "expr": "p = m v", "note": "Newton's second law can also be written F = Δp / Δt." }
+      ],
+      "examples": [
+        {
+          "title": "Pulling a box with friction",
+          "problem": "A 10 kg box is pulled along a floor with a horizontal force of 50 N. Friction opposes the motion with 20 N. Find the acceleration.",
+          "steps": [
+            "Draw the horizontal forces: 50 N forward, 20 N backward (friction). Vertical forces (weight and normal force) cancel.",
+            "Net horizontal force: F_net = 50 − 20 = 30 N forward.",
+            "Apply F = ma: 30 = 10 × a → a = 3 m/s² in the direction of the pull."
+          ],
+          "steps_simple": [
+            "Two forces matter here: the pull (50 N forward) and friction (20 N backward).",
+            "Take the smaller away from the bigger: 50 − 20 = 30 N. That is the total force, and it points forward.",
+            "Now use F = m × a. 30 = 10 × a, so a = 3 m/s²."
+          ],
+          "answer": "a = 3 m/s²"
+        }
+      ],
+      "quiz": [
+        { "type": "mcq", "q": "Which law explains why you lurch forward when a bus brakes suddenly?", "options": ["First law (inertia)", "Second law (F = ma)", "Third law (action–reaction)", "Law of gravitation"], "answer": 0, "explain": "Your body keeps its forward velocity until a force (the seatbelt or the seat in front) changes it — that is inertia." },
+        { "type": "numeric", "q": "A net force of 20 N acts on a 5 kg mass. What is its acceleration in m/s²?", "answer": 4, "tolerance": 0.05, "unit": "m/s²", "explain": "a = F/m = 20/5 = 4 m/s²." },
+        { "type": "mcq", "q": "The two forces of an action–reaction pair act on…", "options": ["the same object", "different objects", "only stationary objects", "only objects in contact"], "answer": 1, "explain": "Each force of the pair acts on the other object, which is why the pair never cancels." },
+        { "type": "numeric", "q": "What is the weight (in newtons) of a 60 kg person on Earth? Take g = 9.8 m/s².", "answer": 588, "tolerance": 2, "unit": "N", "explain": "W = mg = 60 × 9.8 = 588 N." }
+      ],
+      "problems": [
+        {
+          "difficulty": 1,
+          "title": "Force for a given acceleration",
+          "statement": "What net force is needed to give a 2 kg trolley an acceleration of 3 m/s²?",
+          "steps": [
+            "Use Newton's second law F = ma.",
+            "F = 2 × 3 = 6 N."
+          ],
+          "answer": "6 N"
+        },
+        {
+          "difficulty": 2,
+          "title": "Person in an accelerating lift",
+          "statement": "A 70 kg person stands on a scale in a lift that accelerates upward at 2 m/s². What does the scale read (the normal force), taking g = 9.8 m/s²?",
+          "steps": [
+            "Forces on the person: normal force N upward (this is what the scale reads), weight mg = 70 × 9.8 = 686 N downward.",
+            "Take upward as positive. Net force = N − 686.",
+            "Apply F = ma with a = +2: N − 686 = 70 × 2 = 140.",
+            "So N = 686 + 140 = 826 N. The person feels heavier than usual, as expected when accelerating upward."
+          ],
+          "answer": "N = 826 N (compared with 686 N at rest)"
+        },
+        {
+          "difficulty": 3,
+          "title": "Atwood machine",
+          "statement": "Two masses, 3 kg and 5 kg, hang from a light string over a frictionless pulley. Find the acceleration of the system and the tension in the string (g = 9.8 m/s²).",
+          "steps": [
+            "The heavier 5 kg mass will move down and the 3 kg mass up, both with the same acceleration a (the string does not stretch). Tension T is the same on both sides for a light string and frictionless pulley.",
+            "For the 5 kg mass (taking down as positive for it): 5g − T = 5a.",
+            "For the 3 kg mass (taking up as positive for it): T − 3g = 3a.",
+            "Add the two equations to eliminate T: 5g − 3g = 8a → a = 2g/8 = 2 × 9.8/8 = 2.45 m/s².",
+            "Substitute back to find T: T = 3g + 3a = 3 × 9.8 + 3 × 2.45 = 29.4 + 7.35 = 36.75 N.",
+            "Check with the other equation: 5 × 9.8 − 36.75 = 49 − 36.75 = 12.25 = 5 × 2.45. Consistent. Note T lies between the two weights (29.4 N and 49 N), as it must."
+          ],
+          "answer": "a = 2.45 m/s², T ≈ 36.8 N"
+        }
+      ],
+      "glossary": [
+        { "term": "inertia", "def": "The tendency of an object to resist any change in its motion. Mass measures inertia.", "def_hi": "किसी वस्तु की अपनी गति में किसी भी परिवर्तन का विरोध करने की प्रवृत्ति। द्रव्यमान जड़त्व की माप है।" },
+        { "term": "net force", "def": "The single force that has the same effect as all the forces on an object combined; also called the resultant force.", "def_hi": "वह एकल बल जिसका प्रभाव वस्तु पर लगे सभी बलों के संयुक्त प्रभाव के बराबर हो; इसे परिणामी बल भी कहते हैं।" },
+        { "term": "newton", "def": "The SI unit of force. 1 N gives a 1 kg mass an acceleration of 1 m/s².", "def_hi": "बल की SI इकाई। 1 N, 1 kg द्रव्यमान को 1 m/s² का त्वरण देता है।" },
+        { "term": "normal force", "def": "The push from a surface on an object resting on it, acting perpendicular (normal) to the surface.", "def_hi": "किसी सतह द्वारा उस पर रखी वस्तु पर लगाया गया धक्का, जो सतह के लंबवत होता है।" },
+        { "term": "momentum", "def": "Mass times velocity (p = mv), in kg·m/s. The net force equals the rate of change of momentum.", "def_hi": "द्रव्यमान गुणा वेग (p = mv), kg·m/s में। नेट बल संवेग के परिवर्तन की दर के बराबर है।" }
+      ],
+      "constants": [
+        { "name": "Acceleration due to gravity (Earth's surface)", "symbol": "g", "value": "9.8", "unit": "m/s²" }
+      ]
+    },
+    {
+      "id": "phy-projectile",
+      "order": 3,
+      "title": "Projectile motion",
+      "title_hi": "प्रक्षेप्य गति",
+      "level": "Standard",
+      "summary": "Why a thrown ball follows a parabola: independent horizontal and vertical motion, time of flight, range and maximum height. Includes a simulation.",
+      "summary_hi": "फेंकी गई गेंद परवलय पथ पर क्यों चलती है: स्वतंत्र क्षैतिज और ऊर्ध्वाधर गति, उड़ान काल, परास और अधिकतम ऊँचाई। सिमुलेशन सहित।",
+      "hindi_full": false,
+      "illustration": "projectile",
+      "illustration_alt": "A dotted parabolic arc from a launcher on the ground to a landing point, with the launch angle marked.",
+      "sim": "projectile",
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "Two motions at once",
+          "standard": "A projectile is any object moving through the air under gravity alone (we ignore air resistance). The trick that makes projectiles easy is to treat the horizontal and vertical motions **separately**: they do not affect each other.\n\nHorizontally there is no force, so the horizontal velocity `v_x = u cos θ` stays constant and `x = u cos θ · t`.\n\nVertically gravity acts, so the vertical motion is uniformly accelerated with a = −g: `v_y = u sin θ − g t` and `y = u sin θ · t − ½ g t²`.\n\nA ball dropped from your hand and a ball thrown horizontally from the same height at the same instant hit the ground at the same time — the sideways motion does not change how fast it falls.",
+          "simple": "A thrown ball moves sideways and up-and-down at the same time. The big idea: think about the two directions separately.\n\nSideways: nothing pushes or pulls, so the sideways speed never changes.\n\nUp-and-down: gravity pulls down, so the ball slows on the way up, stops for an instant at the top, and speeds up on the way down.\n\nDrop one ball and throw another sideways at the same moment: they land at the same time."
+        },
+        {
+          "id": "s2",
+          "heading": "Time of flight, range and maximum height",
+          "standard": "For a projectile launched from ground level at speed u and angle θ, three results follow from the equations above.\n\n**Time of flight**: the ball lands when y = 0 again, giving `T = 2 u sin θ / g`.\n\n**Range** (horizontal distance): `R = u cos θ × T = u² sin 2θ / g`. The range is largest when sin 2θ = 1, i.e. θ = 45°. Angles that add to 90° (such as 30° and 60°) give the same range but different flight times.\n\n**Maximum height**: at the top v_y = 0, so `H = u² sin² θ / (2g)`.\n\nThe path is a parabola because x grows linearly with t while y has a t² term.",
+          "simple": "Launch at speed u and angle θ from the ground:\n\n- Time in the air: `T = 2 u sin θ / g`\n- How far it goes: `R = u² sin 2θ / g`\n- How high it goes: `H = u² sin² θ / (2g)`\n\nThe farthest throw is at 45°. A 30° throw and a 60° throw land in the same place, but the 60° one stays in the air longer.\n\nThe path is a curve called a parabola."
+        },
+        {
+          "id": "s3",
+          "heading": "When the model breaks down",
+          "standard": "The formulas assume no air resistance and a flat landing surface at the launch height. Real projectiles — a football, a cricket ball, an arrow — experience drag proportional to roughly the square of their speed, which shortens the range and makes the descent steeper than the ascent. For a well-struck cricket ball, drag can reduce the range by 30–40 %.\n\nDrag also shifts the optimum angle below 45°, typically to around 35–40° for a ball. The simulation in this lesson uses the ideal model, so treat it as the shape of the physics, not a match for every real throw.\n\nIf the projectile lands below or above its launch height (a ball thrown from a cliff), you must solve `y = y_0 + u sin θ · t − ½ g t²` for the landing time instead of using T = 2u sin θ / g.",
+          "simple": "These formulas ignore air. Real balls are slowed by the air, so they do not go quite as far, and the best angle is a little less than 45°.\n\nThe simulation here ignores air too. It shows the shape of the motion, not an exact real throw.\n\nIf the ball lands lower or higher than where it started (like off a cliff), you need to solve for the landing time separately."
+        }
+      ],
+      "formulas": [
+        { "name": "Horizontal position", "expr": "x = u cos θ · t", "note": "Horizontal velocity is constant." },
+        { "name": "Vertical position", "expr": "y = u sin θ · t − ½ g t²", "note": "Upward positive; launch height zero." },
+        { "name": "Time of flight (level ground)", "expr": "T = 2 u sin θ / g", "note": "" },
+        { "name": "Range (level ground)", "expr": "R = u² sin 2θ / g", "note": "Maximum at θ = 45°." },
+        { "name": "Maximum height", "expr": "H = u² sin² θ / (2g)", "note": "" }
+      ],
+      "examples": [
+        {
+          "title": "A ball launched at 30°",
+          "problem": "A ball is launched from the ground at 20 m/s at 30° above the horizontal. Take g = 9.8 m/s². Find the time of flight, the range and the maximum height.",
+          "steps": [
+            "Resolve the launch velocity: u cos 30° = 20 × 0.866 = 17.32 m/s horizontal; u sin 30° = 20 × 0.5 = 10 m/s vertical.",
+            "Time of flight: T = 2 × 10 / 9.8 = 2.04 s.",
+            "Range: R = 17.32 × 2.04 = 35.3 m. (Or R = u² sin 60° / g = 400 × 0.866 / 9.8 = 35.3 m.)",
+            "Maximum height: H = (10)² / (2 × 9.8) = 100 / 19.6 = 5.10 m."
+          ],
+          "steps_simple": [
+            "Split the 20 m/s into a sideways part (17.3 m/s) and an upward part (10 m/s).",
+            "The upward 10 m/s is used up by gravity in 10/9.8 ≈ 1.02 s, then the ball takes the same time to come back down: about 2.04 s in total.",
+            "Sideways it travels 17.3 m/s for 2.04 s: about 35 m.",
+            "The top of the flight is at 10² ÷ (2 × 9.8) ≈ 5.1 m."
+          ],
+          "answer": "T ≈ 2.04 s, R ≈ 35.3 m, H ≈ 5.1 m"
+        }
+      ],
+      "quiz": [
+        { "type": "mcq", "q": "Ignoring air resistance, which launch angle gives the greatest range on level ground?", "options": ["30°", "45°", "60°", "90°"], "answer": 1, "explain": "R = u² sin 2θ / g is largest when sin 2θ = 1, i.e. θ = 45°." },
+        { "type": "numeric", "q": "A ball is thrown horizontally at 10 m/s from a 20 m cliff. Taking g = 10 m/s², how long (in s) does it take to hit the ground?", "answer": 2, "tolerance": 0.05, "unit": "s", "explain": "Vertical motion only: 20 = ½ × 10 × t² → t² = 4 → t = 2 s. The horizontal speed does not matter." },
+        { "type": "mcq", "q": "At the highest point of its flight, a projectile's vertical velocity is…", "options": ["at its maximum", "zero", "equal to the launch speed", "equal to g"], "answer": 1, "explain": "At the top the ball has stopped rising and not yet started falling, so v_y = 0. The horizontal velocity is unchanged." },
+        { "type": "numeric", "q": "Find the range (in m) of a projectile launched at 30 m/s at 45° on level ground with g = 10 m/s².", "answer": 90, "tolerance": 1, "unit": "m", "explain": "R = u² sin 90° / g = 900 × 1 / 10 = 90 m." }
+      ],
+      "problems": [
+        {
+          "difficulty": 1,
+          "title": "Maximum height",
+          "statement": "A ball is launched at 15 m/s at 60° above the horizontal. Find the maximum height (g = 9.8 m/s²).",
+          "steps": [
+            "Vertical launch velocity: u sin 60° = 15 × 0.866 = 12.99 m/s.",
+            "Use H = (u sin θ)² / (2g) = 12.99² / 19.6 = 168.75 / 19.6 = 8.61 m."
+          ],
+          "answer": "H ≈ 8.6 m"
+        },
+        {
+          "difficulty": 2,
+          "title": "Off a cliff",
+          "statement": "A stone is thrown horizontally at 12 m/s from the top of a 45 m cliff (g = 10 m/s²). Find the time to reach the ground, how far from the cliff base it lands, and its speed on impact.",
+          "steps": [
+            "Vertical: starts with zero vertical velocity, falls 45 m. 45 = ½ × 10 × t² → t² = 9 → t = 3 s.",
+            "Horizontal: x = 12 × 3 = 36 m from the base of the cliff.",
+            "Vertical speed at impact: v_y = g t = 10 × 3 = 30 m/s. Horizontal speed is still 12 m/s.",
+            "Impact speed: v = √(12² + 30²) = √(144 + 900) = √1044 = 32.3 m/s."
+          ],
+          "answer": "t = 3 s, lands 36 m out, impact speed ≈ 32.3 m/s"
+        },
+        {
+          "difficulty": 3,
+          "title": "Hitting a target",
+          "statement": "A launcher fires at 25 m/s. At what launch angle(s) will the projectile land 60 m away on level ground? (g = 9.8 m/s²)",
+          "steps": [
+            "Use the range formula and solve for the angle: R = u² sin 2θ / g → sin 2θ = R g / u².",
+            "Substitute: sin 2θ = 60 × 9.8 / 625 = 588 / 625 = 0.9408.",
+            "There are two angles between 0° and 180° with this sine: 2θ = 70.2° or 2θ = 180° − 70.2° = 109.8°.",
+            "So θ = 35.1° or θ = 54.9°. Both hit the target; the higher angle takes longer and rises higher.",
+            "Sanity check: the two angles add to 90°, as complementary angles always give equal range. And 0.9408 < 1, so the target is within reach (maximum range at 45° is 625/9.8 = 63.8 m)."
+          ],
+          "answer": "θ ≈ 35.1° or θ ≈ 54.9°"
+        }
+      ],
+      "glossary": [
+        { "term": "projectile", "def": "An object moving through the air with gravity as the only force acting on it (air resistance ignored)." },
+        { "term": "trajectory", "def": "The path followed by a projectile; a parabola in the ideal model." },
+        { "term": "range", "def": "The horizontal distance a projectile travels before returning to its launch height." },
+        { "term": "apex", "def": "The highest point of a trajectory, where the vertical velocity is zero." }
+      ],
+      "constants": [
+        { "name": "Acceleration due to gravity (Earth's surface)", "symbol": "g", "value": "9.8", "unit": "m/s²" }
+      ]
+    },
+    {
+      "id": "phy-gravity",
+      "order": 4,
+      "title": "Gravitation and orbits",
+      "title_hi": "गुरुत्वाकर्षण और कक्षाएँ",
+      "level": "Advanced",
+      "summary": "Newton's law of universal gravitation, why a satellite stays up by falling around the Earth, orbital speed and period, and escape velocity. Includes an orbit simulation.",
+      "summary_hi": "न्यूटन का सार्वत्रिक गुरुत्वाकर्षण नियम, उपग्रह पृथ्वी के चारों ओर गिरते हुए ऊपर कैसे रहता है, कक्षीय चाल व आवर्तकाल, और पलायन वेग। कक्षा सिमुलेशन सहित।",
+      "hindi_full": false,
+      "illustration": "orbit",
+      "illustration_alt": "A small satellite circling a large planet, with a dashed circular orbit and an arrow pointing from the satellite toward the planet's centre.",
+      "sim": "orbit",
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "The law of universal gravitation",
+          "standard": "Every mass attracts every other mass. For two point masses m₁ and m₂ a distance r apart, the attractive force is\n\n`F = G m₁ m₂ / r²`\n\nwhere `G = 6.674 × 10⁻¹¹ N·m²/kg²` is the gravitational constant. The force is along the line joining the masses and it obeys an **inverse-square law**: doubling the distance cuts the force to a quarter.\n\nFor a spherical body such as the Earth, the whole mass acts as if concentrated at its centre, so r is measured from the centre, not the surface. Near the surface the field strength is `g = G M / R²`; putting in Earth's mass and radius gives 9.8 m/s².",
+          "simple": "Everything pulls on everything else. The pull is stronger for bigger masses and weaker when they are far apart.\n\n`F = G m₁ m₂ / r²`\n\nG is a very small number, which is why you do not notice the pull between everyday objects. Only planets and stars are massive enough for it to matter.\n\nIf you double the distance, the pull becomes four times weaker. Distances are measured from the centre of the planet."
+        },
+        {
+          "id": "s2",
+          "heading": "Why a satellite stays in orbit",
+          "standard": "A satellite is not beyond gravity — at the altitude of the International Space Station (about 400 km) gravity is still about 90 % of its surface value. The satellite stays up because it is **falling around the Earth**: it moves sideways so fast that as it falls toward the Earth, the ground curves away beneath it at the same rate.\n\nFor a circular orbit the gravitational force provides exactly the centripetal force needed: `G M m / r² = m v² / r`. Cancelling m and rearranging gives the orbital speed\n\n`v = √(G M / r)`\n\nNotice that the satellite's own mass cancels — a bolt and a space station at the same altitude orbit at the same speed. Astronauts feel weightless not because there is no gravity, but because they and their spacecraft are in free fall together.\n\nIf the satellite goes too slowly it spirals in; too fast and its orbit becomes an ellipse, and beyond escape velocity it never comes back. Try this in the simulation.",
+          "simple": "There is still plenty of gravity where satellites fly. The satellite stays up because it moves sideways very fast.\n\nImagine throwing a ball harder and harder. It falls, but it also travels further before it lands. Throw it fast enough and the ground curves away as fast as the ball falls. Now it never lands: it is in orbit.\n\nThe speed needed is `v = √(G M / r)`. It does not depend on the satellite's mass.\n\nAstronauts float because they are falling together with their spacecraft, not because gravity is gone.\n\nUse the slider in the simulation: too slow and the satellite falls; too fast and it flies away."
+        },
+        {
+          "id": "s3",
+          "heading": "Orbital period and escape velocity",
+          "standard": "The **period** T is the time for one orbit. For a circular orbit, distance = speed × time, so `2πr = vT`, giving\n\n`T = 2π √(r³ / (G M))`\n\nThis is Kepler's third law: T² is proportional to r³. Higher orbits are slower and take longer. A geostationary satellite has T = 1 sidereal day (86 164 s) and sits at r ≈ 42 160 km from the Earth's centre, about 35 800 km above the equator.\n\n**Escape velocity** is the launch speed needed to leave a body entirely, from energy conservation: `½ m v² = G M m / r` gives `v_esc = √(2 G M / r)`. For the Earth's surface this is 11.2 km/s — exactly √2 times the speed of a circular orbit at that radius.",
+          "simple": "The period is how long one lap takes.\n\n`T = 2π √(r³ / (G M))`\n\nHigher orbits are slower and take longer. A satellite about 35 800 km up takes exactly one day, so it seems to hang over one spot on the equator. TV satellites do this.\n\nEscape velocity is how fast you must go to leave a planet completely and never fall back: `v_esc = √(2 G M / r)`. From Earth's surface it is about 11.2 km/s."
+        }
+      ],
+      "formulas": [
+        { "name": "Universal gravitation", "expr": "F = G m₁ m₂ / r²", "note": "r from centre to centre." },
+        { "name": "Surface gravity", "expr": "g = G M / R²", "note": "" },
+        { "name": "Circular orbital speed", "expr": "v = √(G M / r)", "note": "Independent of the satellite's mass." },
+        { "name": "Orbital period", "expr": "T = 2π √(r³ / (G M))", "note": "Kepler's third law: T² ∝ r³." },
+        { "name": "Escape velocity", "expr": "v_esc = √(2 G M / r)", "note": "√2 × circular orbital speed at the same r." }
+      ],
+      "examples": [
+        {
+          "title": "The International Space Station",
+          "problem": "The ISS orbits about 400 km above the Earth's surface. Find its orbital speed and period. Use G M_Earth = 3.986 × 10¹⁴ m³/s² and R_Earth = 6.371 × 10⁶ m.",
+          "steps": [
+            "Orbital radius from the Earth's centre: r = 6.371 × 10⁶ + 0.400 × 10⁶ = 6.771 × 10⁶ m.",
+            "Speed: v = √(G M / r) = √(3.986 × 10¹⁴ / 6.771 × 10⁶) = √(5.887 × 10⁷) = 7 673 m/s ≈ 7.67 km/s.",
+            "Period: T = 2πr / v = 2π × 6.771 × 10⁶ / 7 673 = 5 545 s ≈ 92.4 minutes.",
+            "So the ISS circles the Earth roughly 15.6 times a day, which matches observation."
+          ],
+          "steps_simple": [
+            "Add the height to the Earth's radius, because distances are measured from the centre: 6 371 km + 400 km = 6 771 km.",
+            "Put that into v = √(G M / r). The answer is about 7 670 m/s, or 7.7 km/s — around 27 600 km/h.",
+            "One lap is the circumference 2πr ≈ 42 500 km. At 7.67 km/s that takes about 5 545 s, which is 92 minutes.",
+            "That is why astronauts see about 16 sunrises a day."
+          ],
+          "answer": "v ≈ 7.67 km/s, T ≈ 92 min"
+        }
+      ],
+      "quiz": [
+        { "type": "mcq", "q": "If the distance between two masses is doubled, the gravitational force between them becomes…", "options": ["half as large", "a quarter as large", "twice as large", "four times as large"], "answer": 1, "explain": "Inverse-square law: F ∝ 1/r², so doubling r divides F by 4." },
+        { "type": "numeric", "q": "Find the circular orbital speed (in m/s) at r = 7.0 × 10⁶ m from the Earth's centre. Use G M = 3.986 × 10¹⁴ m³/s².", "answer": 7546, "tolerance": 60, "unit": "m/s", "explain": "v = √(3.986 × 10¹⁴ / 7.0 × 10⁶) = √(5.694 × 10⁷) ≈ 7 546 m/s." },
+        { "type": "mcq", "q": "A satellite in a circular orbit stays up because it is…", "options": ["beyond the reach of gravity", "in free fall, moving sideways fast enough that the Earth curves away beneath it", "pushed outward by centrifugal force stronger than gravity", "stationary relative to the stars"], "answer": 1, "explain": "Gravity provides the centripetal force; the satellite continually falls toward the Earth but its sideways speed keeps it missing." },
+        { "type": "numeric", "q": "A geostationary satellite has a period of 86 164 s. Find its orbital radius in km. Use G M = 3.986 × 10¹⁴ m³/s².", "answer": 42164, "tolerance": 400, "unit": "km", "explain": "r = (G M T² / 4π²)^(1/3) = (3.986 × 10¹⁴ × 86164² / 39.48)^(1/3) ≈ 4.216 × 10⁷ m ≈ 42 160 km." }
+      ],
+      "problems": [
+        {
+          "difficulty": 1,
+          "title": "Gravity on Mars",
+          "statement": "Mars has mass 6.39 × 10²³ kg and radius 3.39 × 10⁶ m. Find the acceleration due to gravity at its surface.",
+          "steps": [
+            "Use g = G M / R².",
+            "Numerator: G M = 6.674 × 10⁻¹¹ × 6.39 × 10²³ = 4.265 × 10¹³ m³/s².",
+            "Denominator: R² = (3.39 × 10⁶)² = 1.149 × 10¹³ m².",
+            "g = 4.265 × 10¹³ / 1.149 × 10¹³ = 3.71 m/s², about 38 % of Earth's."
+          ],
+          "answer": "g_Mars ≈ 3.71 m/s²"
+        },
+        {
+          "difficulty": 2,
+          "title": "The Moon's period",
+          "statement": "The Moon orbits at an average distance of 3.844 × 10⁸ m from the Earth's centre. Predict its orbital period in days using G M_Earth = 3.986 × 10¹⁴ m³/s².",
+          "steps": [
+            "Use T = 2π √(r³ / G M).",
+            "r³ = (3.844 × 10⁸)³ = 5.680 × 10²⁵ m³.",
+            "r³ / G M = 5.680 × 10²⁵ / 3.986 × 10¹⁴ = 1.425 × 10¹¹ s².",
+            "√(1.425 × 10¹¹) = 3.775 × 10⁵ s; multiply by 2π: T = 2.372 × 10⁶ s.",
+            "Convert: 2.372 × 10⁶ / 86 400 = 27.5 days. The observed sidereal month is 27.3 days — the small difference comes from the Moon's mass (which we ignored) and its elliptical orbit."
+          ],
+          "answer": "T ≈ 27.5 days"
+        },
+        {
+          "difficulty": 3,
+          "title": "Escape velocity from energy",
+          "statement": "Starting from energy conservation, derive the escape velocity from the Earth's surface and evaluate it. Use G M = 3.986 × 10¹⁴ m³/s² and R = 6.371 × 10⁶ m.",
+          "steps": [
+            "Gravitational potential energy of a mass m at distance r from the Earth's centre is U = −G M m / r (zero at infinity).",
+            "To just escape, the object must reach infinity with zero speed: total energy at launch = total energy at infinity = 0.",
+            "At the surface: ½ m v² − G M m / R = 0.",
+            "Cancel m and solve: v² = 2 G M / R, so v_esc = √(2 G M / R).",
+            "Evaluate: 2 × 3.986 × 10¹⁴ / 6.371 × 10⁶ = 1.251 × 10⁸ m²/s²; v_esc = √(1.251 × 10⁸) = 11 186 m/s ≈ 11.2 km/s.",
+            "Compare with the circular orbital speed at the surface, √(G M / R) = 7 910 m/s: the ratio is √2, as the formulas predict. Note that this is the speed needed with no further propulsion and no air resistance; real rockets keep thrusting and fly through the atmosphere, so they do not need to start at 11.2 km/s."
+          ],
+          "answer": "v_esc = √(2GM/R) ≈ 11.2 km/s"
+        }
+      ],
+      "glossary": [
+        { "term": "gravitational constant", "def": "G = 6.674 × 10⁻¹¹ N·m²/kg², the universal constant in Newton's law of gravitation. Not to be confused with g, the local field strength." },
+        { "term": "orbit", "def": "The closed path of one body around another under gravity; circular in the simplest case, elliptical in general." },
+        { "term": "centripetal force", "def": "The net inward force required to keep a body moving in a circle, m v² / r. In orbit it is supplied by gravity." },
+        { "term": "free fall", "def": "Motion under gravity alone. Orbiting satellites and their crews are in free fall, which is why they feel weightless." },
+        { "term": "escape velocity", "def": "The minimum launch speed needed to leave a body's gravitational field entirely without further propulsion, √(2GM/r)." }
+      ],
+      "constants": [
+        { "name": "Gravitational constant", "symbol": "G", "value": "6.674 × 10⁻¹¹", "unit": "N·m²/kg²" },
+        { "name": "Mass of Earth", "symbol": "M_E", "value": "5.972 × 10²⁴", "unit": "kg" },
+        { "name": "Mean radius of Earth", "symbol": "R_E", "value": "6.371 × 10⁶", "unit": "m" },
+        { "name": "Earth's gravitational parameter", "symbol": "G M_E", "value": "3.986 × 10¹⁴", "unit": "m³/s²" }
+      ]
+    }
+  ]
+}

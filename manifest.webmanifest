@@ -1,0 +1,18 @@
+{
+  "name": "JANUS — STEM that works without the internet",
+  "short_name": "JANUS",
+  "description": "Offline-first STEM learning: downloadable content packs, lessons, simulations, quizzes, problem sets and a local tutor that runs entirely on your device.",
+  "id": "/hackathon/janus/",
+  "start_url": "/hackathon/janus/app/",
+  "scope": "/hackathon/janus/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#F8F3E8",
+  "theme_color": "#B4502C",
+  "lang": "en",
+  "categories": ["education"],
+  "icons": [
+    { "src": "/hackathon/janus/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/hackathon/janus/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}

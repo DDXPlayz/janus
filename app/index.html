@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>JANUS — Learn</title>
+  <meta name="description" content="The JANUS offline-first STEM app: library, lesson reader, quizzes, problem sets, simulations, local tutor, content packs, notebook and settings.">
+  <link rel="canonical" href="https://anantamracing.com/hackathon/janus/app/">
+  <meta name="theme-color" content="#B4502C">
+  <meta property="og:title" content="JANUS — Learn">
+  <meta property="og:description" content="Offline-first physics, chemistry, mathematics and engineering with a local tutor.">
+  <link rel="icon" type="image/svg+xml" href="/hackathon/janus/favicon.svg">
+  <link rel="manifest" href="/hackathon/janus/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/hackathon/janus/icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link id="janus-fonts" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Nunito:wght@400;700;800&display=swap">
+  <script>
+    try { var s = JSON.parse(localStorage.getItem('janus:v1') || '{}'); var r = document.documentElement;
+      if (s.lowBandwidth) { r.classList.add('lb'); document.getElementById('janus-fonts').media = 'not all'; }
+      if (s.dyslexia) r.classList.add('dyslexia'); if (s.dyslexiaFont) r.classList.add('dyslexia-font');
+      if (s.highContrast) r.classList.add('hc'); if (s.reducedMotion) r.classList.add('rm');
+      if (s.textScale) r.style.fontSize = Math.round(s.textScale * 100) + '%'; } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="/hackathon/janus/janus.css">
+</head>
+<body class="app">
+  <a class="skip-link" href="#view">Skip to main content</a>
+  <header class="app-header">
+    <div class="bar">
+      <a class="brand" href="/hackathon/janus/" aria-label="JANUS home">
+        <svg class="wordmark-svg" viewBox="0 0 44 40" width="34" height="31" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6h14a2 2 0 0 1 2 2v26a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/><path d="M22 8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v26a2 2 0 0 1-2 2H24a2 2 0 0 1-2-2"/><path d="M8 13h10M8 18h10M8 23h7" stroke-width="1.2"/><path d="M26 12c3-3 7-3 10 0M26 20c3 3 7 3 10 0" stroke-width="1.2"/></g><circle cx="29" cy="16" r="1" fill="currentColor"/><circle cx="35" cy="16" r="1" fill="currentColor"/></svg>
+        <span>JANUS<small>Offline-first STEM</small></span>
+      </a>
+      <nav class="app-nav" aria-label="App sections" id="app-nav"></nav>
+      <span class="spacer"></span>
+      <a class="back-hub" href="/hackathon/">Back to Hackathon</a>
+      <span id="conn" class="conn online" role="status" aria-live="polite" aria-atomic="true"></span>
+      <button type="button" id="tutor-toggle" class="btn ghost small tutor-btn" aria-expanded="false" aria-controls="tutor-panel">Tutor</button>
+    </div>
+  </header>
+  <div class="status-strip" id="status-strip" aria-live="polite"></div>
+
+  <div class="app-body" id="app-body">
+    <main id="view" class="view" tabindex="-1" aria-live="off"></main>
+    <aside id="tutor-panel" class="tutor-panel" aria-label="Local tutor" hidden>
+      <div class="tutor-head">
+        <div><h2>Local tutor</h2><p class="small muted" style="margin:0">Searches only the lessons on this device.</p></div>
+        <button type="button" class="btn ghost small" id="tutor-close" aria-label="Close tutor panel">Close</button>
+      </div>
+      <div class="tutor-chips" id="tutor-chips"></div>
+      <div class="tutor-log" id="tutor-log" role="log" aria-live="polite" aria-relevant="additions"></div>
+      <form class="tutor-form" id="tutor-form" autocomplete="off">
+        <label for="tutor-input" class="visually-hidden">Ask the tutor</label>
+        <input type="text" id="tutor-input" placeholder="Ask about a topic, a formula, a term…" maxlength="300">
+        <button type="submit" class="btn primary small">Ask</button>
+      </form>
+    </aside>
+  </div>
+
+  <footer class="app-footer">
+    <span>An independent project, supported and showcased by <a href="/hackathon/">Anantam Hackathon</a>.</span>
+    <span><a href="/hackathon/">← Back to Hackathon</a> · <a href="/hackathon/janus/docs/">Docs</a> · <a href="/hackathon/janus/">About JANUS</a></span>
+  </footer>
+  <div class="toasts" id="toasts" aria-live="polite" aria-atomic="false"></div>
+  <script type="module" src="/hackathon/janus/js/app.js"></script>
+</body>
+</html>
