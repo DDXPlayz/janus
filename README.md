@@ -7,6 +7,11 @@ local tutor — all of it running on the device, after one visit while connected
 **[Try it → anantamracing.com/hackathon/janus/app/](https://anantamracing.com/hackathon/janus/app/)**
 — open it once online, then turn your connection off and keep using it.
 
+![janus screenshot](docs/offline-first.jpg)
+
+*Offline-first by architecture: downloaded once, then opened on a bus, in a village or during a power cut, with no connection.*
+
+
 An independent project, supported and showcased by
 [Anantam Hackathon](https://hackathon.anantamracing.com/).
 
